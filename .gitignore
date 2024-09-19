@@ -1,3 +1,4 @@
+# Built files
 /*.js
 /*.d.ts
 native/artifacts.json
@@ -21,6 +22,7 @@ Cargo.lock
 
 node_modules/
 
+# Flamegraph
 *.html
 *.svg
 package-lock.json
@@ -28,6 +30,7 @@ package-lock.json
 *.old
 *.stacks
 
+# Coverage datas
 *.zip
 *.info
 

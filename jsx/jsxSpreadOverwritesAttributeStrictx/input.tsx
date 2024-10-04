@@ -5,18 +5,17 @@
 // @skipLibCheck: true
 // @libFiles: react.d.ts,lib.d.ts
 
-import React = require('react');
+import React = require("react");
 
 interface Props {
-    a: number;
-    b: number;
-    c?: number;
-    d?: number;
+	a: number;
+	b: number;
+	c?: number;
+	d?: number;
 }
 
-
 const props: Props = { a: 1, b: 1 };
-const Foo = (props: Props) => <div>{ props.a }</div>;
+const Foo = (props: Props) => <div>{props.a}</div>;
 
 // ok
 const a1 = <Foo {...props}></Foo>;

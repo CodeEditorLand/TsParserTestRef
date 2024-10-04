@@ -1,7 +1,7 @@
 //@filename: file.tsx
 //@jsx: preserve
 declare module JSX {
-	interface Element { }
+	interface Element {}
 	interface IntrinsicElements {
 		test1: { "data-foo"?: string };
 	}
@@ -11,6 +11,6 @@ declare module JSX {
 <test1 data-foo={32} />;
 
 // OK
-<test1 data-foo={'32'} />;
-<test1 data-bar={'32'} />;
+<test1 data-foo={"32"} />;
+<test1 data-bar={"32"} />;
 <test1 data-bar={32} />;

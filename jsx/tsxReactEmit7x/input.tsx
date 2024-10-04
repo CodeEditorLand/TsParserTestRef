@@ -3,7 +3,7 @@
 
 //@filename: file.tsx
 declare module JSX {
-	interface Element { }
+	interface Element {}
 	interface IntrinsicElements {
 		[s: string]: any;
 	}

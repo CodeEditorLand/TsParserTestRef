@@ -2,8 +2,6 @@
 
 declare namespace JSX {
 	interface IntrinsicElements {
-		x: { y: number; z: string; };
+		x: { y: number; z: string };
 	}
 }
-
-

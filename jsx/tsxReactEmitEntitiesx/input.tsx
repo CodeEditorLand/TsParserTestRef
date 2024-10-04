@@ -1,7 +1,7 @@
 //@filename: file.tsx
 //@jsx: react
 declare module JSX {
-	interface Element { }
+	interface Element {}
 	interface IntrinsicElements {
 		[s: string]: any;
 	}
@@ -17,7 +17,7 @@ declare var React: any;
 // Also works in string literal attributes
 <div attr="&#0123;&hellip;&#x7D;\"></div>;
 // Does not happen for a string literal that happens to be inside an attribute (and escapes then work)
-<div attr={"&#0123;&hellip;&#x7D;\""}></div>;
+<div attr={'&#0123;&hellip;&#x7D;"'}></div>;
 // Preserves single quotes
 <div attr='"'></div>;
 // https://github.com/microsoft/TypeScript/issues/35732

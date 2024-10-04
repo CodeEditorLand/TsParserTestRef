@@ -4,12 +4,12 @@
 // @skipLibCheck: true
 // @libFiles: react.d.ts,lib.d.ts
 
-import React = require('react');
+import React = require("react");
 
 class Poisoned extends React.Component<{}, {}> {
-    render() {
-        return <div>Hello</div>;
-    }
+	render() {
+		return <div>Hello</div>;
+	}
 }
 
 const obj = {};

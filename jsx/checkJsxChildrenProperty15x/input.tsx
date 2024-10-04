@@ -4,7 +4,7 @@
 // @skipLibCheck: true
 // @libFiles: react.d.ts,lib.d.ts
 
-import React = require('react');
+import React = require("react");
 
 const Tag = (x: {}) => <div></div>;
 
@@ -14,5 +14,14 @@ const k2 = <Tag></Tag>;
 
 // Not OK (excess children)
 const k3 = <Tag children={<div></div>} />;
-const k4 = <Tag key="1"><div></div></Tag>;
-const k5 = <Tag key="1"><div></div><div></div></Tag>;
+const k4 = (
+	<Tag key="1">
+		<div></div>
+	</Tag>
+);
+const k5 = (
+	<Tag key="1">
+		<div></div>
+		<div></div>
+	</Tag>
+);

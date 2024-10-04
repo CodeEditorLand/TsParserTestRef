@@ -1,8 +1,8 @@
 //@jsx: preserve
 //@filename: file1.tsx
 declare module JSX {
-	interface Element { }
+	interface Element {}
 }
 
 // OK, but implicit any
-<div n='x' />;
+<div n="x" />;

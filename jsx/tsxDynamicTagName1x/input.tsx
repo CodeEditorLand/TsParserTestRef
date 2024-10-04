@@ -1,4 +1,4 @@
 // @jsx: preserve
 
 var CustomTag = "h1";
-<CustomTag> Hello World </CustomTag>  // No error
+<CustomTag> Hello World </CustomTag>; // No error

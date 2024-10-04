@@ -4,16 +4,16 @@
 // @skipLibCheck: true
 // @libFiles: react.d.ts,lib.d.ts
 
-import React = require('react');
+import React = require("react");
 
 interface Prop {
-    a: number,
-    b: string
+	a: number;
+	b: string;
 }
 
 declare class MyComp<P = Prop> extends React.Component<P, {}> {
-    internalProp: P;
+	internalProp: P;
 }
 
-let x = <MyComp />
-let x1 = <MyComp a="hi"/>
+let x = <MyComp />;
+let x1 = <MyComp a="hi" />;

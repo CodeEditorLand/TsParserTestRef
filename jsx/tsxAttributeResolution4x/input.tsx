@@ -1,7 +1,7 @@
 //@filename: file.tsx
 //@jsx: preserve
 declare module JSX {
-	interface Element { }
+	interface Element {}
 	interface IntrinsicElements {
 		test1: Attribs1;
 	}
@@ -11,7 +11,7 @@ interface Attribs1 {
 }
 
 // OK
-<test1 {... {x: (n) => 0} } />;
+<test1 {...{ x: (n) => 0 }} />;
 
 // Error, no member 'len' on 'string'
-<test1 {... {x: (n) => n.len} } />;
+<test1 {...{ x: (n) => n.len }} />;

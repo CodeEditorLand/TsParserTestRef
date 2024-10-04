@@ -2,9 +2,8 @@
 
 //@filename: react.d.ts
 declare module JSX {
-	interface Element { }
-	interface IntrinsicElements {
-	}
+	interface Element {}
+	interface IntrinsicElements {}
 	interface ElementAttributesProperty {
 		props;
 	}
@@ -15,7 +14,7 @@ declare module JSX {
 
 //@filename: file.tsx
 
-declare class Component<P, S>  {
+declare class Component<P, S> {
 	constructor(props?: P, context?: any);
 	setState(f: (prevState: S, props: P) => S, callback?: () => any): void;
 	setState(state: S, callback?: () => any): void;
@@ -26,14 +25,12 @@ declare class Component<P, S>  {
 	context: {};
 }
 
-
 interface ComponentClass<P> {
 	new (props?: P, context?: any): Component<P, any>;
 }
 
 declare module TestMod {
-	interface TestClass extends ComponentClass<{reqd: any}> {
-	}
+	interface TestClass extends ComponentClass<{ reqd: any }> {}
 	var Test: TestClass;
 }
 
@@ -43,4 +40,3 @@ var t1 = <T />;
 
 // Should error
 var t2 = <TestMod.Test />;
-

@@ -1,13 +1,15 @@
 //@filename: file.tsx
 //@jsx: preserve
 declare module JSX {
-	interface Element { something; }
-	interface IntrinsicElements { }
+	interface Element {
+		something;
+	}
+	interface IntrinsicElements {}
 }
 
 interface Obj1 {
-	new(n: string): { x: number };
-	new(n: number): { y: string };
+	new (n: string): { x: number };
+	new (n: number): { y: string };
 }
 var Obj1: Obj1;
 <Obj1 />; // Error, return type is not an object type

@@ -1,7 +1,7 @@
 //@filename: file.tsx
 //@jsx: react
 declare module JSX {
-	interface Element { }
+	interface Element {}
 	interface IntrinsicElements {
 		[s: string]: any;
 	}
@@ -13,53 +13,32 @@ declare var React: any;
 
 var p = 0;
 // Emit "   "
-<div>   </div>;
+<div> </div>;
 // Emit "  ", p, "   "
-<div>  {p}    </div>;
+<div> {p} </div>;
 // Emit only p
-<div>  
-      {p}    
-      </div>;
+<div>{p}</div>;
 
 // Emit only p
-<div>
-  {p}
-    </div>;
+<div>{p}</div>;
 
 // Emit "  3"
-<div>  3  
-  </div>;
+<div> 3</div>;
 
 // Emit "  3  "
-<div>  3  </div>;
+<div> 3 </div>;
 
 // Emit "3"
-<div>   
-   3    
-   </div>;
+<div>3</div>;
 
 // Emit no args
-<div>   
-   </div>;
+<div></div>;
 
 // Emit "foo bar"
-<div>  
-
-   foo
-
- bar   
-
-  </div>;
+<div>foo bar</div>;
 
 // Emit "hello\\ world"
-<div>
-
-    hello\
-
-world
-</div>;
+<div>hello\ world</div>;
 
 // Emit "  a b  c d  "
-<div>  a
-    b  c
-    d  </div>;
+<div> a b c d </div>;

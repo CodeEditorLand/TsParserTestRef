@@ -1,18 +1,18 @@
 //@filename: file.tsx
 //@jsx: preserve
 declare module JSX {
-	interface Element { }
+	interface Element {}
 	interface IntrinsicElements {
-	    div: { n: string; };
-	    span: { m: string; };
+		div: { n: string };
+		span: { m: string };
 	}
 }
 
 // OK
-<div n='x' />;
+<div n="x" />;
 
 // OK
-<span m='ok' />;
+<span m="ok" />;
 
 // Error
-<span q='' />;
+<span q="" />;

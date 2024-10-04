@@ -3,9 +3,8 @@
 
 //@filename: react.d.ts
 declare module JSX {
-	interface Element { }
-	interface IntrinsicElements {
-	}
+	interface Element {}
+	interface IntrinsicElements {}
 	interface ElementAttributesProperty {
 		props;
 	}
@@ -15,15 +14,13 @@ declare module JSX {
 }
 
 //@filename: file.tsx
-class MyComponent {  
-  render() {
-  }
+class MyComponent {
+	render() {}
 
-  props: {
-	  ref?: string;
-  }
+	props: {
+		ref?: string;
+	};
 }
 
 // Should be an OK
-var x = <MyComponent bar='world' />;
-
+var x = <MyComponent bar="world" />;

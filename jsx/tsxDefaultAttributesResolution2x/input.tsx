@@ -4,16 +4,16 @@
 // @skipLibCheck: true
 // @libFiles: react.d.ts,lib.d.ts
 
-import React = require('react');
+import React = require("react");
 
 interface Prop {
-    x: true;
+	x: true;
 }
 class Poisoned extends React.Component<Prop, {}> {
-    render() {
-        return <div>Hello</div>;
-    }
+	render() {
+		return <div>Hello</div>;
+	}
 }
 
 // OK
-let p = <Poisoned x/>;
+let p = <Poisoned x />;

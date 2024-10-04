@@ -4,27 +4,27 @@
 // @skipLibCheck: true
 // @libFiles: react.d.ts,lib.d.ts
 
-import React = require('react');
+import React = require("react");
 
 interface Address {
-  street: string;
-  country: string;
+	street: string;
+	country: string;
 }
 
 interface CanadianAddress extends Address {
-    postalCode: string;
+	postalCode: string;
 }
 
 interface AmericanAddress extends Address {
-    zipCode: string;
+	zipCode: string;
 }
 
 type Properties = CanadianAddress | AmericanAddress;
 
 export class AddressComp extends React.Component<Properties, void> {
-  public render() {
-    return null;
-  }
+	public render() {
+		return null;
+	}
 }
 
-let a = <AddressComp postalCode='T1B 0L3' street="vancouver" country="CA" />
+let a = <AddressComp postalCode="T1B 0L3" street="vancouver" country="CA" />;

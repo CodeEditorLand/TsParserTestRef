@@ -2,8 +2,8 @@
 //@filename: file1.tsx
 //@noimplicitany: true
 declare module JSX {
-	interface Element { }
+	interface Element {}
 }
 
 // Error under implicit any
-<div n='x' />;
+<div n="x" />;

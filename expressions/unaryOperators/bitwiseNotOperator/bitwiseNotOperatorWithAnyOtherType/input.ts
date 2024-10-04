@@ -5,22 +5,22 @@
 var ANY: any;
 var ANY1;
 var ANY2: any[] = ["", ""];
-var obj: () => {}
-var obj1 = { x:"", y: () => { }};
+var obj: () => {};
+var obj1 = { x: "", y: () => {} };
 
 function foo(): any {
-    var a;
-    return a;
+	var a;
+	return a;
 }
 class A {
-    public a: any;
-    static foo() {
-        var a;
-        return a;
-    }
+	public a: any;
+	static foo() {
+		var a;
+		return a;
+	}
 }
 module M {
-    export var n: any;
+	export var n: any;
 }
 var objA = new A();
 
@@ -37,7 +37,7 @@ var ResultIsNumber6 = ~undefined;
 var ResultIsNumber7 = ~null;
 
 // any type expressions
-var ResultIsNumber8 = ~ANY2[0]
+var ResultIsNumber8 = ~ANY2[0];
 var ResultIsNumber9 = ~obj1.x;
 var ResultIsNumber10 = ~obj1.y;
 var ResultIsNumber11 = ~objA.a;

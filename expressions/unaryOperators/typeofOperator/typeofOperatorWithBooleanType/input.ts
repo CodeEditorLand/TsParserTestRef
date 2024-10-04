@@ -3,14 +3,18 @@
 // typeof  operator on boolean type
 var BOOLEAN: boolean;
 
-function foo(): boolean { return true; }
+function foo(): boolean {
+	return true;
+}
 
 class A {
-    public a: boolean;
-    static foo() { return false; }
+	public a: boolean;
+	static foo() {
+		return false;
+	}
 }
 module M {
-    export var n: boolean;
+	export var n: boolean;
 }
 
 var objA = new A();
@@ -45,7 +49,7 @@ var x: boolean[];
 var r: () => boolean;
 z: typeof BOOLEAN;
 r: typeof foo;
-var y = { a: true, b: false};
+var y = { a: true, b: false };
 z: typeof y.a;
 z: typeof objA.a;
 z: typeof A.foo;

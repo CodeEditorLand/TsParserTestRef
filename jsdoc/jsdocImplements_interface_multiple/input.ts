@@ -6,30 +6,30 @@
 
 // @Filename: /defs.d.ts
 interface Drawable {
-    draw(): number;
+	draw(): number;
 }
 interface Sizable {
-    size(): number;
+	size(): number;
 }
 // @Filename: /a.js
-/** 
- * @implements {Drawable} 
- * @implements Sizable 
+/**
+ * @implements {Drawable}
+ * @implements Sizable
  **/
 class Square {
-    draw() {
-        return 0;
-    }
-    size() {
-        return 0;
-    }
+	draw() {
+		return 0;
+	}
+	size() {
+		return 0;
+	}
 }
 /**
  * @implements Drawable
  * @implements {Sizable}
  **/
 class BadSquare {
-    size() {
-        return 0;
-    }
+	size() {
+		return 0;
+	}
 }

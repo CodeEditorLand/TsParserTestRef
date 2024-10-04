@@ -1,9 +1,9 @@
 class Base {
-    public a: string;
+	public a: string;
 }
 
 class Derived extends Base {
-    public b: string;
+	public b: string;
 }
 
 var a1: { [a: string]: string };

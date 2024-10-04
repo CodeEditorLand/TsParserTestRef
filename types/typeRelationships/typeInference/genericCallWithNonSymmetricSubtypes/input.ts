@@ -2,18 +2,18 @@
 // we choose the first candidate so the result is dependent on the order of the arguments provided
 
 function foo<T>(x: T, y: T) {
-    var r: T;
-    return r;
+	var r: T;
+	return r;
 }
 
-var a: { x: number; y?: number; };
-var b: { x: number; z?: number; };
+var a: { x: number; y?: number };
+var b: { x: number; z?: number };
 
 var r = foo(a, b); // { x: number; y?: number; };
 var r2 = foo(b, a); // { x: number; z?: number; };
 
-var x: { x: number; };
-var y: { x?: number; };
+var x: { x: number };
+var y: { x?: number };
 
 var r3 = foo(a, x); // { x: number; y?: number; };
 var r4 = foo(x, a); // { x: number; };

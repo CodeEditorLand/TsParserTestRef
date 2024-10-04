@@ -1,1 +1,1 @@
-﻿var x = `abc${ 0 }def` instanceof String;
+﻿var x = `abc${0}def` instanceof String;

@@ -1,29 +1,33 @@
 interface I {
-    id: number;
+	id: number;
 }
 
 class C implements I {
-    id: number;
+	id: number;
 }
 
-class D<T>{
-    source: T;
-    recurse: D<T>;
-    wrapped: D<D<T>>
+class D<T> {
+	source: T;
+	recurse: D<T>;
+	wrapped: D<D<T>>;
 }
 
-function F(x: string): number { return 42; }
+function F(x: string): number {
+	return 42;
+}
 
 module M {
-    export class A {
-        name: string;
-    }
+	export class A {
+		name: string;
+	}
 
-    export function F2(x: number): string { return x.toString(); }
+	export function F2(x: number): string {
+		return x.toString();
+	}
 }
 
 var aNumber: number = 9.9;
-var aString: string = 'this is a string';
+var aString: string = "this is a string";
 var aDate: Date = new Date(12);
 var anObject: Object = new Object();
 
@@ -43,5 +47,4 @@ var aLambda: typeof F = (x) => 2;
 
 var aModule: typeof M = M;
 var aClassInModule: M.A = new M.A();
-var aFunctionInModule: typeof M.F2 = (x) => 'this is a string';
-
+var aFunctionInModule: typeof M.F2 = (x) => "this is a string";

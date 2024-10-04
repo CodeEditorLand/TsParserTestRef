@@ -1,2 +1,1 @@
-class C<T extends number> {
-}
+class C<T extends number> {}

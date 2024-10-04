@@ -1,1 +1,1 @@
-﻿var x = `abc${ typeof "hi" }def`;
+﻿var x = `abc${typeof "hi"}def`;

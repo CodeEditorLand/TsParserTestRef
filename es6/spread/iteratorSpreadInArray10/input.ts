@@ -1,8 +1,8 @@
 //@target: ES6
 class SymbolIterator {
-    [Symbol.iterator]() {
-        return this;
-    }
+	[Symbol.iterator]() {
+		return this;
+	}
 }
 
-var array = [...new SymbolIterator];
+var array = [...new SymbolIterator()];

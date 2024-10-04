@@ -1,43 +1,41 @@
 // @declaration: true
 
-type Kind = "A" | "B"
+type Kind = "A" | "B";
 
 interface Entity {
-    kind: Kind;
+	kind: Kind;
 }
 
 interface A extends Entity {
-    kind: "A";
-    a: number;
+	kind: "A";
+	a: number;
 }
 
 interface B extends Entity {
-    kind: "B";
-    b: string;
+	kind: "B";
+	b: string;
 }
 
 function hasKind(entity: Entity, kind: "A"): entity is A;
 function hasKind(entity: Entity, kind: "B"): entity is B;
 function hasKind(entity: Entity, kind: Kind): entity is Entity;
 function hasKind(entity: Entity, kind: Kind): boolean {
-    return entity.kind === kind;
+	return entity.kind === kind;
 }
 
 let x: A = {
-    kind: "A",
-    a: 100,
-}
+	kind: "A",
+	a: 100,
+};
 
 if (hasKind(x, "A")) {
-    let a = x;
-}
-else {
-    let b = x;
+	let a = x;
+} else {
+	let b = x;
 }
 
 if (!hasKind(x, "B")) {
-    let c = x;
-}
-else {
-    let d = x;
+	let c = x;
+} else {
+	let d = x;
 }

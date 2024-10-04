@@ -8,9 +8,9 @@ declare var module: { exports: any };
 // @Filename: mod1.js
 /// <reference path='./types.d.ts'/>
 class Chunk {
-    constructor() {
-        this.chunk = 1;
-    }
+	constructor() {
+		this.chunk = 1;
+	}
 }
 module.exports = Chunk;
 

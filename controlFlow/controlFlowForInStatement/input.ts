@@ -4,14 +4,14 @@ let cond: boolean;
 
 x = /a/;
 for (let y in obj) {
-    x = y;
-    if (cond) {
-        x = 42;
-        continue;
-    }
-    if (cond) {
-        x = true;
-        break;
-    }
+	x = y;
+	if (cond) {
+		x = 42;
+		continue;
+	}
+	if (cond) {
+		x = true;
+		break;
+	}
 }
 x; // RegExp | string | number | boolean

@@ -1,4 +1,4 @@
 interface C {
-    foo;
-    new;
+	foo;
+	new;
 }

@@ -1,4 +1,4 @@
-class C { }
+class C {}
 
 var x1: any;
 var x2: Function;

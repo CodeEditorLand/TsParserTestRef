@@ -2,5 +2,5 @@
 //@noImplicitAny: true
 
 function* g() {
-    yield yield;
+	yield yield;
 }

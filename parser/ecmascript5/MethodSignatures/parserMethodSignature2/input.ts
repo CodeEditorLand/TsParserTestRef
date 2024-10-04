@@ -1,3 +1,3 @@
 interface I {
-  B?();
+	B?();
 }

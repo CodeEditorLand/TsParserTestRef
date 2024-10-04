@@ -1,2 +1,2 @@
 //@target: ES6
-var v = { set [e](v) { } }
+var v = { set [e](v) {} };

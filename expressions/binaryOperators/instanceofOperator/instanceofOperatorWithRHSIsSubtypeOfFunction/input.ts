@@ -1,4 +1,4 @@
-interface I extends Function { }
+interface I extends Function {}
 
 var x: any;
 var f1: Function;

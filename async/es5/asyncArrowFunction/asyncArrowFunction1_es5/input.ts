@@ -2,5 +2,4 @@
 // @lib: es5,es2015.promise
 // @noEmitHelpers: true
 
-var foo = async (): Promise<void> => {
-};
+var foo = async (): Promise<void> => {};

@@ -1,15 +1,15 @@
 class Base {
-    private x: { foo: string };
+	private x: { foo: string };
 }
 
 class Derived extends Base {
-    private x: { foo: string; bar: string; }; // error
+	private x: { foo: string; bar: string }; // error
 }
 
 class Base2 {
-    private static y: { foo: string };
+	private static y: { foo: string };
 }
 
 class Derived2 extends Base2 {
-    private static y: { foo: string; bar: string; }; // error
+	private static y: { foo: string; bar: string }; // error
 }

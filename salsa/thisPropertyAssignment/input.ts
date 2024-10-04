@@ -19,10 +19,10 @@ this["y"]["z"] = {};
 
 /** @constructor */
 function F() {
-  this.a = {};
-  this.a.b = {};
-  this["b"] = {};
-  this["b"]["c"] = {};
+	this.a = {};
+	this.a.b = {};
+	this["b"] = {};
+	this["b"]["c"] = {};
 }
 
 const f = new F();

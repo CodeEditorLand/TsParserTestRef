@@ -1,14 +1,18 @@
 // accessing any private outside the class is an error
 
 class C {
-    private x;
-    private a = '';
-    private b: string = '';
-    private c() { return '' }
-    private d = () => '';
-    private static e;
-    private static f() { return '' }
-    private static g = () => '';
+	private x;
+	private a = "";
+	private b: string = "";
+	private c() {
+		return "";
+	}
+	private d = () => "";
+	private static e;
+	private static f() {
+		return "";
+	}
+	private static g = () => "";
 }
 
 var c = new C();

@@ -1,1 +1,1 @@
-new Date<A ? B : C
+new Date() < A ? B : C;

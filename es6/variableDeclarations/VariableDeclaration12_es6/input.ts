@@ -1,4 +1,3 @@
 // @target:es6
 
-let
-x
+let x;

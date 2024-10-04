@@ -1,5 +1,5 @@
 interface I {
-    new(): any;
+	new (): any;
 }
 
 var i: I;
@@ -8,7 +8,7 @@ f = i;
 i = f;
 
 var a: {
-    new(): any
-}
+	new (): any;
+};
 f = a;
 a = f;

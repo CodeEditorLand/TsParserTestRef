@@ -2,7 +2,7 @@
 // no errors expected below
 
 interface I {
-    (): void;
+	(): void;
 }
 
 var i: I;
@@ -10,8 +10,8 @@ var r2: void = i();
 var r2b: (x: any, y?: any) => any = i.apply;
 
 var b: {
-    (): void;
-}
+	(): void;
+};
 
 var r4: void = b();
 var rb4: (x: any, y?: any) => any = b.apply;

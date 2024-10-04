@@ -2,8 +2,12 @@
 
 // typeof  operator on enum type
 
-enum ENUM { };
-enum ENUM1 { A, B, "" };
+enum ENUM {}
+enum ENUM1 {
+	A,
+	B,
+	"",
+}
 
 // enum type var
 var ResultIsString1 = typeof ENUM;
@@ -24,6 +28,6 @@ typeof ENUM1["B"];
 typeof ENUM, ENUM1;
 
 // use typeof in type query
-enum z { };
+enum z {}
 z: typeof ENUM;
 z: typeof ENUM1;

@@ -12,7 +12,7 @@ var f = undefined;
 f = x;
 
 enum E {
-    A
+	A,
 }
 
 var g: E = x;
@@ -20,13 +20,13 @@ var g2 = E.A;
 g2 = x;
 
 class C {
-    foo: string;
+	foo: string;
 }
 
 var h: C = x;
 
 interface I {
-    foo: string;
+	foo: string;
 }
 
 var i: I = x;
@@ -35,11 +35,11 @@ var j: { (): string } = x;
 var j2: { <T>(x: T): string } = x;
 
 module M {
-    export var foo = 1;
+	export var foo = 1;
 }
 
 M = x;
 
 function k<T>(a: T) {
-    a = x;
+	a = x;
 }

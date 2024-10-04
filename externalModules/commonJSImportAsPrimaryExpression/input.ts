@@ -7,6 +7,6 @@ export class C1 {
 
 // @Filename: foo_1.ts
 import foo = require("./foo_0");
-if(foo.C1.s1){
+if (foo.C1.s1) {
 	// Should cause runtime import
 }

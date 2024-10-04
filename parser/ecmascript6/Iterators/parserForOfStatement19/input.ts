@@ -1,2 +1,3 @@
 //@target: ES6
-for (var of in of) { }
+for (var of in of) {
+}

@@ -1,6 +1,6 @@
 //@target: ES5
 class C {
-    [Symbol.iterator]() { }
+	[Symbol.iterator]() {}
 }
 
-(new C)[Symbol.iterator]
+new C()[Symbol.iterator];

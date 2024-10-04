@@ -3,12 +3,12 @@
 var ANY: any;
 var ANY1: any;
 var ANY2: any[] = ["", ""];
-var obj = {x:1,y:null};
+var obj = { x: 1, y: null };
 class A {
-    public a: any;
+	public a: any;
 }
 module M {
-    export var n: any;
+	export var n: any;
 }
 var objA = new A();
 

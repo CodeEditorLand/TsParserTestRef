@@ -1,2 +1,2 @@
 let a: any;
-const c = true ? (a) : function() {};
+const c = true ? a : function () {};

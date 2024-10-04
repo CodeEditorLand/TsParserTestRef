@@ -1,10 +1,10 @@
 interface I {
-    a: string;
-    b?: number;
+	a: string;
+	b?: number;
 }
 
 interface J {
-    a: string;
+	a: string;
 }
 
 var a: I;

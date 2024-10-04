@@ -10,12 +10,12 @@
  * @param {number} [r=101]
  */
 function f(p, q, r) {
-    p = undefined
-    q = undefined
-    // note that, unlike TS, JSDOC [r=101] retains | undefined because
-    // there's no code emitted to get rid of it.
-    r = undefined
+	p = undefined;
+	q = undefined;
+	// note that, unlike TS, JSDOC [r=101] retains | undefined because
+	// there's no code emitted to get rid of it.
+	r = undefined;
 }
-f()
-f(undefined, undefined, undefined)
-f(1, 2, 3)
+f();
+f(undefined, undefined, undefined);
+f(1, 2, 3);

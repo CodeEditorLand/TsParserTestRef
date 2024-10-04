@@ -3,16 +3,14 @@
 // @checkJs: true
 // @Filename: a.js
 var Outer = class O {
-    m(x, y) { }
-}
+	m(x, y) {}
+};
 Outer.Inner = class I {
-    n(a, b) { }
-
-}
+	n(a, b) {}
+};
 /** @type {Outer} */
-var si
-si.m
+var si;
+si.m;
 /** @type {Outer.Inner} */
-var oi
-oi.n
-
+var oi;
+oi.n;

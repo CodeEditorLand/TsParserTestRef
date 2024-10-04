@@ -28,4 +28,3 @@ const v7: number = unbox(b7);
 
 const b8 = { value: ofnu?.prop() };
 const v8: number = unbox(b8);
-

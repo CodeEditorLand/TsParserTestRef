@@ -3,16 +3,16 @@
 // @checkJs: true
 // @Filename: a.js
 function Outer() {
-    this.y = 2
+	this.y = 2;
 }
 Outer.Inner = class I {
-    constructor() {
-        this.x = 1
-    }
-}
+	constructor() {
+		this.x = 1;
+	}
+};
 /** @type {Outer} */
-var ok
-ok.y
+var ok;
+ok.y;
 /** @type {Outer.Inner} */
-var oc
-oc.x
+var oc;
+oc.x;

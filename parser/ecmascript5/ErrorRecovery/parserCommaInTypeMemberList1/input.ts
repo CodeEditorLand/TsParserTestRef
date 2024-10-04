@@ -1,1 +1,1 @@
-var v: { workItem: any, width: string };
+var v: { workItem: any; width: string };

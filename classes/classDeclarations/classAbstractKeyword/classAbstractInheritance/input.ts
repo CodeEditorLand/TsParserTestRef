@@ -5,7 +5,7 @@ abstract class B extends A {}
 class C extends A {}
 
 abstract class AA {
-    abstract foo();
+	abstract foo();
 }
 
 abstract class BB extends AA {}

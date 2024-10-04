@@ -1,18 +1,32 @@
-﻿interface I { }
-class A { a = 10; }
-class C implements I { c };
-class D implements I { d };
-class E extends A { e };
-class F extends A { f };
-enum E1 { one }
-enum E2 { one }
+﻿interface I {}
+class A {
+	a = 10;
+}
+class C implements I {
+	c;
+}
+class D implements I {
+	d;
+}
+class E extends A {
+	e;
+}
+class F extends A {
+	f;
+}
+enum E1 {
+	one,
+}
+enum E2 {
+	one,
+}
 
 // no error
 var numStrTuple: [number, string] = [5, "foo"];
 var emptyObjTuple = <[{}, {}]>numStrTuple;
 var numStrBoolTuple = <[number, string, boolean]>numStrTuple;
-var shorter = numStrBoolTuple as [number, string]
-var longer = numStrTuple as [number, string, boolean]
+var shorter = numStrBoolTuple as [number, string];
+var longer = numStrTuple as [number, string, boolean];
 var classCDTuple: [C, D] = [new C(), new D()];
 var interfaceIITuple = <[I, I]>classCDTuple;
 var classCDATuple = <[C, D, A]>classCDTuple;
@@ -23,8 +37,8 @@ var t11 = <[number, number]>t10;
 var array1 = <{}[]>emptyObjTuple;
 var unionTuple: [C, string | number] = [new C(), "foo"];
 var unionTuple2: [C, string | number, D] = [new C(), "foo", new D()];
-var unionTuple3: [number, string| number] = [10, "foo"]; 
-var unionTuple4 = <[number, number]>unionTuple3; 
+var unionTuple3: [number, string | number] = [10, "foo"];
+var unionTuple4 = <[number, number]>unionTuple3;
 
 // error
 var t3 = <[number, number]>numStrTuple;

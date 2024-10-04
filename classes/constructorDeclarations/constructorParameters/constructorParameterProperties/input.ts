@@ -1,6 +1,9 @@
 class C {
-    y: string;
-    constructor(private x: string, protected z: string) { }
+	y: string;
+	constructor(
+		private x: string,
+		protected z: string,
+	) {}
 }
 
 var c: C;
@@ -9,8 +12,12 @@ var r2 = c.x; // error
 var r3 = c.z; // error
 
 class D<T> {
-    y: T;
-    constructor(a: T, private x: T, protected z: T) { }
+	y: T;
+	constructor(
+		a: T,
+		private x: T,
+		protected z: T,
+	) {}
 }
 
 var d: D<string>;

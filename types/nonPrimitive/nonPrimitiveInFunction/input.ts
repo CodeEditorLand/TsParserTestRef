@@ -1,7 +1,7 @@
 // @declaration: true
 function takeObject(o: object) {}
 function returnObject(): object {
-    return {};
+	return {};
 }
 
 var nonPrimitive: object;
@@ -14,6 +14,6 @@ takeObject(primitive); // expect error
 primitive = returnObject(); // expect error
 
 function returnError(): object {
-    var ret = 123;
-    return ret; // expect error
+	var ret = 123;
+	return ret; // expect error
 }

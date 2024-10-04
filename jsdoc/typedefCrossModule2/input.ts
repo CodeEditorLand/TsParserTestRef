@@ -6,15 +6,15 @@
 // error
 
 /** @typedef {number} Foo */
-class Foo { } // should error
+class Foo {} // should error
 
 /** @typedef {number} Bar */
-exports.Bar = class { }
+exports.Bar = class {};
 
 /** @typedef {number} Baz */
 module.exports = {
-    Baz: class { }
-}
+	Baz: class {},
+};
 
 // ok
 
@@ -26,12 +26,12 @@ exports.Quid = 2;
 
 /** @typedef {number} Quack */
 module.exports = {
-    Quack: 2
-}
+	Quack: 2,
+};
 
 // @Filename: use.js
 
-var mod = require('./mod1.js');
+var mod = require("./mod1.js");
 /** @type {import("./mod1.js").Baz} */
 var b;
 /** @type {mod.Baz} */

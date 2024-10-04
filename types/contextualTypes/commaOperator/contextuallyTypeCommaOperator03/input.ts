@@ -3,4 +3,4 @@
 
 let x: (a: string) => string;
 
-x = (a => a, b => b);
+x = ((a) => a, (b) => b);

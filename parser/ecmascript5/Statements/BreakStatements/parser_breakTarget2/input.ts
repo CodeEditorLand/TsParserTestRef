@@ -1,4 +1,3 @@
-target:
-while (true) {
-  break target;
+target: while (true) {
+	break target;
 }

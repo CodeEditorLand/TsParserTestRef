@@ -4,23 +4,23 @@
 // return expressions are contextually typed by the type given in the set accessor's parameter type annotation.
 
 class C {
-    set X(x: number) { }
-    get X() {
-        return "string";  // Error; get contextual type by set accessor parameter type annotation
-    }
+	set X(x: number) {}
+	get X() {
+		return "string"; // Error; get contextual type by set accessor parameter type annotation
+	}
 
-    set Y(y) { }
-    get Y() {
-        return true;
-    }
+	set Y(y) {}
+	get Y() {
+		return true;
+	}
 
-    set W(w) { }
-    get W(): boolean {
-        return true;
-    }
+	set W(w) {}
+	get W(): boolean {
+		return true;
+	}
 
-    set Z(z: number) { }
-    get Z() {
-        return 1;
-    }
+	set Z(z: number) {}
+	get Z() {
+		return 1;
+	}
 }

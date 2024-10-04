@@ -1,4 +1,3 @@
-class Outer
-{
-static public() {}
+class Outer {
+	static public() {}
 }

@@ -3,5 +3,5 @@
 export var x = 42;
 
 // @Filename: foo_1.ts
-import foo = require('./test/foo');
+import foo = require("./test/foo");
 var z = foo.x + 10;

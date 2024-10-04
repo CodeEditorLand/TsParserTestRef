@@ -58,4 +58,5 @@ var resultIsBoolean3 = typeof "123" == "string" ? exprBoolean1 : exprBoolean2;
 var resultIsNumber3 = 2 > 1 ? exprNumber1 : exprNumber2;
 var resultIsString3 = null === undefined ? exprString1 : exprString2;
 var resultIsObject3 = true || false ? exprIsObject1 : exprIsObject2;
-var resultIsStringOrBoolean4 = typeof "123" === "string" ? exprString1 : exprBoolean1; // union
+var resultIsStringOrBoolean4 =
+	typeof "123" === "string" ? exprString1 : exprBoolean1; // union

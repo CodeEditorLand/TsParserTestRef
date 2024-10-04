@@ -1,6 +1,6 @@
 interface Foo {
-    (): number;
-    new (): any;
+	(): number;
+	new (): any;
 }
 
 var f: Foo;

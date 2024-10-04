@@ -1,10 +1,14 @@
 // @target: esnext
 // @useDefineForClassFields: true
 declare class Animal {
-    sound: string;
+	sound: string;
 }
 class Lion extends Animal {
-    _sound = 'roar'
-    get sound(): string { return this._sound }
-    set sound(val: string) { this._sound = val }
+	_sound = "roar";
+	get sound(): string {
+		return this._sound;
+	}
+	set sound(val: string) {
+		this._sound = val;
+	}
 }

@@ -1,1 +1,2 @@
-for (var {a, b} in []) {}
+for (var { a, b } in []) {
+}

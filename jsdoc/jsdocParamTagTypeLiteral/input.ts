@@ -10,7 +10,7 @@
  * @param {string} unrelated - not actually related because it's not notSpecial.unrelated
  */
 function normal(notSpecial) {
-    notSpecial; // should just be 'Object'
+	notSpecial; // should just be 'Object'
 }
 normal(12);
 
@@ -22,30 +22,30 @@ normal(12);
  * @param {string} [opts1.w="hi"] doc5
  */
 function foo1(opts1) {
-    opts1.x;
+	opts1.x;
 }
 
-foo1({x: 'abc'});
+foo1({ x: "abc" });
 
 /**
  * @param {Object[]} opts2
  * @param {string} opts2[].anotherX
  * @param {string=} opts2[].anotherY
  */
-function foo2(/** @param opts2 bad idea theatre! */opts2) {
-    opts2[0].anotherX;
+function foo2(/** @param opts2 bad idea theatre! */ opts2) {
+	opts2[0].anotherX;
 }
 
-foo2([{anotherX: "world"}]);
+foo2([{ anotherX: "world" }]);
 
 /**
  * @param {object} opts3
  * @param {string} opts3.x
  */
 function foo3(opts3) {
-    opts3.x;
+	opts3.x;
 }
-foo3({x: 'abc'});
+foo3({ x: "abc" });
 
 /**
  * @param {object[]} opts4
@@ -55,10 +55,10 @@ foo3({x: 'abc'});
  * @param {string} [opts4[].w="hi"]
  */
 function foo4(opts4) {
-    opts4[0].x;
+	opts4[0].x;
 }
 
-foo4([{ x: 'hi' }]);
+foo4([{ x: "hi" }]);
 
 /**
  * @param {object[]} opts5 - Let's test out some multiple nesting levels
@@ -71,8 +71,14 @@ foo4([{ x: 'hi' }]);
  * @param {number} opts5[].unnest - Here we are almost all the way back at the beginning.
  */
 function foo5(opts5) {
-    opts5[0].what.bad[0].idea;
-    opts5[0].unnest;
+	opts5[0].what.bad[0].idea;
+	opts5[0].unnest;
 }
 
-foo5([{ help: "help", what: { a: 'a', bad: [{ idea: 'idea', oh: false }] }, unnest: 1 }]);
+foo5([
+	{
+		help: "help",
+		what: { a: "a", bad: [{ idea: "idea", oh: false }] },
+		unnest: 1,
+	},
+]);

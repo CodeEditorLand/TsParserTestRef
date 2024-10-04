@@ -3,6 +3,5 @@
 // @checkJs: true
 // @Filename: bug25097.js
 /** @type {C | null} */
-const c = null
-class C {
-}
+const c = null;
+class C {}

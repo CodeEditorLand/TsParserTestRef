@@ -4,9 +4,9 @@ var BOOLEAN: boolean;
 var NUMBER: number;
 var STRING: string;
 
-var resultIsBoolean: boolean
-var resultIsNumber: number
-var resultIsString: string
+var resultIsBoolean: boolean;
+var resultIsNumber: number;
+var resultIsString: string;
 
 //Expect errors when the results type is different form the second operand
 resultIsBoolean = (BOOLEAN, STRING);

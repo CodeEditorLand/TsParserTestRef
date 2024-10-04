@@ -3,4 +3,4 @@
 // newlines are <CR><LF>
 `
 \
-`
+`;

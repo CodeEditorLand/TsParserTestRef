@@ -1,9 +1,17 @@
 // checking subtype relations for function types as it relates to contextual signature instantiation
 
-class Base { foo: string; }
-class Derived extends Base { bar: string; }
-class Derived2 extends Derived { baz: string; }
-class OtherDerived extends Base { bing: string; }
+class Base {
+	foo: string;
+}
+class Derived extends Base {
+	bar: string;
+}
+class Derived2 extends Derived {
+	baz: string;
+}
+class OtherDerived extends Base {
+	bing: string;
+}
 
 declare function foo1(a: new <T>(x: T) => T[]);
 declare function foo1(a: any): any;
@@ -20,10 +28,14 @@ declare function foo4(a: any): any;
 declare function foo5(a5: new <T, U>(x: new (arg: T) => U) => T);
 declare function foo5(a: any): any;
 
-declare function foo6(a6: new <T extends Base>(x: new (arg: T) => Derived) => T);
+declare function foo6(
+	a6: new <T extends Base>(x: new (arg: T) => Derived) => T,
+);
 declare function foo6(a: any): any;
 
-declare function foo11(a11: new <T>(x: { foo: T }, y: { foo: T; bar: T }) => Base);
+declare function foo11(
+	a11: new <T>(x: { foo: T }, y: { foo: T; bar: T }) => Base,
+);
 declare function foo11(a: any): any;
 
 declare function foo15(a15: new <T>(x: { a: T; b: T }) => T[]);
@@ -33,20 +45,20 @@ declare function foo16(a16: new <T extends Base>(x: { a: T; b: T }) => T[]);
 declare function foo16(a: any): any;
 
 declare function foo17(a17: {
-    new <T extends Derived>(x: new (a: T) => T): T[];
-    new <T extends Base>(x: new (a: T) => T): T[];        
+	new <T extends Derived>(x: new (a: T) => T): T[];
+	new <T extends Base>(x: new (a: T) => T): T[];
 });
 declare function foo17(a: any): any;
 
 declare function foo18(a18: {
-    new (x: {
-        new <T extends Derived>(a: T): T;
-        new <T extends Base>(a: T): T;
-    }): any[];
-    new (x: {
-        new <T extends Derived2>(a: T): T;
-        new <T extends Base>(a: T): T;
-    }): any[];
+	new (x: {
+		new <T extends Derived>(a: T): T;
+		new <T extends Base>(a: T): T;
+	}): any[];
+	new (x: {
+		new <T extends Derived2>(a: T): T;
+		new <T extends Base>(a: T): T;
+	}): any[];
 });
 declare function foo18(a: any): any;
 
@@ -92,7 +104,7 @@ var r11 = foo11(r11arg);
 var r11a = [r11arg, r11arg2];
 var r11b = [r11arg2, r11arg];
 
-var r15arg: new <U, V>(x: { a: U; b: V; }) => U[];
+var r15arg: new <U, V>(x: { a: U; b: V }) => U[];
 var r15arg2: new <T>(x: { a: T; b: T }) => T[];
 var r15 = foo15(r15arg);
 var r15a = [r15arg, r15arg2];

@@ -9,17 +9,16 @@ class Handler {
 		return 1;
 	}
 
-	process() {
-	}
+	process() {}
 }
-Handler.statische = function() { }
+Handler.statische = function () {};
 const Strings = {
-    a: "A",
-    b: "B"
-}
+	a: "A",
+	b: "B",
+};
 
 module.exports = Handler;
-module.exports.Strings = Strings
+module.exports.Strings = Strings;
 
 /**
  * @typedef {Object} HandlerOptions

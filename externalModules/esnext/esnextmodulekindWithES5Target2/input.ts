@@ -2,7 +2,7 @@
 // @module: esnext
 
 export default class C {
-    static s = 0;
-    p = 1;
-    method() { }
+	static s = 0;
+	p = 1;
+	method() {}
 }

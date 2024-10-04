@@ -1,13 +1,13 @@
 // enum is only a subtype of number, no types are subtypes of enum, all of these except the first are errors
 
-
-enum E { A }
-
-interface I0 {
-    [x: string]: E;
-    foo: E; // identical and subtype, ok
+enum E {
+	A,
 }
 
+interface I0 {
+	[x: string]: E;
+	foo: E; // identical and subtype, ok
+}
 
 declare function foo(x: E): E;
 declare function foo(x: number): number;
@@ -46,19 +46,25 @@ declare function foo7(x: E): E;
 
 var r4 = foo7(E.A);
 
-interface I8 { foo: string; }
+interface I8 {
+	foo: string;
+}
 declare function foo8(x: I8): I8;
 declare function foo8(x: E): E;
 
 var r4 = foo8(E.A);
 
-class A { foo: number; }
+class A {
+	foo: number;
+}
 declare function foo9(x: A): A;
 declare function foo9(x: E): E;
 
 var r4 = foo9(E.A);
 
-class A2<T> { foo: T; }
+class A2<T> {
+	foo: T;
+}
 declare function foo10(x: A2<number>): A2<number>;
 declare function foo10(x: E): E;
 
@@ -74,24 +80,28 @@ declare function foo12(x: E): E;
 
 var r4 = foo12(E.A);
 
-enum E2 { A }
+enum E2 {
+	A,
+}
 declare function foo13(x: E2): E2;
 declare function foo13(x: E): E;
 
 var r4 = foo13(E.A);
 
-function f() { }
+function f() {}
 module f {
-    export var bar = 1;
+	export var bar = 1;
 }
 declare function foo14(x: typeof f): typeof f;
 declare function foo14(x: E): E;
 
 var r4 = foo14(E.A);
 
-class CC { baz: string }
+class CC {
+	baz: string;
+}
 module CC {
-    export var bar = 1;
+	export var bar = 1;
 }
 declare function foo15(x: CC): CC;
 declare function foo15(x: E): E;

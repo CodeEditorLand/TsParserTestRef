@@ -1,2 +1,1 @@
-declare class C {
-}
+declare class C {}

@@ -17,42 +17,42 @@ f1("foo", ...t1);
 f1("foo", ...t2);
 f1("foo", ...t3);
 f1("foo", ...t4);
-f1("foo", 10);  // Error
-f1("foo");  // Error
+f1("foo", 10); // Error
+f1("foo"); // Error
 
 f2 = f1;
 f3 = f1;
-f4 = f1;  // Error, misaligned complex rest types
-f1 = f2;  // Error
-f1 = f3;  // Error
-f1 = f4;  // Error, misaligned complex rest types
+f4 = f1; // Error, misaligned complex rest types
+f1 = f2; // Error
+f1 = f3; // Error
+f1 = f4; // Error, misaligned complex rest types
 
 // Repro from #26110
 
-interface CoolArray<E> extends Array<E> { 
-    hello: number;
+interface CoolArray<E> extends Array<E> {
+	hello: number;
 }
 
 declare function foo<T extends any[]>(cb: (...args: T) => void): void;
 
-foo<CoolArray<any>>();     // Error
-foo<CoolArray<any>>(100);  // Error
-foo<CoolArray<any>>(foo);  // Error
+foo<CoolArray<any>>(); // Error
+foo<CoolArray<any>>(100); // Error
+foo<CoolArray<any>>(foo); // Error
 
 function bar<T extends any[]>(...args: T): T {
-    return args;
+	return args;
 }
 
 let a = bar(10, 20);
-let b = bar<CoolArray<number>>(10, 20);  // Error
+let b = bar<CoolArray<number>>(10, 20); // Error
 
 declare function baz<T>(...args: CoolArray<T>): void;
 declare const ca: CoolArray<number>;
 
-baz();       // Error
-baz(1);      // Error
-baz(1, 2);   // Error
-baz(...ca);  // Error
+baz(); // Error
+baz(1); // Error
+baz(1, 2); // Error
+baz(...ca); // Error
 
 // Repro from #26491
 

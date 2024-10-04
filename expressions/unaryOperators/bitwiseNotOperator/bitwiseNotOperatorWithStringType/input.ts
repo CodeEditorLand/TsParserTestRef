@@ -4,14 +4,18 @@
 var STRING: string;
 var STRING1: string[] = ["", "abc"];
 
-function foo(): string { return "abc"; }
+function foo(): string {
+	return "abc";
+}
 
 class A {
-    public a: string;
-    static foo() { return ""; }
+	public a: string;
+	static foo() {
+		return "";
+	}
 }
 module M {
-    export var n: string;
+	export var n: string;
 }
 
 var objA = new A();
@@ -23,7 +27,12 @@ var ResultIsNumber2 = ~STRING1;
 // string type literal
 var ResultIsNumber3 = ~"";
 var ResultIsNumber4 = ~{ x: "", y: "" };
-var ResultIsNumber5 = ~{ x: "", y: (s: string) => { return s; } };
+var ResultIsNumber5 = ~{
+	x: "",
+	y: (s: string) => {
+		return s;
+	},
+};
 
 // string type expressions
 var ResultIsNumber6 = ~objA.a;
@@ -42,4 +51,4 @@ var ResultIsNumber14 = ~~~(STRING + STRING);
 ~STRING;
 ~STRING1;
 ~foo();
-~objA.a,M.n;
+~objA.a, M.n;

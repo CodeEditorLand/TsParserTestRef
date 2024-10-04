@@ -1,33 +1,31 @@
-
 interface C1 {
-    (): C1;
-    prototype: C1;
-    p1: string;
+	(): C1;
+	prototype: C1;
+	p1: string;
 }
 interface C2 {
-    (): C2;
-    prototype: C2;
-    p2: number;
+	(): C2;
+	prototype: C2;
+	p2: number;
 }
 interface D1 extends C1 {
-    prototype: D1;
-    p3: number;
+	prototype: D1;
+	p3: number;
 }
 var str: string;
 var num: number;
 var strOrNum: string | number;
 
-
 function isC1(x: any): x is C1 {
-    return true;
+	return true;
 }
 
 function isC2(x: any): x is C2 {
-    return true;
+	return true;
 }
 
 function isD1(x: any): x is D1 {
-    return true;
+	return true;
 }
 
 var c1: C1;

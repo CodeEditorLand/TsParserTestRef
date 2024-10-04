@@ -1,4 +1,4 @@
 // @target: es6
-function *g() {
-    yield * [];
+function* g() {
+	yield* [];
 }

@@ -1,14 +1,14 @@
 ﻿// @target:es5
 var f1 = () => {
-    this.age = 10
+	this.age = 10;
 };
 
 var f2 = (x: string) => {
-    this.name = x
-}
+	this.name = x;
+};
 
-function foo(func: () => boolean) { }
+function foo(func: () => boolean) {}
 foo(() => {
-    this.age = 100;
-    return true;
+	this.age = 100;
+	return true;
 });

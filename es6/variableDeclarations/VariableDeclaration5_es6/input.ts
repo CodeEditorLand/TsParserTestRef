@@ -1,2 +1,2 @@
 // @target:es6
-const a: number = 1
+const a: number = 1;

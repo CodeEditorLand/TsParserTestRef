@@ -1,5 +1,5 @@
 //@target: ES6
 //@declaration: true
 var obj = {
-    [Symbol.isConcatSpreadable]: 0
-}
+	[Symbol.isConcatSpreadable]: 0,
+};

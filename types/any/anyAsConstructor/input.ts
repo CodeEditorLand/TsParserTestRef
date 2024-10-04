@@ -3,7 +3,7 @@
 
 var x: any;
 var a = new x();
-var b = new x('hello');
+var b = new x("hello");
 var c = new x(x);
 
 // grammar allows this for constructors

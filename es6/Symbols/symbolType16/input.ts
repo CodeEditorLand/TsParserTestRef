@@ -1,6 +1,6 @@
 //@target: ES6
 interface Symbol {
-    newSymbolProp: number;
+	newSymbolProp: number;
 }
 
 var sym: symbol;

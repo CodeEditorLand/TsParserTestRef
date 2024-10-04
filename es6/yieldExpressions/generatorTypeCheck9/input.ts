@@ -1,2 +1,2 @@
 //@target: ES6
-function* g3(): void { }
+function* g3(): void {}

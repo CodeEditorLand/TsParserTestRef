@@ -4,5 +4,5 @@
 "use strict";
 const x = 1;
 class C {
-    [x]: string;
+	[x]: string;
 }

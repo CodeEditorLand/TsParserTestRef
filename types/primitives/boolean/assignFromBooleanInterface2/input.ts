@@ -1,9 +1,9 @@
 interface Boolean {
-    doStuff(): string;
+	doStuff(): string;
 }
 
 interface NotBoolean {
-    doStuff(): string;
+	doStuff(): string;
 }
 
 var x = true;
@@ -18,4 +18,3 @@ b = x;
 
 x = a; // expected error
 x = b; // expected error
-

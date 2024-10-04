@@ -1,19 +1,19 @@
 // @declaration: true
 
 class Foo {
-     constructor(public x: number) { }
+	constructor(public x: number) {}
 }
 
 class Bar {
-    public constructor(public x: number) { }
+	public constructor(public x: number) {}
 }
 
 class Baz {
-    protected constructor(public x: number) { }
+	protected constructor(public x: number) {}
 }
 
 class Qux {
-     private constructor(public x: number) { }
+	private constructor(public x: number) {}
 }
 
 // b is public

@@ -16,5 +16,5 @@
  * @param {string} gamma
  */
 export function f(x, y, z, alpha, beta, gamma) {
-    return x + y + z + alpha + beta + gamma
+	return x + y + z + alpha + beta + gamma;
 }

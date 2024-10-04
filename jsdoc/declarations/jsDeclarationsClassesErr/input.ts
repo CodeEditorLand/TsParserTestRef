@@ -9,68 +9,67 @@
 // but we should be able to synthesize declarations from the symbols regardless
 
 export class M<T> {
-    field: T;
+	field: T;
 }
 
 export class N<U> extends M<U> {
-    other: U;
+	other: U;
 }
 
 export class O {
-    [idx: string]: string;
+	[idx: string]: string;
 }
 
 export class P extends O {}
 
 export class Q extends O {
-    [idx: string]: "ok";
+	[idx: string]: "ok";
 }
 
 export class R extends O {
-    [idx: number]: "ok";
+	[idx: number]: "ok";
 }
 
 export class S extends O {
-    [idx: string]: "ok";
-    [idx: number]: never;
+	[idx: string]: "ok";
+	[idx: number]: never;
 }
 
 export class T {
-    [idx: number]: string;
+	[idx: number]: string;
 }
 
 export class U extends T {}
 
-
 export class V extends T {
-    [idx: string]: string;
+	[idx: string]: string;
 }
 
 export class W extends T {
-    [idx: number]: "ok";
+	[idx: number]: "ok";
 }
 
 export class X extends T {
-    [idx: string]: string;
-    [idx: number]: "ok";
+	[idx: string]: string;
+	[idx: number]: "ok";
 }
 
 export class Y {
-    [idx: string]: {x: number};
-    [idx: number]: {x: number, y: number};
+	[idx: string]: { x: number };
+	[idx: number]: { x: number; y: number };
 }
 
 export class Z extends Y {}
 
 export class AA extends Y {
-    [idx: string]: {x: number, y: number};
+	[idx: string]: { x: number; y: number };
 }
 
 export class BB extends Y {
-    [idx: number]: {x: 0, y: 0};
+	[idx: number]: { x: 0; y: 0 };
 }
 
 export class CC extends Y {
-    [idx: string]: {x: number, y: number};
-    [idx: number]: {x: 0, y: 0};
+	[idx: string]: { x: number; y: number };
+	[idx: number]: { x: 0; y: 0 };
 }

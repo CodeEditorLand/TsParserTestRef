@@ -1,1 +1,1 @@
-var v: [number,]
+var v: [number];

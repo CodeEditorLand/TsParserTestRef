@@ -1,2 +1,1 @@
-class C<T> {
-}
+class C<T> {}

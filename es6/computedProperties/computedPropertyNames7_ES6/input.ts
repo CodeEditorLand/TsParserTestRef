@@ -1,7 +1,7 @@
 // @target: es6
 enum E {
-    member
+	member,
 }
 var v = {
-    [E.member]: 0
-}
+	[E.member]: 0,
+};

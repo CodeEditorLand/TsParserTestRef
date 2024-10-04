@@ -4,7 +4,11 @@
 
 // https://github.com/microsoft/TypeScript/issues/36295
 const a = (): { d: string } | undefined => undefined;
-((b = a()?.d) => { var a; })();
+((b = a()?.d) => {
+	var a;
+})();
 
 const x = "";
-((b = a()?.d, d = x) => { var x; })();
+((b = a()?.d, d = x) => {
+	var x;
+})();

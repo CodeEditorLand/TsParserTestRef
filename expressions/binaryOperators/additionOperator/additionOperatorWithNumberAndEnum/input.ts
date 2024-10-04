@@ -1,5 +1,11 @@
-enum E { a, b }
-enum F { c, d }
+enum E {
+	a,
+	b,
+}
+enum F {
+	c,
+	d,
+}
 
 var a: number;
 var b: E;
@@ -13,8 +19,8 @@ var r4 = b + b;
 var r5 = 0 + a;
 var r6 = E.a + 0;
 var r7 = E.a + E.b;
-var r8 = E['a'] + E['b'];
-var r9 = E['a'] + F['c'];
+var r8 = E["a"] + E["b"];
+var r9 = E["a"] + F["c"];
 
 var r10 = a + c;
 var r11 = c + a;

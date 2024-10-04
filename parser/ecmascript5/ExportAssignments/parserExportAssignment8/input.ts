@@ -1,4 +1,3 @@
 export = B;
 
-export class C {
-}
+export class C {}

@@ -7,8 +7,8 @@
 //     - If the array literal contains no spread elements and is contextually typed by a tuple-like type,
 //       the resulting type is a tuple type constructed from the types of the element expressions.
 
-var a0: [any, any, any] = [];                             // Error
-var a1: [boolean, string, number] = ["string", 1, true];  // Error
+var a0: [any, any, any] = []; // Error
+var a1: [boolean, string, number] = ["string", 1, true]; // Error
 
 // The resulting type an array literal expression is determined as follows:
 //     - If the array literal contains no spread elements and is an array assignment pattern in a destructuring assignment (section 4.17.1),
@@ -21,14 +21,17 @@ var [b1, b2]: [number, number] = [1, 2, "string", true];
 //        non - spread element expressions and the numeric index signature types of the spread element expressions
 var temp = ["s", "t", "r"];
 var temp1 = [1, 2, 3];
-var temp2: [number[], string[]] = [[1, 2, 3], ["hello", "string"]];
+var temp2: [number[], string[]] = [
+	[1, 2, 3],
+	["hello", "string"],
+];
 
 interface tup {
-    0: number[]|string[];
-    1: number[]|string[];
+	0: number[] | string[];
+	1: number[] | string[];
 }
-interface myArray extends Array<Number> { }
-interface myArray2 extends Array<Number|String> { }
-var c0: tup = [...temp2];                         // Error
-var c1: [number, number, number] = [...temp1];    // Error cannot assign number[] to [number, number, number]
-var c2: myArray = [...temp1, ...temp];            // Error cannot assign (number|string)[] to number[]
+interface myArray extends Array<Number> {}
+interface myArray2 extends Array<Number | String> {}
+var c0: tup = [...temp2]; // Error
+var c1: [number, number, number] = [...temp1]; // Error cannot assign number[] to [number, number, number]
+var c2: myArray = [...temp1, ...temp]; // Error cannot assign (number|string)[] to number[]

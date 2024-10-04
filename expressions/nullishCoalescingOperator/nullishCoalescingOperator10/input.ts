@@ -2,5 +2,4 @@
 
 declare function f(): string | undefined;
 
-let gg = f() ?? 'foo'
-
+let gg = f() ?? "foo";

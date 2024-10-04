@@ -2,41 +2,41 @@
 // @lib: es6
 // @filename: foo.ts
 interface Point {
-    x: number;
-    y: number;
+	x: number;
+	y: number;
 }
 export = Point;
 
 // @filename: foo2.ts
 namespace Bar {
-    export interface I {
-        a: string;
-        b: number;
-    }
+	export interface I {
+		a: string;
+		b: number;
+	}
 }
 
 export namespace Baz {
-    export interface J {
-        a: number;
-        b: string;
-    }
+	export interface J {
+		a: number;
+		b: string;
+	}
 }
 
 class Bar {
-    item: Bar.I;
-    constructor(input: Baz.J) {}
+	item: Bar.I;
+	constructor(input: Baz.J) {}
 }
-export { Bar }
+export { Bar };
 
 // @filename: usage.ts
 export const x: import("./foo") = { x: 0, y: 0 };
 export let y: import("./foo2").Bar.I = { a: "", b: 0 };
 
 export class Bar2 {
-    item: {a: string, b: number, c: object};
-    constructor(input?: any) {}
+	item: { a: string; b: number; c: object };
+	constructor(input?: any) {}
 }
 
 export let shim: typeof import("./foo2") = {
-    Bar: Bar2
+	Bar: Bar2,
 };

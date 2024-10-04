@@ -10,15 +10,19 @@ Object.defineProperty(exports, "thing", obj);
 /**
  * @type {string}
  */
-let str = /** @type {string} */("other");
+let str = /** @type {string} */ "other";
 Object.defineProperty(exports, str, { value: 42, writable: true });
 
-const propName = "prop"
+const propName = "prop";
 Object.defineProperty(exports, propName, { value: 42, writable: true });
 
-
-Object.defineProperty(exports, "bad1", { });
-Object.defineProperty(exports, "bad2", { get() { return 12 }, value: "no" });
+Object.defineProperty(exports, "bad1", {});
+Object.defineProperty(exports, "bad2", {
+	get() {
+		return 12;
+	},
+	value: "no",
+});
 Object.defineProperty(exports, "bad3", { writable: true });
 
 // @filename: importer.js
@@ -29,7 +33,6 @@ mod.prop;
 mod.bad1;
 mod.bad2;
 mod.bad3;
-
 
 mod.thing = 0;
 mod.other = 0;

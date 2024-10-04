@@ -2,17 +2,17 @@
 // Here the multiple overloads come from multiple merged declarations.
 
 interface I {
-    (x: string): string;
+	(x: string): string;
 }
 
 interface I {
-    (x: string): number;
+	(x: string): number;
 }
 
 interface I2<T> {
-    (x: string): string;
+	(x: string): string;
 }
 
 interface I2<T> {
-    (x: string): number;
+	(x: string): number;
 }

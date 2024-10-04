@@ -5,7 +5,7 @@ var r = x[1];
 var r2 = new r();
 var r2b = r();
 
-var x2: { new(): string }[];
+var x2: { new (): string }[];
 var r3 = x[1];
 var r4 = new r3();
 var r4b = new r3();

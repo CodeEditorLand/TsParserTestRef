@@ -1,1 +1,1 @@
-function f([a, b]: [number, any]) { }
+function f([a, b]: [number, any]) {}

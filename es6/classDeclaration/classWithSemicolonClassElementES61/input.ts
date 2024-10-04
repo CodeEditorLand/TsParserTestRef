@@ -1,4 +1,2 @@
 //@target: es6
-class C {
-    ;
-}
+class C {}

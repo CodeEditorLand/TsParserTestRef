@@ -1,9 +1,9 @@
 //@target: ES6
 class C {
-    private [Symbol.iterator]: { x };
+	private [Symbol.iterator]: { x };
 }
 interface I {
-    [Symbol.iterator]: { x };
+	[Symbol.iterator]: { x };
 }
 
 declare function foo(i: I): I;
@@ -12,6 +12,6 @@ declare function foo(a: any): any;
 declare function bar(i: C): C;
 declare function bar(a: any): any;
 
-foo(new C);
+foo(new C());
 var i: I;
 bar(i);

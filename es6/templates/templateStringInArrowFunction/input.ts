@@ -1,1 +1,1 @@
-﻿var x = x => `abc${ x }def`;
+﻿var x = (x) => `abc${x}def`;

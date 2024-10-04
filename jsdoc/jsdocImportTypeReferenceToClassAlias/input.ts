@@ -3,13 +3,13 @@
 // @checkJs: true
 // @Filename: mod1.js
 class C {
-    s() { }
+	s() {}
 }
-module.exports.C = C
+module.exports.C = C;
 
 // @Filename: test.js
 /** @typedef {import('./mod1').C} X */
 /** @param {X} c */
 function demo(c) {
-    c.s
+	c.s;
 }

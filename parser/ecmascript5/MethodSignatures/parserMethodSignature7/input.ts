@@ -1,3 +1,3 @@
 interface I {
-  "G"<T>();
+	"G"<T>();
 }

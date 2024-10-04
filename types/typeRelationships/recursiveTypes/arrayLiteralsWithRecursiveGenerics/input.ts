@@ -1,16 +1,16 @@
 class List<T> {
-    data: T;
-    next: List<List<T>>;
+	data: T;
+	next: List<List<T>>;
 }
 
 class DerivedList<U> extends List<U> {
-    foo: U;
-    // next: List<List<U>>
+	foo: U;
+	// next: List<List<U>>
 }
 
 class MyList<T> {
-    data: T;
-    next: MyList<MyList<T>>;
+	data: T;
+	next: MyList<MyList<T>>;
 }
 
 var list: List<number>;

@@ -1,2 +1,2 @@
 ﻿// @target: ES6
-var x = `abc${ x => x }def`;
+var x = `abc${(x) => x}def`;

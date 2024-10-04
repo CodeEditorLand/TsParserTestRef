@@ -5,6 +5,5 @@
 
 /** @typedef {number} Foo */
 const ns = {};
-ns.Foo = class {}
+ns.Foo = class {};
 module.exports = ns;
-

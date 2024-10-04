@@ -2,10 +2,9 @@
 // @module: commonjs
 
 export class C {
-    m(): this is D {
-        return this instanceof D;
-    }
+	m(): this is D {
+		return this instanceof D;
+	}
 }
 
-class D extends C {
-}
+class D extends C {}

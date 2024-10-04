@@ -3,7 +3,9 @@
 // @noEmit: true
 
 // @Filename: dummyType.d.ts
-declare class C<T> { t: T }
+declare class C<T> {
+	t: T;
+}
 
 // @Filename: badTypeArguments.js
 /** @param {C.<>} x */
@@ -11,6 +13,6 @@ declare class C<T> { t: T }
 // @ts-ignore
 /** @param {C.<number,>} skipped */
 function f(x, y, skipped) {
-    return x.t + y.t;
+	return x.t + y.t;
 }
 var x = f({ t: 1000 }, { t: 3000 }, { t: 5000 });

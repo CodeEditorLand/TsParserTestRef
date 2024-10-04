@@ -15,9 +15,9 @@ var r1b2 = b ** null;
 var r1b3 = c ** null;
 
 var r1c1 = null ** true;
-var r1c2 = null ** '';
+var r1c2 = null ** "";
 var r1c3 = null ** {};
 
 var r1d1 = true ** null;
-var r1d2 = '' ** null;
+var r1d2 = "" ** null;
 var r1d3 = {} ** null;

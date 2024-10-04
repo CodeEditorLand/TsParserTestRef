@@ -1,9 +1,9 @@
 class C {
-    static f: number;
-    f: number;
+	static f: number;
+	f: number;
 }
 
 class D {
-    static f: number;
-    f() { }
+	static f: number;
+	f() {}
 }

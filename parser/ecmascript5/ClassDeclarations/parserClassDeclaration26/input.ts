@@ -1,4 +1,4 @@
 class C {
-   var
-   public
+	var;
+	public;
 }

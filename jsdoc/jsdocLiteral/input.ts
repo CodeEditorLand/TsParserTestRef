@@ -9,5 +9,5 @@
  * @param {12 | true | 'str'} p5
  */
 function f(p1, p2, p3, p4, p5) {
-    return p1 + p2 + p3 + p4 + p5 + '.';
+	return p1 + p2 + p3 + p4 + p5 + ".";
 }

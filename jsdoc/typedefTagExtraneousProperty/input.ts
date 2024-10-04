@@ -10,6 +10,6 @@
 
 /** @type {Mmap} */
 var y = { bye: "no" };
-y
-y.ignoreMe = "ok but just because of the index signature"
-y['hi'] = "yes"
+y;
+y.ignoreMe = "ok but just because of the index signature";
+y["hi"] = "yes";

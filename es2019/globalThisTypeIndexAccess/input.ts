@@ -1,2 +1,1 @@
-
-declare const w_e: (typeof globalThis)["globalThis"]
+declare const w_e: (typeof globalThis)["globalThis"];

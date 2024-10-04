@@ -1,7 +1,11 @@
 ﻿var unionNumberString: number | string;
-class C { }
-class D extends C { foo1() { } }
-class E extends C { foo2() { } }
+class C {}
+class D extends C {
+	foo1() {}
+}
+class E extends C {
+	foo2() {}
+}
 var unionDE: D | E;
 
 var num: number;
@@ -39,7 +43,7 @@ e = e;
 unionDE = e; // ok
 num = num;
 str = num;
-unionNumberString = num; // ok 
+unionNumberString = num; // ok
 num = str;
 str = str;
 unionNumberString = str; // ok
@@ -61,12 +65,12 @@ unionNumberString = undefined;
 
 // type parameters
 function foo<T, U>(t: T, u: U) {
-    t = u; // error
-    u = t; // error
-    var x : T | U;
-    x = t; // ok
-    x = u; // ok
-    x = undefined;
-    t = x; // error U not assignable to T
-    u = x; // error T not assignable to U
+	t = u; // error
+	u = t; // error
+	var x: T | U;
+	x = t; // ok
+	x = u; // ok
+	x = undefined;
+	t = x; // error U not assignable to T
+	u = x; // error T not assignable to U
 }

@@ -1,13 +1,13 @@
 interface I1 {
-    p1: number
+	p1: number;
 }
 
 interface I2 extends I1 {
-    p2: number;
+	p2: number;
 }
 
 interface I3 {
-    p3: number;
+	p3: number;
 }
 
 var x = { p1: 10, p2: 20, p3: 30 };

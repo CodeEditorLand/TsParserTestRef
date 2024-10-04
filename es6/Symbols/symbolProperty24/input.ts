@@ -1,10 +1,10 @@
 //@target: ES6
 interface I {
-    [Symbol.toPrimitive]: () => boolean;
+	[Symbol.toPrimitive]: () => boolean;
 }
 
 class C implements I {
-    [Symbol.toPrimitive]() {
-        return "";
-    }
+	[Symbol.toPrimitive]() {
+		return "";
+	}
 }

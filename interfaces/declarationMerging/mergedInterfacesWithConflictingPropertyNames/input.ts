@@ -1,41 +1,41 @@
 interface A {
-    x: string; // error
+	x: string; // error
 }
 
 interface A {
-    x: number;
+	x: number;
 }
 
 module M {
-    interface A<T> {
-        x: T;
-    }
+	interface A<T> {
+		x: T;
+	}
 
-    interface A<T> {
-        x: number;  // error
-    }
+	interface A<T> {
+		x: number; // error
+	}
 }
 
 module M2 {
-    interface A<T> {
-        x: T;
-    }   
+	interface A<T> {
+		x: T;
+	}
 }
 
 module M2 {
-    interface A<T> {
-        x: number;  // ok, different declaration space than other M2
-    }
+	interface A<T> {
+		x: number; // ok, different declaration space than other M2
+	}
 }
 
 module M3 {
-    export interface A<T> {
-        x: T;
-    }
+	export interface A<T> {
+		x: T;
+	}
 }
 
 module M3 {
-    export interface A<T> {
-        x: number;  // error
-    }
+	export interface A<T> {
+		x: number; // error
+	}
 }

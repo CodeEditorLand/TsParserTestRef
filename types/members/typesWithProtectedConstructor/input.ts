@@ -1,15 +1,15 @@
 // @declaration: true
 
 class C {
-    protected constructor() { }
+	protected constructor() {}
 }
 
 var c = new C(); // error C is protected
 var r: () => void = c.constructor;
 
 class C2 {
-    protected constructor(x: number);
-    protected constructor(x: any) { }
+	protected constructor(x: number);
+	protected constructor(x: any) {}
 }
 
 var c2 = new C2(); // error C2 is protected

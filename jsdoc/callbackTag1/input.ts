@@ -7,14 +7,13 @@
  * @param {string} s
  * @returns {string} What were you expecting
  */
-var x = 1
+var x = 1;
 
 /** @type {Sid} smallId */
-var sid = s => s + "!";
-
+var sid = (s) => s + "!";
 
 /** @type {NoReturn} */
-var noreturn = obj => void obj.title
+var noreturn = (obj) => void obj.title;
 
 /**
  * @callback NoReturn

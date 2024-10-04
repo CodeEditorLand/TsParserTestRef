@@ -1,8 +1,8 @@
 module A {
-    class B {
-        id: number;
-    }
+	class B {
+		id: number;
+	}
 
-    export var beez: Array<B>;
-    export var beez2 = new Array<B>();
+	export var beez: Array<B>;
+	export var beez2 = new Array<B>();
 }

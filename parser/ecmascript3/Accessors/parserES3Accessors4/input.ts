@@ -1,1 +1,1 @@
-var v = { set Foo(a) { } };
+var v = { set Foo(a) {} };

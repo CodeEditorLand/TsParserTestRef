@@ -6,8 +6,10 @@
  * @param {T} x
  * @param {(t: T) => void} k
  */
-module.exports = function (x, k) { return k(x) }
+module.exports = function (x, k) {
+	return k(x);
+};
 
 // @Filename: main.js
-var f = require('./first');
-f(1, n => { })
+var f = require("./first");
+f(1, (n) => {});

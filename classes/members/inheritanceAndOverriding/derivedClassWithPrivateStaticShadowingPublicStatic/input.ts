@@ -1,23 +1,27 @@
 class Base {
-    public static x: string;
-    public static fn(): string {
-        return '';
-    }
+	public static x: string;
+	public static fn(): string {
+		return "";
+	}
 
-    public static get a() { return 1; }
-    public static set a(v) { }
+	public static get a() {
+		return 1;
+	}
+	public static set a(v) {}
 }
 
 // BUG 847404
 // should be error
 class Derived extends Base {
-    private static x: string; 
-    private static fn(): string {
-        return '';
-    }
+	private static x: string;
+	private static fn(): string {
+		return "";
+	}
 
-    private static get a() { return 1; }
-    private static set a(v) { }
+	private static get a() {
+		return 1;
+	}
+	private static set a(v) {}
 }
 
 var r = Base.x; // ok

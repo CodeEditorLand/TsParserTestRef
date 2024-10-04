@@ -3,4 +3,4 @@
 // @noemit: true
 // @strict: true
 // @filename: thisPropertyAssignmentComputed.js
-this["a" + "b"] = 0
+this["a" + "b"] = 0;

@@ -8,50 +8,50 @@
 // Examples of literal enum types
 
 enum E01 {
-    A
+	A,
 }
 
 enum E02 {
-    A = 123
+	A = 123,
 }
 
 enum E03 {
-    A = "hello"
+	A = "hello",
 }
 
 enum E04 {
-    A,
-    B,
-    C
+	A,
+	B,
+	C,
 }
 
 enum E05 {
-    A,
-    B = 10,
-    C
+	A,
+	B = 10,
+	C,
 }
 
 enum E06 {
-    A = "one",
-    B = "two",
-    C = "three"
+	A = "one",
+	B = "two",
+	C = "three",
 }
 
 enum E07 {
-    A,
-    B,
-    C = "hi",
-    D = 10,
-    E,
-    F = "bye"
+	A,
+	B,
+	C = "hi",
+	D = 10,
+	E,
+	F = "bye",
 }
 
 enum E08 {
-    A = 10,
-    B = "hello",
-    C = A,
-    D = B,
-    E = C,
+	A = 10,
+	B = "hello",
+	C = A,
+	D = B,
+	E = C,
 }
 
 // Examples of numeric enum types with only constant members
@@ -59,22 +59,22 @@ enum E08 {
 enum E10 {}
 
 enum E11 {
-    A = +0,
-    B,
-    C
+	A = +0,
+	B,
+	C,
 }
 
 enum E12 {
-    A = 1 << 0,
-    B = 1 << 1,
-    C = 1 << 2
+	A = 1 << 0,
+	B = 1 << 1,
+	C = 1 << 2,
 }
 
 // Examples of numeric enum types with constant and computed members
 
 enum E20 {
-    A = "foo".length,
-    B = A + 1,
-    C = +"123",
-    D = Math.sin(1)
+	A = "foo".length,
+	B = A + 1,
+	C = +"123",
+	D = Math.sin(1),
 }

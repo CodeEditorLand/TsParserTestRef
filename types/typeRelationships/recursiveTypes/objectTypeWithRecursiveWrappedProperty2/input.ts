@@ -1,8 +1,8 @@
 // Basic recursive type
 
 class List<T> {
-    data: T;
-    next: List<List<T>>;
+	data: T;
+	next: List<List<T>>;
 }
 
 var list1 = new List<number>();

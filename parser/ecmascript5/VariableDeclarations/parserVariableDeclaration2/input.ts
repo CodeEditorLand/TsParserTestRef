@@ -1,9 +1,7 @@
-(function() {
-        var check = function () {
-        }
+(function () {
+	var check = function () {};
 
-        var checkNot = function () {
-        }
+	var checkNot = function () {};
 
-        MUnit.test(a);
+	MUnit.test(a);
 })();

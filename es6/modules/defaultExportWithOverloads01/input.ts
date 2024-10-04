@@ -3,5 +3,4 @@
 
 export default function f();
 export default function f(x: string);
-export default function f(...args: any[]) {
-}
+export default function f(...args: any[]) {}

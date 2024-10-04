@@ -1,4 +1,4 @@
 //@target: ES6
 var x: {
-    [Symbol.toPrimitive]: string
-}
+	[Symbol.toPrimitive]: string;
+};

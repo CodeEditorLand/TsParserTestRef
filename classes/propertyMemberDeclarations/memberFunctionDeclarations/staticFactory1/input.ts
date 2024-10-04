@@ -1,13 +1,17 @@
 class Base {
-    foo() { return 1; }
-    static create() {
-        return new this();
-    }
+	foo() {
+		return 1;
+	}
+	static create() {
+		return new this();
+	}
 }
 
 class Derived extends Base {
-    foo() { return 2; }
+	foo() {
+		return 2;
+	}
 }
-var d = Derived.create(); 
+var d = Derived.create();
 
-d.foo();  
+d.foo();

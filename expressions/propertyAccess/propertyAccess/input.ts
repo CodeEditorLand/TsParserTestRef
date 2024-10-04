@@ -1,29 +1,34 @@
 class A {
-    a: number;
+	a: number;
 }
 class B extends A {
-    b: number;
+	b: number;
 }
 enum Compass {
-    North, South, East, West
+	North,
+	South,
+	East,
+	West,
 }
 
-var numIndex: { [n: number]: string } = { 3: 'three', 'three': 'three' };
-var strIndex: { [n: string]: Compass } = { 'N': Compass.North, 'E': Compass.East };
-var bothIndex:
-    {
-        [n: string]: A;
-        [m: number]: B;
-    };
+var numIndex: { [n: number]: string } = { 3: "three", "three": "three" };
+var strIndex: { [n: string]: Compass } = {
+	"N": Compass.North,
+	"E": Compass.East,
+};
+var bothIndex: {
+	[n: string]: A;
+	[m: number]: B;
+};
 
-function noIndex() { }
+function noIndex() {}
 
 var obj = {
-    10: 'ten',
-    x: 'hello',
-    y: 32,
-    z: { n: 'world', m: 15, o: () => false },
-    'literal property': 100
+	10: "ten",
+	x: "hello",
+	y: 32,
+	z: { n: "world", m: 15, o: () => false },
+	"literal property": 100,
 };
 var anyVar: any = {};
 var stringOrNumber: string | number;
@@ -45,19 +50,19 @@ var bb = obj.hasOwnProperty;
 var cc = obj.qqq; // error
 
 // Bracket notation property access using string literal value on type with property of that literal name
-var dd = obj['literal property'];
+var dd = obj["literal property"];
 var dd: number;
 
 // Bracket notation property access using string literal value on type without property of that literal name
-var ee = obj['wa wa wa wa wa'];
+var ee = obj["wa wa wa wa wa"];
 var ee: any;
 
 // Bracket notation property access using numeric string literal value on type with property of that literal name
-var ff = obj['10'];
+var ff = obj["10"];
 var ff: string;
 
 // Bracket notation property access using numeric string literal value on type without property of that literal name
-var gg = obj['1'];
+var gg = obj["1"];
 var gg: any;
 
 // Bracket notation property access using numeric value on type with numeric index signature
@@ -73,16 +78,16 @@ var jj = numIndex[anyVar];
 var jj: string;
 
 // Bracket notation property access using string value on type with numeric index signature
-var kk = numIndex['what'];
+var kk = numIndex["what"];
 var kk: any;
 
 // Bracket notation property access using value of other type on type with numeric index signature and no string index signature
 var ll = numIndex[someObject]; // Error
 
 // Bracket notation property access using string value on type with string index signature and no numeric index signature
-var mm = strIndex['N'];
+var mm = strIndex["N"];
 var mm: Compass;
-var mm2 = strIndex['zzz'];
+var mm2 = strIndex["zzz"];
 var mm2: Compass;
 
 // Bracket notation property access using numeric value on type with string index signature and no numeric index signature
@@ -102,7 +107,7 @@ var qq = noIndex[123];
 var qq: any;
 
 // Bracket notation property access using string value on type with no index signatures
-var rr = noIndex['zzzz'];
+var rr = noIndex["zzzz"];
 var rr: any;
 
 // Bracket notation property access using enum value on type with no index signatures
@@ -129,11 +134,11 @@ var xx = bothIndex[<any>null];
 var xx: B;
 
 // Bracket notation property access using string value on type with numeric index signature and string index signature
-var yy = bothIndex['foo'];
+var yy = bothIndex["foo"];
 var yy: A;
 
 // Bracket notation property access using numeric string value on type with numeric index signature and string index signature
-var zz = bothIndex['1.0'];
+var zz = bothIndex["1.0"];
 var zz: A;
 
 // Bracket notation property access using value of other type on type with numeric index signature and no string index signature and string index signature

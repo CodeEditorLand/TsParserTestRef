@@ -1,4 +1,4 @@
 class C {
-    "foo"();
-    "bar"() { }
+	"foo"();
+	"bar"() {}
 }

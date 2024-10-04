@@ -1,7 +1,6 @@
 // @target: esnext
 // @useDefineForClassFields: true
 
-
 // With useDefineForClassFields: true and ESNext target, initializer
 // expressions for property declarations are evaluated in the scope of
 // the class body and are permitted to reference parameters or local
@@ -15,21 +14,19 @@
 
 var x = 1;
 class C {
-    b = x; // ok
-    constructor(x: string) {
-    }
+	b = x; // ok
+	constructor(x: string) {}
 }
 
 var y = 1;
 class D {
-    b = y; // ok
-    constructor(x: string) {
-        var y = "";
-    }
+	b = y; // ok
+	constructor(x: string) {
+		var y = "";
+	}
 }
 
 class E {
-    b = z; // not ok
-    constructor(z: string) {
-    }
+	b = z; // not ok
+	constructor(z: string) {}
 }

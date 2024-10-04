@@ -1,8 +1,8 @@
 // any is not a subtype of any other types, errors expected on all the below derived classes unless otherwise noted
 
 interface I {
-    [x: string]: any;
-    foo: any; // ok, any identical to itself
+	[x: string]: any;
+	foo: any; // ok, any identical to itself
 }
 
 var a: any;
@@ -35,17 +35,23 @@ declare function foo8(x: number[]): number[];
 declare function foo8(x: any): any;
 var r3 = foo3(a); // any
 
-interface I8 { foo: string }
+interface I8 {
+	foo: string;
+}
 declare function foo9(x: I8): I8;
 declare function foo9(x: any): any;
 var r3 = foo3(a); // any
 
-class A { foo: number; }
+class A {
+	foo: number;
+}
 declare function foo10(x: A): A;
 declare function foo10(x: any): any;
 var r3 = foo3(a); // any
 
-class A2<T> { foo: T; }
+class A2<T> {
+	foo: T;
+}
 declare function foo11(x: A2<string>): A2<string>;
 declare function foo11(x: any): any;
 var r3 = foo3(a); // any
@@ -58,22 +64,26 @@ declare function foo13(x: <T>(x: T) => T): <T>(x: T) => T;
 declare function foo13(x: any): any;
 var r3 = foo3(a); // any
 
-enum E { A }
+enum E {
+	A,
+}
 declare function foo14(x: E): E;
 declare function foo14(x: any): any;
 var r3 = foo3(a); // any
 
-function f() { }
+function f() {}
 module f {
-    export var bar = 1;
+	export var bar = 1;
 }
 declare function foo15(x: typeof f): typeof f;
 declare function foo15(x: any): any;
 var r3 = foo3(a); // any
 
-class CC { baz: string }
+class CC {
+	baz: string;
+}
 module CC {
-    export var bar = 1;
+	export var bar = 1;
 }
 declare function foo16(x: CC): CC;
 declare function foo16(x: any): any;

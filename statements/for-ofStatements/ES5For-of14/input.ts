@@ -1,3 +1,3 @@
 for (const v of []) {
-    var x = v;
+	var x = v;
 }

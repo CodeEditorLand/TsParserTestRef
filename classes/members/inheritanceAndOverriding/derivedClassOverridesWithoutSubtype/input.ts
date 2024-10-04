@@ -1,23 +1,23 @@
 class Base {
-    x: {
-        foo: string;
-    }
+	x: {
+		foo: string;
+	};
 }
 
 class Derived extends Base {
-    x: {
-        foo: any;
-    }
+	x: {
+		foo: any;
+	};
 }
 
 class Base2 {
-    static y: {
-        foo: string;
-    }
+	static y: {
+		foo: string;
+	};
 }
 
 class Derived2 extends Base2 {
-    static y: {
-        foo: any;
-    }
+	static y: {
+		foo: any;
+	};
 }

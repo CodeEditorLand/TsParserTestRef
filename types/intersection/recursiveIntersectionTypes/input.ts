@@ -1,11 +1,11 @@
 ﻿type LinkedList<T> = T & { next: LinkedList<T> };
 
 interface Entity {
-    name: string;
+	name: string;
 }
 
 interface Product extends Entity {
-    price: number;
+	price: number;
 }
 
 var entityList: LinkedList<Entity>;
@@ -16,4 +16,4 @@ var s = entityList.next.next.next.name;
 
 var productList: LinkedList<Product>;
 entityList = productList;
-productList = entityList;  // Error
+productList = entityList; // Error

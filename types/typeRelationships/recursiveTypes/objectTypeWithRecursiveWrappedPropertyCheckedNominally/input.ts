@@ -1,13 +1,13 @@
 // Types with infinitely expanding recursive types are type checked nominally
 
 class List<T> {
-    data: T;
-    next: List<List<T>>;
+	data: T;
+	next: List<List<T>>;
 }
 
 class MyList<T> {
-    data: T;
-    next: MyList<MyList<T>>;
+	data: T;
+	next: MyList<MyList<T>>;
 }
 
 var list1 = new List<number>();
@@ -27,26 +27,26 @@ var rMyList1 = new List<MyList<number>>();
 rList1 = rMyList1; // error, not nominally equal
 
 function foo<T extends List<number>, U extends MyList<number>>(t: T, u: U) {
-    t = u; // error
-    u = t; // error
+	t = u; // error
+	u = t; // error
 
-    var a: List<number>;
-    var b: MyList<number>;
-    a = t; // ok
-    a = u; // error
-    b = t; // error
-    b = u; // ok
+	var a: List<number>;
+	var b: MyList<number>;
+	a = t; // ok
+	a = u; // error
+	b = t; // error
+	b = u; // ok
 }
 
 function foo2<T extends U, U extends MyList<number>>(t: T, u: U) {
-    t = u; // error
-    u = t; // was error, ok after constraint made illegal, doesn't matter
+	t = u; // error
+	u = t; // was error, ok after constraint made illegal, doesn't matter
 
-    var a: List<number>;
-    var b: MyList<number>;
+	var a: List<number>;
+	var b: MyList<number>;
 
-    a = t; // error
-    a = u; // error
-    b = t; // ok
-    b = u; // ok
+	a = t; // error
+	a = u; // error
+	b = t; // ok
+	b = u; // ok
 }

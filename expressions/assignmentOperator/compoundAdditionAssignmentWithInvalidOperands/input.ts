@@ -1,4 +1,7 @@
-enum E { a, b }
+enum E {
+	a,
+	b,
+}
 
 var a: void;
 

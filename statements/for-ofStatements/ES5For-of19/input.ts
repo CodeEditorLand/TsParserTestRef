@@ -1,8 +1,8 @@
 for (let v of []) {
-    v;
-    function foo() {
-        for (const v of []) {
-            v;
-        }
-    }
+	v;
+	function foo() {
+		for (const v of []) {
+			v;
+		}
+	}
 }

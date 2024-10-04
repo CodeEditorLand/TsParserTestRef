@@ -3,8 +3,14 @@
 // @noTypesAndSymbols: true
 
 // GH#34952
-class Base { method?() {} }
+class Base {
+	method?() {}
+}
 class Derived extends Base {
-    method1() { return super.method?.(); }
-    method2() { return super["method"]?.(); }
+	method1() {
+		return super.method?.();
+	}
+	method2() {
+		return super["method"]?.();
+	}
 }

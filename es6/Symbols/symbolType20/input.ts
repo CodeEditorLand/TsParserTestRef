@@ -1,2 +1,2 @@
 ﻿//@target: ES6
-interface symbol { }
+interface symbol {}

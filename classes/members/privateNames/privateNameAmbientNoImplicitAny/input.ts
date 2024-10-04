@@ -1,8 +1,8 @@
 // @noImplicitAny: true
 // @target: ESNext
 declare class A {
-    #prop;
+	#prop;
 }
 class B {
-    #prop;
+	#prop;
 }

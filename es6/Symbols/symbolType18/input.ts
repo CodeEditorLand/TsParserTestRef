@@ -1,11 +1,12 @@
 //@target: ES6
-interface Foo { prop }
+interface Foo {
+	prop;
+}
 var x: symbol | Foo;
 
 x;
 if (typeof x === "object") {
-    x;
-}
-else {
-    x;
+	x;
+} else {
+	x;
 }

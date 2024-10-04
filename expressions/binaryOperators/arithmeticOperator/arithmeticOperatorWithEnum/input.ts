@@ -1,8 +1,8 @@
 // operands of an enum type are treated as having the primitive type Number.
 
 enum E {
-    a,
-    b
+	a,
+	b,
 }
 
 var a: any;

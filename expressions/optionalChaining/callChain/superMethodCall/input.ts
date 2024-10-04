@@ -1,15 +1,15 @@
 // @strict: true
 // @target: ES6
 class Base {
-    method?() { }
+	method?() {}
 }
 
 class Derived extends Base {
-    method() {
-        return super.method?.();
-    }
+	method() {
+		return super.method?.();
+	}
 
-    async asyncMethod() {
-        return super.method?.();
-    }
+	async asyncMethod() {
+		return super.method?.();
+	}
 }

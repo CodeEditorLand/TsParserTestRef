@@ -1,8 +1,8 @@
 // @target: esnext
 // @useDefineForClassFields: true
 class A {
-    m() { }
+	m() {}
 }
 class B extends A {
-    m = () => 1
+	m = () => 1;
 }

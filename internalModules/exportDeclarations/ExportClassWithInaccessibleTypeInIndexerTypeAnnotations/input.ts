@@ -1,14 +1,11 @@
 module A {
+	class Point {
+		x: number;
+		y: number;
+	}
 
-    class Point {
-        x: number;
-        y: number;
-    }
-
-    export class points {
-
-        [idx: number]: Point;
-        [idx: string]: Point;
-    }
+	export class points {
+		[idx: number]: Point;
+		[idx: string]: Point;
+	}
 }
-

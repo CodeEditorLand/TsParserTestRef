@@ -1,8 +1,10 @@
 // @target: esnext
 // @useDefineForClassFields: true
 class A {
-    m() { }
+	m() {}
 }
 class B extends A {
-    get m() { return () => 1 }
+	get m() {
+		return () => 1;
+	}
 }

@@ -2,14 +2,18 @@
 var NUMBER: number;
 var NUMBER1: number[] = [1, 2];
 
-function foo(): number { return 1; }
+function foo(): number {
+	return 1;
+}
 
 class A {
-    public a: number;
-    static foo() { return 1; }
+	public a: number;
+	static foo() {
+		return 1;
+	}
 }
 module M {
-    export var n: number;
+	export var n: number;
 }
 
 var objA = new A();
@@ -20,8 +24,13 @@ var ResultIsBoolean2 = !NUMBER1;
 
 // number type literal
 var ResultIsBoolean3 = !1;
-var ResultIsBoolean4 = !{ x: 1, y: 2};
-var ResultIsBoolean5 = !{ x: 1, y: (n: number) => { return n; } };
+var ResultIsBoolean4 = !{ x: 1, y: 2 };
+var ResultIsBoolean5 = !{
+	x: 1,
+	y: (n: number) => {
+		return n;
+	},
+};
 
 // number type expressions
 var ResultIsBoolean6 = !objA.a;

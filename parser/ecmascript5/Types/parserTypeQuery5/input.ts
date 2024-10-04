@@ -1,1 +1,1 @@
-var v: typeof A.B
+var v: typeof A.B;

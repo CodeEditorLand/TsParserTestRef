@@ -1,2 +1,1 @@
-class C<K,V> {
-}
+class C<K, V> {}

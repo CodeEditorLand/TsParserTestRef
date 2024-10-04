@@ -2,5 +2,5 @@
 // @module: commonjs
 
 export function f(x: any): x is number {
-    return typeof x === "number";
+	return typeof x === "number";
 }

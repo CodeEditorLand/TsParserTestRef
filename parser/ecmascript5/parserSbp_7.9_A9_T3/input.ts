@@ -9,7 +9,5 @@
  */
 
 //CHECK#1
-do {
-  ;
-} while (false) true
-
+do {} while (false);
+true;

@@ -9,10 +9,10 @@ comp **= comp **= 1 - 2;
 comp **= comp **= 1 * 2;
 comp **= comp **= 1 / 2;
 
-comp **= comp **= (1 + 2);
-comp **= comp **= (1 - 2);
-comp **= comp **= (1 * 2);
-comp **= comp **= (1 / 2);
+comp **= comp **= 1 + 2;
+comp **= comp **= 1 - 2;
+comp **= comp **= 1 * 2;
+comp **= comp **= 1 / 2;
 
 comp **= comp **= 1 + 2 ** 3;
 comp **= comp **= 1 - 2 ** 4;

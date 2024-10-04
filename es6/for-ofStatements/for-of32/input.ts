@@ -1,3 +1,4 @@
 ﻿//@target: ES6
 //@noImplicitAny: true
-for (var v of v) { }
+for (var v of v) {
+}

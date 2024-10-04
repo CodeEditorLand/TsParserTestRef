@@ -1,24 +1,24 @@
 class C {
-    constructor() {
-        return;
-    }
+	constructor() {
+		return;
+	}
 }
 
 class D {
-    x: number;
-    constructor() {
-        return;
-    }
+	x: number;
+	constructor() {
+		return;
+	}
 }
 
 class E {
-    constructor(public x: number) {
-        return;
-    }
+	constructor(public x: number) {
+		return;
+	}
 }
 
 class F<T> {
-    constructor(public x: T) {
-        return;
-    }
+	constructor(public x: T) {
+		return;
+	}
 }

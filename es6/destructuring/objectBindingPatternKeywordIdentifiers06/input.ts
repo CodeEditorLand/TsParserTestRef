@@ -1,2 +1,1 @@
-﻿
-var { as: as } = { as: 1 }
+﻿var { as: as } = { as: 1 };

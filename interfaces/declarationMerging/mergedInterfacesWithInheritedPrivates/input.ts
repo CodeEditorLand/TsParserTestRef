@@ -1,25 +1,27 @@
 class C {
-    private x: number;
+	private x: number;
 }
 
 interface A extends C {
-    y: string;
+	y: string;
 }
 
 interface A {
-    z: string;
+	z: string;
 }
 
-class D implements A { // error
-    private x: number;
-    y: string;
-    z: string;
+class D implements A {
+	// error
+	private x: number;
+	y: string;
+	z: string;
 }
 
-class E implements A { // error
-    x: number;
-    y: string;
-    z: string;
+class E implements A {
+	// error
+	x: number;
+	y: string;
+	z: string;
 }
 
 var a: A;

@@ -1,2 +1,2 @@
 var tag: Function;
-tag `Hello world!`;
+tag`Hello world!`;

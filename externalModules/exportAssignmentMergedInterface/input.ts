@@ -7,7 +7,7 @@ interface Foo {
 interface Foo {
 	(a: number): number;
 	c: boolean;
-	d: {x: number; y: number};
+	d: { x: number; y: number };
 }
 export = Foo;
 
@@ -17,6 +17,7 @@ var x: foo;
 x("test");
 x(42);
 var y: string = x.b;
-if(!!x.c){ }
-var z = {x: 1, y: 2};
+if (!!x.c) {
+}
+var z = { x: 1, y: 2 };
 z = x.d;

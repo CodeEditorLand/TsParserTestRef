@@ -1,3 +1,3 @@
 class C {
-  declare Foo;
+	declare Foo;
 }

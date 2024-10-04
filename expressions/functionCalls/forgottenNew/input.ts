@@ -1,5 +1,5 @@
 module Tools {
-    export class NullLogger { }
+	export class NullLogger {}
 }
 
 var logger = Tools.NullLogger();

@@ -4,4 +4,4 @@
 export default class {}
 
 // @filename: b.ts
-export default function() {}
+export default function () {}

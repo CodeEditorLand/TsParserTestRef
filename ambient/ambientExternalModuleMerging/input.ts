@@ -7,10 +7,10 @@ var y = M.y;
 
 //@filename: ambientExternalModuleMerging_declare.ts
 declare module "M" {
-    export var x: string;
+	export var x: string;
 }
 
 // Merge
 declare module "M" {
-    export var y: string;
+	export var y: string;
 }

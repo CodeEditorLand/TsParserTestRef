@@ -1,9 +1,9 @@
 ﻿interface Runnable {
-    isRunning: boolean;
+	isRunning: boolean;
 }
 
 interface Refrigerator extends Runnable {
-    makesFoodGoBrrr: boolean;
+	makesFoodGoBrrr: boolean;
 }
 
 let x: string;
@@ -11,7 +11,7 @@ let y: "foo" | Refrigerator;
 
 let b: boolean;
 b = x === y;
-b = "foo" === y
+b = "foo" === y;
 b = y === "foo";
 b = "foo" === "bar";
 b = "bar" === x;
@@ -20,7 +20,7 @@ b = y === "bar";
 b = "bar" === y;
 
 b = x !== y;
-b = "foo" !== y
+b = "foo" !== y;
 b = y !== "foo";
 b = "foo" !== "bar";
 b = "bar" !== x;

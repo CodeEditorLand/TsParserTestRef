@@ -6,12 +6,12 @@
 // @filename: index.js
 
 export class A {
-    /** @returns {this} */
-    method() {
-        return this;
-    }
+	/** @returns {this} */
+	method() {
+		return this;
+	}
 }
 export default class Base extends A {
-    // This method is required to reproduce #35932
-    verify() { }
+	// This method is required to reproduce #35932
+	verify() {}
 }

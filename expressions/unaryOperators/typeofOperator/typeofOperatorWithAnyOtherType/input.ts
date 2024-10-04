@@ -3,22 +3,22 @@
 var ANY: any;
 var ANY1;
 var ANY2: any[] = ["", ""];
-var obj: () => {}
-var obj1 = { x: "a", y: () => { }};
+var obj: () => {};
+var obj1 = { x: "a", y: () => {} };
 
 function foo(): any {
-    var a;
-    return a;
+	var a;
+	return a;
 }
 class A {
-    public a: any;
-    static foo() {
-        var a;
-        return a;
-    }
+	public a: any;
+	static foo() {
+		var a;
+		return a;
+	}
 }
 module M {
-    export var n: any;
+	export var n: any;
 }
 var objA = new A();
 

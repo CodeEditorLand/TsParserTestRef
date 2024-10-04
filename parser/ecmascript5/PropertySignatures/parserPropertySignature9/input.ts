@@ -1,3 +1,3 @@
 interface I {
-  0;
+	0;
 }

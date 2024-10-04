@@ -1,4 +1,7 @@
-enum E { a, b }
+enum E {
+	a,
+	b,
+}
 
 var a: any;
 var b: void;
@@ -8,7 +11,7 @@ x1 += a;
 x1 += b;
 x1 += true;
 x1 += 0;
-x1 += '';
+x1 += "";
 x1 += E.a;
 x1 += {};
 x1 += null;
@@ -19,7 +22,7 @@ x2 += a;
 x2 += b;
 x2 += true;
 x2 += 0;
-x2 += '';
+x2 += "";
 x2 += E.a;
 x2 += {};
 x2 += null;
@@ -44,7 +47,7 @@ x5 += a;
 
 var x6: {};
 x6 += a;
-x6 += '';
+x6 += "";
 
 var x7: void;
 x7 += a;

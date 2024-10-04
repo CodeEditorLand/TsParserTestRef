@@ -7,11 +7,11 @@
 function mappy(map) {}
 
 export class C {
-    constructor() {
-        /** @type {{ [assetName: string]: number}} */
-        this.assets = {};
-    }
-    m() {
-        mappy(this.assets)
-    }
+	constructor() {
+		/** @type {{ [assetName: string]: number}} */
+		this.assets = {};
+	}
+	m() {
+		mappy(this.assets);
+	}
 }

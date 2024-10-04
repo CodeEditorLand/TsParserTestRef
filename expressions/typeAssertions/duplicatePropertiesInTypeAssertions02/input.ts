@@ -1,3 +1,3 @@
 // @declaration: true
 
-let x = {} as {a: number; a: number};
+let x = {} as { a: number; a: number };

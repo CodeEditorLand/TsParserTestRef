@@ -4,14 +4,16 @@
 // @checkjs: true
 // @Filename: foo.ts
 class Foo {
-    get p() { return 1 }
-    set p(value) { }
+	get p() {
+		return 1;
+	}
+	set p(value) {}
 }
 
 // @Filename: bar.js
 class Bar extends Foo {
-    constructor() {
-        super()
-        this.p = 2
-    }
+	constructor() {
+		super();
+		this.p = 2;
+	}
 }

@@ -1,9 +1,10 @@
 interface Base {
-    x: { a: number };
+	x: { a: number };
 }
 
 interface Derived extends Base {
-    x: {
-        a: number; b: number;
-    };
+	x: {
+		a: number;
+		b: number;
+	};
 }

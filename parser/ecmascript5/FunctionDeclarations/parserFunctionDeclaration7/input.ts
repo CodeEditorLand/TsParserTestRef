@@ -1,3 +1,3 @@
 module M {
-   function foo();
+	function foo();
 }

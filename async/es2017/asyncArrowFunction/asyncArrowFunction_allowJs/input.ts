@@ -6,22 +6,22 @@
 
 // Error (good)
 /** @type {function(): string} */
-const a = () => 0
+const a = () => 0;
 
 // Error (good)
 /** @type {function(): string} */
-const b = async () => 0
+const b = async () => 0;
 
 // No error (bad)
 /** @type {function(): string} */
 const c = async () => {
-	return 0
-}
+	return 0;
+};
 
 /** @type {function(function(): string): void} */
-const f = (p) => {}
+const f = (p) => {};
 
 // Error (good)
 f(async () => {
-	return 0
-})
+	return 0;
+});

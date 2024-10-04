@@ -1,3 +1,3 @@
 module M {
-    export declare module "M" { }
+	export declare module "M" {}
 }

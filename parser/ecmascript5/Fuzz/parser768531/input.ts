@@ -1,4 +1,6 @@
 // @allowUnusedLabels: true
 
-{a: 3}
-/x/
+{
+	a: 3;
+}
+/x/;

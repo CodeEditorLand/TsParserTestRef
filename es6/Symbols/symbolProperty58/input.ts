@@ -1,8 +1,8 @@
 //@target: ES6
 interface SymbolConstructor {
-    foo: string;
+	foo: string;
 }
 
 var obj = {
-    [Symbol.foo]: 0
-}
+	[Symbol.foo]: 0,
+};

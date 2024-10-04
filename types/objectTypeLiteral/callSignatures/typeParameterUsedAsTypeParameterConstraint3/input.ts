@@ -22,17 +22,17 @@
 //}
 
 interface I<T, U, V> {
-    x: T;
-    y: U;
-    z: V;
-    foo<W extends V>(x: W): T;
+	x: T;
+	y: U;
+	z: V;
+	foo<W extends V>(x: W): T;
 }
 
 interface I2<V, T, U> {
-    x: T;
-    y: U;
-    z: V;
-    foo<W extends V>(x: W): T;
+	x: T;
+	y: U;
+	z: V;
+	foo<W extends V>(x: W): T;
 }
 
 //interface I < T, U extends T, V extends U > {

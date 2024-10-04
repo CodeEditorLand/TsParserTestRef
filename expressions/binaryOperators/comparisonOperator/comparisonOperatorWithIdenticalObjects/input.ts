@@ -1,44 +1,60 @@
 class A1 {
-    public a: string;
-    public b: number;
-    public c: boolean;
-    public d: any;
-    public e: Object;
-    public fn(a: string): string {
-        return null;
-    }
+	public a: string;
+	public b: number;
+	public c: boolean;
+	public d: any;
+	public e: Object;
+	public fn(a: string): string {
+		return null;
+	}
 }
 class B1 {
-    public a: string;
-    public b: number;
-    public c: boolean;
-    public d: any;
-    public e: Object;
-    public fn(b: string): string {
-        return null;
-    }
+	public a: string;
+	public b: number;
+	public c: boolean;
+	public d: any;
+	public e: Object;
+	public fn(b: string): string {
+		return null;
+	}
 }
 
 class Base {
-    private a: string;
-    private fn(b: string): string {
-        return null;
-    }
+	private a: string;
+	private fn(b: string): string {
+		return null;
+	}
 }
-class A2 extends Base { }
-class B2 extends Base { }
+class A2 extends Base {}
+class B2 extends Base {}
 
-interface A3 { f(a: number): string; }
-interface B3 { f(a: number): string; }
+interface A3 {
+	f(a: number): string;
+}
+interface B3 {
+	f(a: number): string;
+}
 
-interface A4 { new (a: string): A1; }
-interface B4 { new (a: string): B1; }
+interface A4 {
+	new (a: string): A1;
+}
+interface B4 {
+	new (a: string): B1;
+}
 
-interface A5 { [x: number]: number; }
-interface B5 { [x: number]: number; }
+interface A5 {
+	[x: number]: number;
+}
+interface B5 {
+	[x: number]: number;
+}
 
-interface A6 { [x: string]: string; }
-interface B6 { [x: string]: string; }
+interface A6 {
+	[x: string]: string;
+}
+interface B6 {
+	[x: string]: string;
+}
 
 var a1: A1;
 var a2: A2;

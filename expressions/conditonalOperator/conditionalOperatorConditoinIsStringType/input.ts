@@ -24,13 +24,15 @@ condString ? exprString1 : exprBoolean1; // union
 //Cond is a string type literal
 "" ? exprAny1 : exprAny2;
 "string" ? exprBoolean1 : exprBoolean2;
-'c' ? exprNumber1 : exprNumber2;
-'string' ? exprString1 : exprString2;
+"c" ? exprNumber1 : exprNumber2;
+"string" ? exprString1 : exprString2;
 "  " ? exprIsObject1 : exprIsObject2;
 "hello " ? exprString1 : exprBoolean1; // union
 
 //Cond is a string type expression
-function foo() { return "string" };
+function foo() {
+	return "string";
+}
 var array = ["1", "2", "3"];
 
 typeof condString ? exprAny1 : exprAny2;
@@ -50,8 +52,8 @@ var resultIsStringOrBoolean1 = condString ? exprString1 : exprBoolean1; // union
 
 var resultIsAny2 = "" ? exprAny1 : exprAny2;
 var resultIsBoolean2 = "string" ? exprBoolean1 : exprBoolean2;
-var resultIsNumber2 = 'c' ? exprNumber1 : exprNumber2;
-var resultIsString2 = 'string' ? exprString1 : exprString2;
+var resultIsNumber2 = "c" ? exprNumber1 : exprNumber2;
+var resultIsString2 = "string" ? exprString1 : exprString2;
 var resultIsObject2 = "  " ? exprIsObject1 : exprIsObject2;
 var resultIsStringOrBoolean2 = "hello" ? exprString1 : exprBoolean1; // union
 
@@ -61,4 +63,6 @@ var resultIsNumber3 = condString + "string" ? exprNumber1 : exprNumber2;
 var resultIsString3 = foo() ? exprString1 : exprString2;
 var resultIsObject3 = array[1] ? exprIsObject1 : exprIsObject2;
 var resultIsStringOrBoolean3 = typeof condString ? exprString1 : exprBoolean1; // union
-var resultIsStringOrBoolean4 = condString.toUpperCase ? exprString1 : exprBoolean1; // union
+var resultIsStringOrBoolean4 = condString.toUpperCase
+	? exprString1
+	: exprBoolean1; // union

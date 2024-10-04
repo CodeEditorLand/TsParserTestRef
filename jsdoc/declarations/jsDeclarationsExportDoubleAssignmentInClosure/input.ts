@@ -5,8 +5,10 @@
 // @filename: index.js
 // @ts-nocheck
 function foo() {
-    module.exports = exports = function (o) {
-        return (o == null) ? create(base) : defineProperties(Object(o), descriptors);
-    };
-    exports.methods = methods;
+	module.exports = exports = function (o) {
+		return o == null
+			? create(base)
+			: defineProperties(Object(o), descriptors);
+	};
+	exports.methods = methods;
 }

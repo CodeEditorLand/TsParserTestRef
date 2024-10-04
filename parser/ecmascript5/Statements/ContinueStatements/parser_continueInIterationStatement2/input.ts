@@ -1,4 +1,3 @@
 do {
-  continue;
-}
-while (true);
+	continue;
+} while (true);

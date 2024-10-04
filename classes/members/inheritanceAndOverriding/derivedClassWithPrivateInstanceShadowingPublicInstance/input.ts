@@ -1,22 +1,26 @@
 class Base {
-    public x: string;
-    public fn(): string {
-        return '';
-    }
+	public x: string;
+	public fn(): string {
+		return "";
+	}
 
-    public get a() { return 1; }
-    public set a(v) { }
+	public get a() {
+		return 1;
+	}
+	public set a(v) {}
 }
 
 // error, not a subtype
 class Derived extends Base {
-    private x: string; 
-    private fn(): string {
-        return '';
-    }
+	private x: string;
+	private fn(): string {
+		return "";
+	}
 
-    private get a() { return 1; }
-    private set a(v) { }
+	private get a() {
+		return 1;
+	}
+	private set a(v) {}
 }
 
 var r = Base.x; // ok

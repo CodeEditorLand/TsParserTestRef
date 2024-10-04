@@ -1,1 +1,5 @@
-var v = { get foo() { return } };
+var v = {
+	get foo() {
+		return;
+	},
+};

@@ -1,4 +1,3 @@
-class Outer
-{
-static public<T>() {}
+class Outer {
+	static public<T>() {}
 }

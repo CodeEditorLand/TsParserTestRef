@@ -1,6 +1,6 @@
 // @module: commonjs
 // @Filename: foo_0.ts
-class Foo<T>{
+class Foo<T> {
 	test: T;
 }
 export = Foo;
@@ -8,4 +8,4 @@ export = Foo;
 // @Filename: foo_1.ts
 import foo = require("./foo_0");
 var x = new foo<number>();
-var y:number = x.test;
+var y: number = x.test;

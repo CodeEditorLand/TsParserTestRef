@@ -1,14 +1,14 @@
 class Base {
-    foo: string;
+	foo: string;
 }
 
 class Derived {
-    foo: string;
-    bar: number;
+	foo: string;
+	bar: number;
 }
 
 class Derived2 extends Base {
-    bar: string;
+	bar: string;
 }
 
 var b: Base;

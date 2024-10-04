@@ -1,13 +1,15 @@
 class C {
-    foo: string;
+	foo: string;
 }
 var ac: C;
 interface I {
-    foo: string;
+	foo: string;
 }
 var ai: I;
 
-enum E { A }
+enum E {
+	A,
+}
 var ae: E;
 
 var b: number = undefined;
@@ -31,9 +33,9 @@ var p: Number = undefined;
 var q: String = undefined;
 
 function foo<T, U, V extends Date>(x: T, y: U, z: V) {
-    x = undefined;
-    y = undefined;
-    z = undefined;
+	x = undefined;
+	y = undefined;
+	z = undefined;
 }
 //function foo<T, U extends T, V extends Date>(x: T, y: U, z: V) {
 //    x = undefined;

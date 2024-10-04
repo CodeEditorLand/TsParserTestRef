@@ -16,8 +16,8 @@ export { a } from "./items";
 export { b, c } from "./items";
 
 // @filename: multiple.js
-export {a, b} from "./items";
-export {a as aa} from "./two";
-export {b as bb} from "./two";
-export {c} from "./two"
-export {c as cc} from "./items";
+export { a, b } from "./items";
+export { a as aa } from "./two";
+export { b as bb } from "./two";
+export { c } from "./two";
+export { c as cc } from "./items";

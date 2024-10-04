@@ -1,3 +1,6 @@
+// @filename: index4.js
+import Fab from "./index3";
+
 // @allowJs: true
 // @checkJs: true
 // @target: es5
@@ -8,22 +11,20 @@ export default 12;
 
 // @filename: index2.js
 export default function foo() {
-    return foo;
+	return foo;
 }
 export const x = foo;
 export { foo as bar };
 
 // @filename: index3.js
 export default class Foo {
-    a = /** @type {Foo} */(null);
-};
+	a = /** @type {Foo} */ null;
+}
 export const X = Foo;
 export { Foo as Bar };
 
-// @filename: index4.js
-import Fab from "./index3";
 class Bar extends Fab {
-    x = /** @type {Bar} */(null);
+	x = /** @type {Bar} */ null;
 }
 export default Bar;
 
@@ -36,7 +37,7 @@ export default 12;
 
 // @filename: index6.js
 // merge type alias and function (OK)
-export default function func() {};
+export default function func() {}
 /**
  * @typedef {string | number} default
  */

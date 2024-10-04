@@ -1,5 +1,5 @@
 interface Foo {
-       export(): string;
+	export(): string;
 }
 
 var f: Foo;

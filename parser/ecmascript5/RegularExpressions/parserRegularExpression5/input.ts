@@ -1,1 +1,1 @@
-if (a) / (\\ ? | & ) rct = j / .test(c.href);
+if (a) / (\\ ? | & ) rct = j /.test(c.href);

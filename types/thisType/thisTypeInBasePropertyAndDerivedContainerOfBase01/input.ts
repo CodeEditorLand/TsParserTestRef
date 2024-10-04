@@ -1,13 +1,13 @@
 // @declaration: true
 
 interface BoxOfFoo<T extends Foo> {
-    item: T
+	item: T;
 }
 
 interface Foo {
-    self: this;
+	self: this;
 }
 
 interface Bar extends Foo {
-    other: BoxOfFoo<this>;
+	other: BoxOfFoo<this>;
 }

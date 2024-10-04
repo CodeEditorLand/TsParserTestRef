@@ -1,4 +1,4 @@
 // @target: es5
 var obj = {
-    [this.bar]: 0
-}
+	[this.bar]: 0,
+};

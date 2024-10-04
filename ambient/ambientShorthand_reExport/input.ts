@@ -1,14 +1,15 @@
+// @Filename: reExportUser.ts
+import * as $ from "./reExportAll";
+import { x } from "./reExportX";
+
 // @Filename: declarations.d.ts
 declare module "jquery";
 
 // @Filename: reExportX.ts
-export {x} from "jquery";
+export { x } from "jquery";
 
 // @Filename: reExportAll.ts
 export * from "jquery";
 
-// @Filename: reExportUser.ts
-import {x} from "./reExportX";
-import * as $ from "./reExportAll";
 // '$' is not callable, it is an object.
 x($);

@@ -2,13 +2,19 @@
 // @target: es2020
 // @filename: 0.ts
 export class B {
-    print() { return "I am B"}
+	print() {
+		return "I am B";
+	}
 }
 
-export function foo() { return "foo" }
+export function foo() {
+	return "foo";
+}
 
 // @filename: 1.ts
-export function backup() { return "backup"; }
+export function backup() {
+	return "backup";
+}
 
 // @filename: 2.ts
 declare function bar(): boolean;

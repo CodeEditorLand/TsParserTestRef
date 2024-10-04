@@ -1,2 +1,1 @@
-interface string {
-}
+interface string {}

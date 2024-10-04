@@ -1,18 +1,18 @@
 class C<T> {
-    data: T;
+	data: T;
 
-    x = <U>(a: U) => {
-        var y: T;
-        return y;
-    }
+	x = <U>(a: U) => {
+		var y: T;
+		return y;
+	};
 
-    foo() {
-        function temp<U>(a: U) {
-            var y: T;
-            return y;
-        }
-        return temp(<T>null);
-    }
+	foo() {
+		function temp<U>(a: U) {
+			var y: T;
+			return y;
+		}
+		return temp(<T>null);
+	}
 }
 
 var c = new C<number>();

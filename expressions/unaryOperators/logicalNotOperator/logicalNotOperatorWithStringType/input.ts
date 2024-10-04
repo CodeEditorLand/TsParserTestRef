@@ -2,14 +2,18 @@
 var STRING: string;
 var STRING1: string[] = ["", "abc"];
 
-function foo(): string { return "abc"; }
+function foo(): string {
+	return "abc";
+}
 
 class A {
-    public a: string;
-    static foo() { return ""; }
+	public a: string;
+	static foo() {
+		return "";
+	}
 }
 module M {
-    export var n: string;
+	export var n: string;
 }
 
 var objA = new A();
@@ -21,7 +25,12 @@ var ResultIsBoolean2 = !STRING1;
 // string type literal
 var ResultIsBoolean3 = !"";
 var ResultIsBoolean4 = !{ x: "", y: "" };
-var ResultIsBoolean5 = !{ x: "", y: (s: string) => { return s; } };
+var ResultIsBoolean5 = !{
+	x: "",
+	y: (s: string) => {
+		return s;
+	},
+};
 
 // string type expressions
 var ResultIsBoolean6 = !objA.a;
@@ -41,4 +50,4 @@ var ResultIsBoolean14 = !!!(STRING + STRING);
 !STRING;
 !STRING1;
 !foo();
-!objA.a,M.n;
+!objA.a, M.n;

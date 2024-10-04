@@ -4,7 +4,7 @@ var comp: number;
 
 comp **= 1;
 comp **= comp ** comp;
-comp **= comp ** comp ** 2;
+comp **= comp ** (comp ** 2);
 comp **= comp ** comp + 2;
 comp **= comp ** comp - 2;
 comp **= comp ** comp * 2;

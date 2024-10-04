@@ -6,6 +6,6 @@
  * @constructor
  */
 function Dependency(j) {
-  return j
+	return j;
 }
-Dependency({})
+Dependency({});

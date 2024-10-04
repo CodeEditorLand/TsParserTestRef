@@ -15,23 +15,23 @@ export function foo(a, b) {}
  * Legacy - DO NOT USE
  */
 export class Aleph {
-    /**
-     * Impossible to construct.
-     * @param {Aleph} a
-     * @param {null} b
-     */
-    constructor(a, b) {
-        /**
-         * Field is always null
-         */
-        this.field = b;
-    }
+	/**
+	 * Impossible to construct.
+	 * @param {Aleph} a
+	 * @param {null} b
+	 */
+	constructor(a, b) {
+		/**
+		 * Field is always null
+		 */
+		this.field = b;
+	}
 
-    /**
-     * Doesn't actually do anything
-     * @returns {void}
-     */
-    doIt() {}
+	/**
+	 * Doesn't actually do anything
+	 * @returns {void}
+	 */
+	doIt() {}
 }
 
 /**

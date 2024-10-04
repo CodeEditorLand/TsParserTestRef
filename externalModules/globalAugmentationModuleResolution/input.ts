@@ -1,8 +1,8 @@
 ﻿// @traceResolution: true
 
 // @fileName: a.ts
-export { };
+export {};
 
 declare global {
-  var x: number;
+	var x: number;
 }

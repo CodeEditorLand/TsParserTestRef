@@ -1,9 +1,9 @@
 interface A1 {
-    b?: number;
+	b?: number;
 }
 
 interface B1 {
-    b?: string;
+	b?: string;
 }
 
 var a: A1;

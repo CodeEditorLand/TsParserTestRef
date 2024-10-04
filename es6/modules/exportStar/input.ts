@@ -1,3 +1,6 @@
+// @filename: main.ts
+import hello, { foo, x, y, z } from "./t4";
+
 // @module: commonjs
 // @target: ES5
 
@@ -7,7 +10,7 @@ export var y = 2;
 
 // @filename: t2.ts
 export default "hello";
-export function foo() { }
+export function foo() {}
 
 // @filename: t3.ts
 var x = "x";
@@ -20,8 +23,6 @@ export * from "./t1";
 export * from "./t2";
 export * from "./t3";
 
-// @filename: main.ts
-import hello, { x, y, z, foo } from "./t4";
 hello;
 x;
 y;

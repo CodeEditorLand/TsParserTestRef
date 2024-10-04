@@ -1,6 +1,12 @@
 module A {
-    export enum Color { Red, Blue }
-    enum Day { Monday, Tuesday }
+	export enum Color {
+		Red,
+		Blue,
+	}
+	enum Day {
+		Monday,
+		Tuesday,
+	}
 }
 
 // not an error since exported

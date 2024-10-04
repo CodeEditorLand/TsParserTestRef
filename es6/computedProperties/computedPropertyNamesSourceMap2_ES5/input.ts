@@ -1,10 +1,10 @@
 // @target: es5
 // @sourceMap: true
 var v = {
-    ["hello"]() {
-        debugger;
+	["hello"]() {
+		debugger;
 	},
-    get ["goodbye"]() {
+	get ["goodbye"]() {
 		return 0;
-	}
-}
+	},
+};

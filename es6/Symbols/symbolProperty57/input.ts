@@ -1,6 +1,6 @@
 //@target: ES6
 var obj = {
-    [Symbol.iterator]: 0
+	[Symbol.iterator]: 0,
 };
 
 // Should give type 'any'.

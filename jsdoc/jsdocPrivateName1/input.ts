@@ -6,6 +6,6 @@
 // @target: es2015
 
 class A {
-    /** @type {boolean} some number value */
-    #foo = 3 // Error because not assignable to boolean
+	/** @type {boolean} some number value */
+	#foo = 3; // Error because not assignable to boolean
 }

@@ -1,11 +1,11 @@
 // @strictNullChecks: true
 // @declaration: true
 
-type Item = { a: string, b: number, c: boolean };
+type Item = { a: string; b: number; c: boolean };
 
 type T00 = { [P in "x" | "y"]: number };
 type T01 = { [P in "x" | "y"]: P };
-type T02 = { [P in "a" | "b"]: Item[P]; }
+type T02 = { [P in "a" | "b"]: Item[P] };
 type T03 = { [P in keyof Item]: Date };
 
 type T10 = { [P in keyof Item]: Item[P] };

@@ -1,4 +1,4 @@
 //@target: ES6
 var obj = {
-    [Symbol.prototype]: 0
+	[Symbol.prototype]: 0,
 };

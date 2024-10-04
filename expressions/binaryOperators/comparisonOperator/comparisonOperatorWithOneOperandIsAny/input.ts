@@ -1,25 +1,29 @@
 var x: any;
 
-enum E { a, b, c }
+enum E {
+	a,
+	b,
+	c,
+}
 
 function foo<T>(t: T) {
-    var foo_r1 = t < x;
-    var foo_r2 = t > x;
-    var foo_r3 = t <= x;
-    var foo_r4 = t >= x;
-    var foo_r5 = t == x;
-    var foo_r6 = t != x;
-    var foo_r7 = t === x;
-    var foo_r8 = t !== x;
+	var foo_r1 = t < x;
+	var foo_r2 = t > x;
+	var foo_r3 = t <= x;
+	var foo_r4 = t >= x;
+	var foo_r5 = t == x;
+	var foo_r6 = t != x;
+	var foo_r7 = t === x;
+	var foo_r8 = t !== x;
 
-    var foo_r1 = x < t;
-    var foo_r2 = x > t;
-    var foo_r3 = x <= t;
-    var foo_r4 = x >= t;
-    var foo_r5 = x == t;
-    var foo_r6 = x != t;
-    var foo_r7 = x === t;
-    var foo_r8 = x !== t;
+	var foo_r1 = x < t;
+	var foo_r2 = x > t;
+	var foo_r3 = x <= t;
+	var foo_r4 = x >= t;
+	var foo_r5 = x == t;
+	var foo_r6 = x != t;
+	var foo_r7 = x === t;
+	var foo_r8 = x !== t;
 }
 
 var a: boolean;

@@ -1,7 +1,7 @@
 for (var w of []) {
-    var x = w;
+	var x = w;
 }
 
 for (var v of []) {
-    var x = [w, v];
+	var x = [w, v];
 }

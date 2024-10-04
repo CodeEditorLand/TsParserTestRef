@@ -1,28 +1,31 @@
 //@filename: part1.ts
 module A {
-    export interface Point {
-        x: number;
-        y: number;
-    }
+	export interface Point {
+		x: number;
+		y: number;
+	}
 
-    export module Utils {
-        export function mirror<T extends Point>(p: T) {
-            return { x: p.y, y: p.x };
-        }
-    }
-    export var Origin: Point = { x: 0, y: 0 };
+	export module Utils {
+		export function mirror<T extends Point>(p: T) {
+			return { x: p.y, y: p.x };
+		}
+	}
+	export var Origin: Point = { x: 0, y: 0 };
 }
 
 //@filename: part2.ts
 module A {
-    // not a collision, since we don't export
-    var Origin: string = "0,0";
+	// not a collision, since we don't export
+	var Origin: string = "0,0";
 
-    export module Utils {
-        export class Plane {
-            constructor(public tl: Point, public br: Point) { }
-        }
-    }
+	export module Utils {
+		export class Plane {
+			constructor(
+				public tl: Point,
+				public br: Point,
+			) {}
+		}
+	}
 }
 
 //@filename: part3.ts
@@ -36,4 +39,3 @@ var o = A.Utils.mirror(o);
 var p: { tl: A.Point; br: A.Point };
 var p: A.Utils.Plane;
 var p = new A.Utils.Plane(o, { x: 1, y: 1 });
-

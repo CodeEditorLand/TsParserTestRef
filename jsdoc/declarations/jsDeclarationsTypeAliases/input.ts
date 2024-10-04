@@ -6,7 +6,7 @@
 
 export {}; // flag file as module
 /**
- * @typedef {string | number | symbol} PropName 
+ * @typedef {string | number | symbol} PropName
  */
 
 /**
@@ -19,7 +19,7 @@ export {}; // flag file as module
 
 /**
  * @template T
- * @typedef {T & {name: string}} MixinName 
+ * @typedef {T & {name: string}} MixinName
  */
 
 /**
@@ -40,15 +40,15 @@ export {}; // flag file as module
  * @returns {SomeType}
  */
 function doTheThing(x) {
-    return {x: ""+x};
+	return { x: "" + x };
 }
 class ExportedThing {
-    z = "ok"
+	z = "ok";
 }
 module.exports = {
-    doTheThing,
-    ExportedThing,
+	doTheThing,
+	ExportedThing,
 };
 class LocalThing {
-    y = "ok"
+	y = "ok";
 }

@@ -6,15 +6,12 @@
 // @Filename: a.js
 
 /** @type {function(string): void} */
-const f = (value) => {
-};
+const f = (value) => {};
 /** @type {(s: string) => void} */
-function g(s) {
-}
+function g(s) {}
 /** @type {{(s: string): void}} */
-function h(s) {
-}
+function h(s) {}
 
-f() // should error
-g() // should error
-h()
+f(); // should error
+g(); // should error
+h();

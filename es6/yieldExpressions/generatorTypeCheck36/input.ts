@@ -1,4 +1,4 @@
 //@target: ES6
 function* g() {
-    yield yield 0;
+	yield yield 0;
 }

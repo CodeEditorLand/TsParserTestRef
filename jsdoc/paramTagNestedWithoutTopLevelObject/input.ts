@@ -7,5 +7,5 @@
  * @param {number} xyz.p
  */
 function g(xyz) {
-    return xyz.p;
+	return xyz.p;
 }

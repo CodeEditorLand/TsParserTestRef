@@ -25,12 +25,14 @@ condNumber ? exprString1 : exprBoolean1; // Union
 1 ? exprAny1 : exprAny2;
 0 ? exprBoolean1 : exprBoolean2;
 0.123456789 ? exprNumber1 : exprNumber2;
-- 10000000000000 ? exprString1 : exprString2;
+-10000000000000 ? exprString1 : exprString2;
 1000000000000 ? exprIsObject1 : exprIsObject2;
 10000 ? exprString1 : exprBoolean1; // Union
 
 //Cond is a number type expression
-function foo() { return 1 };
+function foo() {
+	return 1;
+}
 var array = [1, 2, 3];
 
 1 * 0 ? exprAny1 : exprAny2;
@@ -51,7 +53,7 @@ var resultIsStringOrBoolean1 = condNumber ? exprString1 : exprBoolean1; // Union
 var resultIsAny2 = 1 ? exprAny1 : exprAny2;
 var resultIsBoolean2 = 0 ? exprBoolean1 : exprBoolean2;
 var resultIsNumber2 = 0.123456789 ? exprNumber1 : exprNumber2;
-var resultIsString2 = - 10000000000000 ? exprString1 : exprString2;
+var resultIsString2 = -10000000000000 ? exprString1 : exprString2;
 var resultIsObject2 = 1000000000000 ? exprIsObject1 : exprIsObject2;
 var resultIsStringOrBoolean2 = 10000 ? exprString1 : exprBoolean1; // Union
 

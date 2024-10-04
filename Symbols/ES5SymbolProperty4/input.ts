@@ -2,7 +2,7 @@
 var Symbol: { iterator: string };
 
 class C {
-    [Symbol.iterator]() { }
+	[Symbol.iterator]() {}
 }
 
-(new C)[Symbol.iterator]
+new C()[Symbol.iterator];

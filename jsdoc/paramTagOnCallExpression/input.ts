@@ -7,4 +7,4 @@ declare function factory(type: string): {};
 
 // from util
 /** @param {function} ctor - A big long explanation follows */
-exports.inherits = factory('inherits')
+exports.inherits = factory("inherits");

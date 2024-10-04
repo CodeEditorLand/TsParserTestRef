@@ -1,1 +1,4 @@
-﻿// newlines are <CR>`\`
+﻿// newlines are <CR>
+`
+\
+`;

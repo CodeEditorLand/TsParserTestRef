@@ -9,9 +9,9 @@
  */
 
 class Conn {
-    constructor() {}
-    item = 3;
-    method() {}
+	constructor() {}
+	item = 3;
+	method() {}
 }
 
 module.exports = Conn;
@@ -23,16 +23,16 @@ module.exports = Conn;
  */
 
 class Wrap {
-    /**
-     * @param {Conn} c
-     */
-    constructor(c) {
-        this.connItem = c.item;
-        /** @type {import("./conn").Whatever} */
-        this.another = "";
-    }
+	/**
+	 * @param {Conn} c
+	 */
+	constructor(c) {
+		this.connItem = c.item;
+		/** @type {import("./conn").Whatever} */
+		this.another = "";
+	}
 }
 
 module.exports = {
-    Wrap
+	Wrap,
 };

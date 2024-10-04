@@ -1,21 +1,31 @@
 // members N and M of types S and T have the same name, same accessibility, same optionality, and N is assignable M
 // additional optional properties do not cause errors
 
-class S { foo: string; }
-class T { foo: string; }
+class S {
+	foo: string;
+}
+class T {
+	foo: string;
+}
 var s: S;
 var t: T;
 
-interface S2 { foo: string; bar?: string }
-interface T2 { foo: string; baz?: string }
+interface S2 {
+	foo: string;
+	bar?: string;
+}
+interface T2 {
+	foo: string;
+	baz?: string;
+}
 var s2: S2;
 var t2: T2;
 
-var a: { foo: string; bar?: string }
-var b: { foo: string; baz?: string }
+var a: { foo: string; bar?: string };
+var b: { foo: string; baz?: string };
 
-var a2 = { foo: '' };
-var b2 = { foo: '' };
+var a2 = { foo: "" };
+var b2 = { foo: "" };
 
 s = t;
 t = s;

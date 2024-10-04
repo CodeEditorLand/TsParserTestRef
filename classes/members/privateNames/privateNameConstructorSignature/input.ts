@@ -1,18 +1,17 @@
 // @target: es2015
 
 interface D {
-    x: number;
+	x: number;
 }
 class C {
-    #x;
-    static test() {
-        new C().#x = 10;
-        const y = new C();
-        const z = new y();
-        z.x = 123;
-    }
+	#x;
+	static test() {
+		new C().#x = 10;
+		const y = new C();
+		const z = new y();
+		z.x = 123;
+	}
 }
 interface C {
-    new (): D;
+	new (): D;
 }
-

@@ -7,11 +7,11 @@
 function a(): any {}
 
 function b({ b = a(), ...x } = a()) {
-    var a;
+	var a;
 }
 
 const x = "";
 
 function c({ b, ...c } = a(), d = x) {
-    var x;
+	var x;
 }

@@ -3,4 +3,4 @@
 // @noEmit: true
 // @Filename: a.js
 /** doc */
-const a = b = () => 0;
+const a = (b = () => 0);

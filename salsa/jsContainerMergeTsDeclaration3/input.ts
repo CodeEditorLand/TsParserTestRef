@@ -4,5 +4,5 @@
 // @Filename: a.d.ts
 declare class A {}
 // @Filename: b.js
-const A = { };
-A.d = { };
+const A = {};
+A.d = {};

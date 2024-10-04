@@ -1,10 +1,16 @@
-function foo() { }
+function foo() {}
 class C {
-    public a: string;
-    static foo() { }
+	public a: string;
+	static foo() {}
 }
-enum E { a, b, c }
-module M { export var a }
+enum E {
+	a,
+	b,
+	c,
+}
+module M {
+	export var a;
+}
 
 var a: any;
 var b: boolean;
@@ -33,7 +39,11 @@ var r13 = a + new C();
 var r14 = a + E;
 var r15 = a + E.a;
 var r16 = a + M;
-var r17 = a + '';
+var r17 = a + "";
 var r18 = a + 123;
-var r19 = a + { a: '' };
-var r20 = a + ((a: string) => { return a });
+var r19 = a + { a: "" };
+var r20 =
+	a +
+	((a: string) => {
+		return a;
+	});

@@ -8,5 +8,5 @@
  * @param {number} xyz.bar.p
  */
 function g(xyz) {
-    return xyz.bar.p;
+	return xyz.bar.p;
 }

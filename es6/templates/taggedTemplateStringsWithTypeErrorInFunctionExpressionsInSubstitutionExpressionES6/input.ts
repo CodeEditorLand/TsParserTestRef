@@ -1,6 +1,7 @@
 ﻿//@target: es6
 
-function foo(...rest: any[]) {
-}
+function foo(...rest: any[]) {}
 
-foo `${function (x: number) { x = "bad"; } }`;
+foo`${function (x: number) {
+	x = "bad";
+}}`;

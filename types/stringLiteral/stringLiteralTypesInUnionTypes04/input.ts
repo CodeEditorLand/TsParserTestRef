@@ -6,33 +6,33 @@ let x: T = undefined;
 let y: T = undefined;
 
 if (x === "") {
-    let a = x;
+	let a = x;
 }
 
 if (x !== "") {
-    let b = x;
+	let b = x;
 }
 
 if (x == "") {
-    let c = x;
+	let c = x;
 }
 
 if (x != "") {
-    let d = x;
+	let d = x;
 }
 
 if (x) {
-    let e = x;
+	let e = x;
 }
 
 if (!x) {
-    let f = x;
+	let f = x;
 }
 
 if (!!x) {
-    let g = x;
+	let g = x;
 }
 
 if (!!!x) {
-    let h = x;
+	let h = x;
 }

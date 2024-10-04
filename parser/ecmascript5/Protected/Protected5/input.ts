@@ -1,3 +1,3 @@
 class C {
-  protected static m() { }
+	protected static m() {}
 }

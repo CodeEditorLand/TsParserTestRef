@@ -26,4 +26,4 @@ s ^= 0;
 s |= s;
 s |= 0;
 
-str += (s || str);
+str += s || str;

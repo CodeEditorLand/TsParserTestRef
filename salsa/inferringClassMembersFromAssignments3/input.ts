@@ -5,12 +5,12 @@
 // @strictNullChecks: true
 // @Filename: a.js
 class Base {
-    constructor() {
-        this.p = 1
-    }
+	constructor() {
+		this.p = 1;
+	}
 }
 class Derived extends Base {
-    m() {
-        this.p = 1
-    }
+	m() {
+		this.p = 1;
+	}
 }

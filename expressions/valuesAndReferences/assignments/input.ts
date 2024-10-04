@@ -7,25 +7,27 @@
 //  Assign to a parameter
 //  Assign to an interface
 
-module M { }
+module M {}
 M = null; // Error
 
-class C { }
+class C {}
 C = null; // Error
 
-enum E { A }
+enum E {
+	A,
+}
 E = null; // Error
 E.A = null; // OK per spec, Error per implementation (509581)
 
-function fn() { }
+function fn() {}
 fn = null; // Should be error
 
 var v;
 v = null; // OK
 
 function fn2(p) {
-    p = null; // OK
+	p = null; // OK
 }
 
-interface I { }
+interface I {}
 I = null; // Error

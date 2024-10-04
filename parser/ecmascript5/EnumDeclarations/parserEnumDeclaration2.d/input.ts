@@ -1,2 +1,1 @@
-declare enum E {
-}
+declare enum E {}

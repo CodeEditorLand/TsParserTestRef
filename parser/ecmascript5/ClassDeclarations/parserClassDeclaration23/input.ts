@@ -1,2 +1,1 @@
-class C\u0032 {
-}
+class C2 {}

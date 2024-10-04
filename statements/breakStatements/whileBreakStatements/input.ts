@@ -1,44 +1,31 @@
 // @allowUnusedLabels: true
 // @allowUnreachableCode: true
 
-while(true) {
-    break;
-} 
-
-ONE:
-
 while (true) {
-    break ONE;
+	break;
 }
 
-TWO:
-THREE:
-while (true) {
-    break THREE;
+ONE: while (true) {
+	break ONE;
 }
 
-FOUR:
-while (true) {
-    FIVE:
-    while (true) {
-        break FOUR;
-    }
+TWO: THREE: while (true) {
+	break THREE;
+}
+
+FOUR: while (true) {
+	FIVE: while (true) {
+		break FOUR;
+	}
 }
 
 while (true) {
-    SIX:
-    while (true)
-        break SIX;
+	SIX: while (true) break SIX;
 }
 
-SEVEN:
-while (true)
-    while (true)
-        while (true)
-            break SEVEN;
+SEVEN: while (true) while (true) while (true) break SEVEN;
 
-EIGHT:
-while (true) {
-    var fn = function () { }
-    break EIGHT;
+EIGHT: while (true) {
+	var fn = function () {};
+	break EIGHT;
 }

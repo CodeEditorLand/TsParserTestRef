@@ -1,8 +1,8 @@
 //@target: ES6
 module M {
-    var Symbol;
+	var Symbol;
 
-    class C {
-        [Symbol.iterator]() { }
-    }
+	class C {
+		[Symbol.iterator]() {}
+	}
 }

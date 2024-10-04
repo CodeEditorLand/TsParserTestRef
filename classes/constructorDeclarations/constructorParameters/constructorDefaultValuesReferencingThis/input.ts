@@ -1,11 +1,11 @@
 class C {
-    constructor(x = this) { }
+	constructor(x = this) {}
 }
 
 class D<T> {
-    constructor(x = this) { }
+	constructor(x = this) {}
 }
 
 class E<T> {
-    constructor(public x = this) { }
+	constructor(public x = this) {}
 }

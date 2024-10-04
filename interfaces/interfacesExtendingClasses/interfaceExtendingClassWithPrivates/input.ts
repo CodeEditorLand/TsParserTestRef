@@ -1,13 +1,14 @@
 class Foo {
-    private x: string;
+	private x: string;
 }
 
-interface I extends Foo { // error
-    x: string;
+interface I extends Foo {
+	// error
+	x: string;
 }
 
 interface I2 extends Foo {
-    y: string;
+	y: string;
 }
 
 var i: I2;

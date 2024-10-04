@@ -1,3 +1,3 @@
-﻿
-
-`${function (x: number) { x = "bad"; } }`;
+﻿`${function (x: number) {
+	x = "bad";
+}}`;

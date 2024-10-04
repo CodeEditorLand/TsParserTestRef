@@ -1,27 +1,27 @@
 class Base {
-    public a: string;
+	public a: string;
 }
 
 class Derived extends Base {
-    public b: string;
+	public b: string;
 }
 
 class A1 {
-    public a: Base;
-    public b: Base;
+	public a: Base;
+	public b: Base;
 }
 
 class B1 {
-    public a: Base;
-    public b: Derived;
+	public a: Base;
+	public b: Derived;
 }
 
 class A2 {
-    private a;
+	private a;
 }
 
 class B2 extends A2 {
-    private b;
+	private b;
 }
 
 var a1: A1;

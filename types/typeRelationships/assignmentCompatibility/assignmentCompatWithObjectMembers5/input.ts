@@ -1,11 +1,11 @@
 class C {
-    foo: string;
+	foo: string;
 }
 
 var c: C;
 
 interface I {
-    fooo: string;
+	fooo: string;
 }
 
 var i: I;

@@ -1,9 +1,9 @@
 interface Foo {
-    (): { a: number };
+	(): { a: number };
 }
 
 interface Derived extends Foo {
-    (): { a: number; b: number };
+	(): { a: number; b: number };
 }
 
 var d: Derived;

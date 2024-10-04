@@ -1,12 +1,12 @@
 type StringTree = string | StringTreeCollection;
 class StringTreeCollectionBase {
-    [n: number]: StringTree;
+	[n: number]: StringTree;
 }
 
-class StringTreeCollection extends StringTreeCollectionBase { }
+class StringTreeCollection extends StringTreeCollectionBase {}
 
 var x: StringTree;
 if (typeof x !== "string") {
-    x[0] = "";
-    x[0] = new StringTreeCollection;
+	x[0] = "";
+	x[0] = new StringTreeCollection();
 }

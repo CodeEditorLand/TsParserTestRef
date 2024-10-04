@@ -10,10 +10,10 @@
 /**
  * @type {Item};
  */
-const x = {x: 12};
+const x = { x: 12 };
 module.exports = x;
 // @filename: index.js
 
 /** @type {(typeof import("./folder/mod1"))[]} */
-const items = [{x: 12}];
+const items = [{ x: 12 }];
 module.exports = items;

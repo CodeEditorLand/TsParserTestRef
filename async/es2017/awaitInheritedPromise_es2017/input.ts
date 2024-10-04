@@ -3,5 +3,5 @@
 interface A extends Promise<string> {}
 declare var a: A;
 async function f() {
-    await a;
+	await a;
 }

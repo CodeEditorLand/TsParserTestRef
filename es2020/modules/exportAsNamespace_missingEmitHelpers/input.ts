@@ -3,7 +3,7 @@
 // @noTypesAndSymbols: true
 
 // @Filename: a.ts
-export {}
+export {};
 
 // @Filename: b.ts
-export * as ns from './a'; // Error
+export * as ns from "./a"; // Error

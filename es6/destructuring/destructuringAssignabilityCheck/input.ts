@@ -6,12 +6,12 @@ const {} = undefined; // error correctly
 (({}) => 0)(undefined); // should be error
 
 function foo({}: undefined) {
-    return 0
+	return 0;
 }
 function bar([]: {}) {
-    return 0
+	return 0;
 }
 
-const { }: undefined = 1
+const {}: undefined = 1;
 
-const []: {} = {}
+const []: {} = {};

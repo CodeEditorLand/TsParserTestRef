@@ -5,7 +5,7 @@
 // @declaration: true
 // @filename: node_modules/@types/node/index.d.ts
 declare module "fs" {
-    export class Something {}
+	export class Something {}
 }
 // @filename: index.js
 /// <reference types="node" />
@@ -15,5 +15,5 @@ const Something = require("fs").Something;
 const thing = new Something();
 
 module.exports = {
-    thing
+	thing,
 };

@@ -11,7 +11,7 @@
  * @return {T}
  */
 function f(x) {
-    return x;
+	return x;
 }
 
 /** @type T - should be fine, since T will be any */
@@ -25,8 +25,7 @@ const x = 3;
  * @template V
  * @param {V} vvvvv
  */
-function g(vvvvv) {
-}
+function g(vvvvv) {}
 
 /** @type {Cb} */
-const cb = x => {}
+const cb = (x) => {};

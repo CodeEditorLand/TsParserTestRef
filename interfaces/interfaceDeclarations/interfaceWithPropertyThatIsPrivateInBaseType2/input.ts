@@ -1,15 +1,17 @@
 class Base {
-    private x() {}
+	private x() {}
 }
 
-interface Foo extends Base { // error
-    x(): any;
+interface Foo extends Base {
+	// error
+	x(): any;
 }
 
 class Base2<T> {
-    private x() { }
+	private x() {}
 }
 
-interface Foo2<T> extends Base2<T> { // error
-    x(): any;
+interface Foo2<T> extends Base2<T> {
+	// error
+	x(): any;
 }

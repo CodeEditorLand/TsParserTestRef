@@ -11,7 +11,7 @@
 export enum A {}
 
 export enum B {
-    Member
+	Member,
 }
 
 enum C {}
@@ -29,40 +29,40 @@ export { F as FF };
 export enum F {}
 
 export enum G {
-    A = 1,
-    B,
-    C
+	A = 1,
+	B,
+	C,
 }
 
 export enum H {
-    A = "a",
-    B = "b"
+	A = "a",
+	B = "b",
 }
 
 export enum I {
-    A = "a",
-    B = 0,
-    C
+	A = "a",
+	B = 0,
+	C,
 }
 
 export const enum J {
-    A = 1,
-    B,
-    C
+	A = 1,
+	B,
+	C,
 }
 
 export enum K {
-    None   = 0,
-    A = 1 << 0,
-    B = 1 << 1,
-    C = 1 << 2,
-    Mask = A | B | C,
+	None = 0,
+	A = 1 << 0,
+	B = 1 << 1,
+	C = 1 << 2,
+	Mask = A | B | C,
 }
 
 export const enum L {
-    None   = 0,
-    A = 1 << 0,
-    B = 1 << 1,
-    C = 1 << 2,
-    Mask = A | B | C,
+	None = 0,
+	A = 1 << 0,
+	B = 1 << 1,
+	C = 1 << 2,
+	Mask = A | B | C,
 }

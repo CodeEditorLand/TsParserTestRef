@@ -1,4 +1,4 @@
 //@noImplicitAny: true
 var a: [any];
 
-var b = a = [undefined, null];
+var b = (a = [undefined, null]);

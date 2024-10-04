@@ -2,12 +2,12 @@
 // all of these are errors
 
 class C {
-    x: string;
+	x: string;
 }
 
 var c = new C<number>();
 
-function Foo(): void { }
+function Foo(): void {}
 var r = new Foo<number>();
 
 var f: { (): void };

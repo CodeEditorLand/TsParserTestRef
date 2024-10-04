@@ -1,9 +1,17 @@
 // checking subtype relations for function types as it relates to contextual signature instantiation
 
-class Base { foo: string; }
-class Derived extends Base { bar: string; }
-class Derived2 extends Derived { baz: string; }
-class OtherDerived extends Base { bing: string; }
+class Base {
+	foo: string;
+}
+class Derived extends Base {
+	bar: string;
+}
+class Derived2 extends Derived {
+	baz: string;
+}
+class OtherDerived extends Base {
+	bing: string;
+}
 
 declare function foo1(a: <T>(x: T) => T[]);
 declare function foo1(a: any): any;
@@ -33,20 +41,14 @@ declare function foo16(a16: <T extends Base>(x: { a: T; b: T }) => T[]);
 declare function foo16(a: any): any;
 
 declare function foo17(a17: {
-    <T extends Derived>(x: (a: T) => T): T[];
-    <T extends Base>(x: (a: T) => T): T[];        
+	<T extends Derived>(x: (a: T) => T): T[];
+	<T extends Base>(x: (a: T) => T): T[];
 });
 declare function foo17(a: any): any;
 
 declare function foo18(a18: {
-    (x: {
-        <T extends Derived>(a: T): T;
-        <T extends Base>(a: T): T;
-    }): any[];
-    (x: {
-        <T extends Derived2>(a: T): T;
-        <T extends Base>(a: T): T;
-    }): any[];
+	(x: { <T extends Derived>(a: T): T; <T extends Base>(a: T): T }): any[];
+	(x: { <T extends Derived2>(a: T): T; <T extends Base>(a: T): T }): any[];
 });
 declare function foo18(a: any): any;
 
@@ -56,20 +58,20 @@ var r1 = foo1(r1arg);
 var r1a = [r1arg, r1arg2];
 var r1b = [r1arg2, r1arg];
 
-var r2arg = <T>(x: T) => [''];
-var r2arg2 = <T>(x: T) => [''];
+var r2arg = <T>(x: T) => [""];
+var r2arg2 = <T>(x: T) => [""];
 var r2 = foo2(r2arg);
 var r2a = [r2arg, r2arg2];
 var r2b = [r2arg2, r2arg];
 
 var r3arg = <T>(x: T) => <T>null;
-var r3arg2 = <T>(x: T) => { };
+var r3arg2 = <T>(x: T) => {};
 var r3 = foo3(r3arg);
 var r3a = [r3arg, r3arg2];
 var r3b = [r3arg2, r3arg];
 
-var r4arg = <T, U>(x: T, y: U) => '';
-var r4arg2 = <T, U>(x: T, y: U) => '';
+var r4arg = <T, U>(x: T, y: U) => "";
+var r4arg2 = <T, U>(x: T, y: U) => "";
 var r4 = foo4(r4arg);
 var r4a = [r4arg, r4arg2];
 var r4b = [r4arg2, r4arg];
@@ -92,7 +94,7 @@ var r11 = foo11(r11arg);
 var r11a = [r11arg, r11arg2];
 var r11b = [r11arg2, r11arg];
 
-var r15arg = <U, V>(x: { a: U; b: V; }) => <U[]>null;
+var r15arg = <U, V>(x: { a: U; b: V }) => <U[]>null;
 var r15arg2 = <T>(x: { a: T; b: T }) => <T[]>null;
 var r15 = foo15(r15arg);
 var r15a = [r15arg, r15arg2];

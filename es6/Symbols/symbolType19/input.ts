@@ -1,11 +1,10 @@
 //@target: ES6
-enum E { }
+enum E {}
 var x: symbol | E;
 
 x;
 if (typeof x === "number") {
-    x;
-}
-else {
-    x;
+	x;
+} else {
+	x;
 }

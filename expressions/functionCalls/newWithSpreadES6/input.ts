@@ -1,27 +1,25 @@
 //@target: ES6
 
-function f(x: number, y: number, ...z: string[]) {
-}
+function f(x: number, y: number, ...z: string[]) {}
 
-function f2(...x: string[]) {
-}
+function f2(...x: string[]) {}
 
 interface A {
-    f: {
-        new (x: number, y: number, ...z: string[]);
-    }
+	f: {
+		new (x: number, y: number, ...z: string[]);
+	};
 }
 
 class B {
-    constructor(x: number, y: number, ...z: string[]) {}
+	constructor(x: number, y: number, ...z: string[]) {}
 }
 
 interface C {
-    "a-b": typeof B;
+	"a-b": typeof B;
 }
 
 interface D {
-    1: typeof B;
+	1: typeof B;
 }
 
 var a: string[];
@@ -40,7 +38,7 @@ new f(1, 2, ...a, "string");
 
 // Multiple spreads arguments
 new f2(...a, ...a);
-new f(1 ,2, ...a, ...a);
+new f(1, 2, ...a, ...a);
 
 // Call expression
 new f(1, 2, "string")();
@@ -50,12 +48,12 @@ new f(1, 2, ...a, "string")();
 // Property access expression
 new b.f(1, 2, "string");
 new b.f(1, 2, ...a);
-new b.f(1, 2, ...a, "string"); 
+new b.f(1, 2, ...a, "string");
 
 // Parenthesised expression
-new (b.f)(1, 2, "string");
-new (b.f)(1, 2, ...a);
-new (b.f)(1, 2, ...a, "string"); 
+new b.f(1, 2, "string");
+new b.f(1, 2, ...a);
+new b.f(1, 2, ...a, "string");
 
 // Element access expression
 new d[1].f(1, 2, "string");
@@ -78,9 +76,9 @@ new c["a-b"](1, 2, ...a);
 new c["a-b"](1, 2, ...a, "string");
 
 // Parenthesised expression
-new (c["a-b"])(1, 2, "string");
-new (c["a-b"])(1, 2, ...a);
-new (c["a-b"])(1, 2, ...a, "string");
+new c["a-b"](1, 2, "string");
+new c["a-b"](1, 2, ...a);
+new c["a-b"](1, 2, ...a, "string");
 
 // Element access expression
 new g[1]["a-b"](1, 2, "string");

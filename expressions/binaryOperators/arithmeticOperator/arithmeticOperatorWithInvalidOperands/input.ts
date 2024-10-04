@@ -1,6 +1,10 @@
 // these operators require their operands to be of type Any, the Number primitive type, or
 // an enum type
-enum E { a, b, c }
+enum E {
+	a,
+	b,
+	c,
+}
 
 var a: any;
 var b: boolean;

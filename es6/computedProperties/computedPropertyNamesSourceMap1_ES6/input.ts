@@ -1,8 +1,8 @@
 // @target: es6
 // @sourceMap: true
 class C {
-    ["hello"]() {
-        debugger;
+	["hello"]() {
+		debugger;
 	}
 	get ["goodbye"]() {
 		return 0;

@@ -14,12 +14,12 @@ var ex;
 
 /** @type {App} */
 const app = {
-    name: 'name',
-    icons: {
-        image32: 'x.png',
-        image64: 'y.png',
-    }
-}
+	name: "name",
+	icons: {
+		image32: "x.png",
+		image64: "y.png",
+	},
+};
 
 /** @typedef {Object} Opp
  * @property {string} name
@@ -27,7 +27,7 @@ const app = {
  * @property {string} horrible
  * @type {string} idea
  */
-var intercessor = 1
+var intercessor = 1;
 
 /** @type {Opp} */
 var mistake;
@@ -39,7 +39,7 @@ var mistake;
  */
 
 /** @type {Upp} */
-var sala = { name: 'uppsala', not: 0, nested: "ok" };
-sala.name
-sala.not
-sala.nested
+var sala = { name: "uppsala", not: 0, nested: "ok" };
+sala.name;
+sala.not;
+sala.nested;

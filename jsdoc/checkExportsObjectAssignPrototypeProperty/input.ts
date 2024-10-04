@@ -1,3 +1,6 @@
+// @filename: validator.ts
+import "./";
+
 // @allowJs: true
 // @noEmit: true
 // @strict: true
@@ -8,29 +11,40 @@
  * @param {string} name
  */
 function Person(name) {
-    this.name = name;
+	this.name = name;
 }
 Person.prototype.describe = function () {
-    return "Person called " + this.name;
+	return "Person called " + this.name;
 };
 Object.defineProperty(Person.prototype, "thing", { value: 42, writable: true });
-Object.defineProperty(Person.prototype, "readonlyProp", { value: "Smith", writable: false });
-Object.defineProperty(Person.prototype, "rwAccessors", { get() { return 98122 }, set(_) { /*ignore*/ } });
-Object.defineProperty(Person.prototype, "readonlyAccessor", { get() { return 21.75 } });
+Object.defineProperty(Person.prototype, "readonlyProp", {
+	value: "Smith",
+	writable: false,
+});
+Object.defineProperty(Person.prototype, "rwAccessors", {
+	get() {
+		return 98122;
+	},
+	set(_) {
+		/*ignore*/
+	},
+});
+Object.defineProperty(Person.prototype, "readonlyAccessor", {
+	get() {
+		return 21.75;
+	},
+});
 Object.defineProperty(Person.prototype, "setonlyAccessor", {
-    /** @param {string} str */
-    set(str) {
-        this.rwAccessors = Number(str)
-    }
+	/** @param {string} str */
+	set(str) {
+		this.rwAccessors = Number(str);
+	},
 });
 module.exports = Person;
 
-// @filename: validator.ts
-import "./";
-
 import Person = require("./mod1");
 
-const m1 = new Person("Name")
+const m1 = new Person("Name");
 
 m1.thing;
 m1.readonlyProp;
@@ -49,4 +63,3 @@ m1.readonlyAccessor = 12;
 m1.thing = "no";
 m1.rwAccessors = "no";
 m1.setonlyAccessor = 0;
-

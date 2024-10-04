@@ -1,3 +1,3 @@
 class C {
-    [index:number]:number
+	[index: number]: number;
 }

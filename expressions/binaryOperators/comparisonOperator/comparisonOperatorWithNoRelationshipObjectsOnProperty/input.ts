@@ -1,17 +1,17 @@
 class A1 {
-    public a: number;
+	public a: number;
 }
 
 class B1 {
-    public a: string;
+	public a: string;
 }
 
 class A2 {
-    private a: string;
+	private a: string;
 }
 
 class B2 {
-    private a: string;
+	private a: string;
 }
 
 var a1: A1;

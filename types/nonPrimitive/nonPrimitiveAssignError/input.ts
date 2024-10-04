@@ -1,5 +1,5 @@
 var x = {};
-var y = {foo: "bar"};
+var y = { foo: "bar" };
 var a: object;
 x = a;
 y = a; // expect error

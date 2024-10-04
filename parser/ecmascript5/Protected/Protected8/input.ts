@@ -1,4 +1,4 @@
 interface I {
-   protected
-   p
+	protected;
+	p;
 }

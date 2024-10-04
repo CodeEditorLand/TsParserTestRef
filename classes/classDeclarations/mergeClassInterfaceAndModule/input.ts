@@ -1,4 +1,3 @@
-
 interface C1 {}
 declare class C1 {}
 module C1 {}

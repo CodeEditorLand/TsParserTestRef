@@ -5,7 +5,7 @@
 // @declaration: true
 // @filename: some-mod.d.ts
 interface Item {
-    x: string;
+	x: string;
 }
 declare function getItems(): Item[];
 export = getItems;

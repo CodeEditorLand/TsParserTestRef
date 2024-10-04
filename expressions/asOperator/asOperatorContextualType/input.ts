@@ -1,2 +1,2 @@
 // should error
-var x = (v => v) as (x: number) => string;
+var x = ((v) => v) as (x: number) => string;

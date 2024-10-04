@@ -1,6 +1,4 @@
-﻿
-
-// newlines are <LF>
+﻿// newlines are <LF>
 `
 \
-`
+`;

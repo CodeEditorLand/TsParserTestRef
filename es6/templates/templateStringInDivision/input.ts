@@ -1,1 +1,1 @@
-﻿var x = `abc${ 1 }def` / 1;
+﻿var x = `abc${1}def` / 1;

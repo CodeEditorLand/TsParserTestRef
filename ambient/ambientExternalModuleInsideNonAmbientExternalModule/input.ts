@@ -1,2 +1,2 @@
 //@module: amd
-export declare module "M" { }
+export declare module "M" {}

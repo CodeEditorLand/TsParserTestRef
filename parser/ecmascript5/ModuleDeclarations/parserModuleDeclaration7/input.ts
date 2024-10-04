@@ -1,2 +1,1 @@
-module number.a {
-}
+module number.a {}

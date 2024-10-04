@@ -1,21 +1,31 @@
 // members N and M of types S and T have the same name, same accessibility, same optionality, and N is assignable M
 // numeric named properties work correctly, no errors expected
 
-class S { 1: string; }
-class T { 1.: string; }
+class S {
+	1: string;
+}
+class T {
+	1: string;
+}
 var s: S;
 var t: T;
 
-interface S2 { 1: string; bar?: string }
-interface T2 { 1.0: string; baz?: string }
+interface S2 {
+	1: string;
+	bar?: string;
+}
+interface T2 {
+	1.0: string;
+	baz?: string;
+}
 var s2: S2;
 var t2: T2;
 
-var a: { 1.: string; bar?: string }
-var b: { 1.0: string; baz?: string }
+var a: { 1: string; bar?: string };
+var b: { 1.0: string; baz?: string };
 
-var a2 = { 1.0: '' };
-var b2 = { 1: '' };
+var a2 = { 1.0: "" };
+var b2 = { 1: "" };
 
 s = t;
 t = s;

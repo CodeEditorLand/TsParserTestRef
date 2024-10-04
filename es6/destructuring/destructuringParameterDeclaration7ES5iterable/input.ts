@@ -2,13 +2,13 @@
 // @downlevelIteration: true
 
 interface ISomething {
-    foo: string,
-    bar: string
+	foo: string;
+	bar: string;
 }
 
-function foo({}, {foo, bar}: ISomething) {}
+function foo({}, { foo, bar }: ISomething) {}
 
-function baz([], {foo, bar}: ISomething) {}
+function baz([], { foo, bar }: ISomething) {}
 
 function one([], {}) {}
 

@@ -1,6 +1,5 @@
 //// [scannerNonAsciiHorizontalWhitespace.ts]
-"  function f() {}"
+"  function f() {}";
 
 //// [scannerNonAsciiHorizontalWhitespace.js]
-"  function f() {}"
-
+"  function f() {}";

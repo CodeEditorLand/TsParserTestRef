@@ -20,4 +20,10 @@ var wrong;
 var insufficient;
 
 // @Filename: test.ts
-declare var actually: Everything<{ a: number  }, undefined, { c: 1, d: 1 }, number, string>;
+declare var actually: Everything<
+	{ a: number },
+	undefined,
+	{ c: 1; d: 1 },
+	number,
+	string
+>;

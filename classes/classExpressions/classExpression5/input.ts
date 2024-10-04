@@ -1,5 +1,5 @@
-new class {
-    hi() {
-        return "Hi!";
-    }
-}().hi();
+new (class {
+	hi() {
+		return "Hi!";
+	}
+})().hi();

@@ -1,11 +1,11 @@
 interface A {
-    foo(): this;
+	foo(): this;
 }
 interface B extends A {
-    bar(): this;
+	bar(): this;
 }
 interface C extends B {
-    baz(): this;
+	baz(): this;
 }
 var c: C;
-var z = c.foo().bar().baz();  // Fluent pattern
+var z = c.foo().bar().baz(); // Fluent pattern

@@ -1,15 +1,17 @@
 var a: any;
 
 class C {
-    foo: string;
+	foo: string;
 }
 var ac: C;
 interface I {
-    foo: string;
+	foo: string;
 }
 var ai: I;
 
-enum E { A }
+enum E {
+	A,
+}
 var ae: E;
 
 var b: number = a;
@@ -33,9 +35,9 @@ var p: Number = a;
 var q: String = a;
 
 function foo<T, U /*extends T*/, V extends Date>(x: T, y: U, z: V) {
-    x = a;
-    y = a;
-    z = a;
+	x = a;
+	y = a;
+	z = a;
 }
 
 //function foo<T, U extends T, V extends Date>(x: T, y: U, z: V) {

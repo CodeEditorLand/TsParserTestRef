@@ -1,2 +1,1 @@
-class C<T extends List<T> > {
-}
+class C<T extends List<T>> {}

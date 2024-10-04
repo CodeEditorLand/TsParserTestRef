@@ -1,33 +1,34 @@
 ﻿// Parameter Declaration with generic
 
-interface F { }
+interface F {}
 class Class implements F {
-    constructor() { }
+	constructor() {}
 }
 
 class SubClass extends Class {
-    foo: boolean;
-    constructor() { super(); }
+	foo: boolean;
+	constructor() {
+		super();
+	}
 }
 
 class D implements F {
-    foo: boolean
-    constructor() { }
+	foo: boolean;
+	constructor() {}
 }
 
 class SubD extends D {
-    bar: number
-    constructor() {
-        super();
-    }
+	bar: number;
+	constructor() {
+		super();
+	}
 }
 
-
-function d0<T extends Class>({x} = { x: new Class() }) { }
-function d1<T extends F>({x}: { x: F }) { }
-function d2<T extends Class>({x}: { x: Class }) { }
-function d3<T extends D>({y}: { y: D }) { }
-function d4<T extends D>({y} = { y: new D() }) { }
+function d0<T extends Class>({ x } = { x: new Class() }) {}
+function d1<T extends F>({ x }: { x: F }) {}
+function d2<T extends Class>({ x }: { x: Class }) {}
+function d3<T extends D>({ y }: { y: D }) {}
+function d4<T extends D>({ y } = { y: new D() }) {}
 
 var obj = new Class();
 d0({ x: 1 });

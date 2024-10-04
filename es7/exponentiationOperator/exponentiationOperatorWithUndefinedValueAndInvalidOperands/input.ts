@@ -15,9 +15,9 @@ var r1b2 = b ** undefined;
 var r1b3 = c ** undefined;
 
 var r1c1 = undefined ** true;
-var r1c2 = undefined ** '';
+var r1c2 = undefined ** "";
 var r1c3 = undefined ** {};
 
 var r1d1 = true ** undefined;
-var r1d2 = '' ** undefined;
+var r1d2 = "" ** undefined;
 var r1d3 = {} ** undefined;

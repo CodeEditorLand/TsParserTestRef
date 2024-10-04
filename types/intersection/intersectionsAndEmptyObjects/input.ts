@@ -31,11 +31,11 @@ let x14: A & B & C & D & E;
 type Dictionary = { [name: string]: string };
 
 const intersectDictionaries = <F1 extends Dictionary, F2 extends Dictionary>(
-  d1: F1,
-  d2: F2,
+	d1: F1,
+	d2: F2,
 ): F1 & F2 => Object.assign({}, d1, d2);
 
-const testDictionary = <T extends Dictionary>(_value: T) => { };
+const testDictionary = <T extends Dictionary>(_value: T) => {};
 
 const d1 = {};
 testDictionary(d1);
@@ -43,7 +43,7 @@ const d2 = intersectDictionaries(d1, d1);
 testDictionary(d2);
 
 const d3 = {
-  s: '',
+	s: "",
 };
 testDictionary(d3);
 const d4 = intersectDictionaries(d1, d3);
@@ -55,15 +55,17 @@ testDictionary(d6);
 
 // Repro from #27044
 
-type choices<IChoiceList extends {
-    [key: string]: boolean;
-}> = IChoiceList & {
-    shoes:boolean;
-    food:boolean;
+type choices<
+	IChoiceList extends {
+		[key: string]: boolean;
+	},
+> = IChoiceList & {
+	shoes: boolean;
+	food: boolean;
 };
 
 type IMyChoiceList = {
-    car: true
+	car: true;
 };
 
 type IUnknownChoiceList = {};

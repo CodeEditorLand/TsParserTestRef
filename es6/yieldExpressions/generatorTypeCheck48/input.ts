@@ -2,9 +2,9 @@
 //@noImplicitAny: true
 
 function* g() {
-    yield;
+	yield;
 }
 
 function* h() {
-    yield undefined;
+	yield undefined;
 }

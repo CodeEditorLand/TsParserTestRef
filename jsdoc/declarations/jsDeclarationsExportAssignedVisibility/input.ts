@@ -5,17 +5,17 @@
 // @declaration: true
 // @filename: obj.js
 module.exports = class Obj {
-    constructor() {
-        this.x = 12;
-    }
-}
+	constructor() {
+		this.x = 12;
+	}
+};
 // @filename: index.js
 const Obj = require("./obj");
 
 class Container {
-    constructor() {
-        this.usage = new Obj();
-    }
+	constructor() {
+		this.usage = new Obj();
+	}
 }
 
 module.exports = Container;

@@ -10,7 +10,6 @@
 
 //import fs = module("fs");
 
-
 //module TypeScriptAllInOne {
 //    export class Program {
 //        static Main(...args: string[]) {
@@ -29,7 +28,6 @@
 
 //                    return 1;
 //                }
-
 
 //                retValue = bfs.TYPES();
 //                if (retValue != 0) {
@@ -168,7 +166,6 @@
 //            return retVal;
 //        }
 
-
 //        ///// <summary>
 //        ///// Test different operators
 //        ///// </summary>
@@ -229,7 +226,6 @@
 //        }
 //    }
 
-
 //    // todo: use these
 //    class A {
 //        public method1(val:number) {
@@ -252,7 +248,7 @@
 //        private otherValue = 42;
 
 //        constructor(private value: number, public name: string) { }
-       
+
 //        public Overloads(value: string);
 //        public Overloads(value: string, ...rest: string[]) { }
 

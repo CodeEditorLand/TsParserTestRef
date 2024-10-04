@@ -73,10 +73,10 @@ var ctor;
 var S: string;
 var s: string;
 var N: number;
-var n: number
+var n: number;
 var B: boolean;
 var b: boolean;
-var V :void;
+var V: void;
 var v: void;
 var U: undefined;
 var u: undefined;

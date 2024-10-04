@@ -4,4 +4,4 @@
 // @Filename: bug26693.js
 
 /** @typedef {module:locale} hi */
-import { nope } from 'nope';
+import { nope } from "nope";

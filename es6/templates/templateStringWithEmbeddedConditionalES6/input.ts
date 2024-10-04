@@ -1,2 +1,2 @@
 ﻿// @target: ES6
-var x = `abc${ true ? false : " " }def`;
+var x = `abc${true ? false : " "}def`;

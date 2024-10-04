@@ -24,15 +24,15 @@ var resultIsString5 = (OBJECT, STRING);
 
 //Literal and expression
 null, STRING;
-ANY = new Date(), STRING;
+(ANY = new Date()), STRING;
 true, "";
 BOOLEAN == undefined, "";
 ["a", "b"], NUMBER.toString();
-OBJECT = new Object, STRING + "string";
+(OBJECT = new Object()), STRING + "string";
 
 var resultIsString6 = (null, STRING);
-var resultIsString7 = (ANY = new Date(), STRING);
+var resultIsString7 = ((ANY = new Date()), STRING);
 var resultIsString8 = (true, "");
 var resultIsString9 = (BOOLEAN == undefined, "");
 var resultIsString10 = (["a", "b"], NUMBER.toString());
-var resultIsString11 = (new Object, STRING + "string");
+var resultIsString11 = (new Object(), STRING + "string");

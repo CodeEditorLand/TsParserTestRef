@@ -1,7 +1,7 @@
 // void returning call signatures can be assigned a non-void returning call signature that otherwise matches
 
 interface T {
-    new (x: number): void;
+	new (x: number): void;
 }
 var t: T;
 var a: { new (x: number): void };
@@ -10,7 +10,7 @@ t = a;
 a = t;
 
 interface S {
-    new (x: number): string;
+	new (x: number): string;
 }
 var s: S;
 var a2: { new (x: number): string };
@@ -20,7 +20,7 @@ a = s;
 a = a2;
 
 interface S2 {
-    (x: string): void;
+	(x: string): void;
 }
 var s2: S2;
 var a3: { (x: string): void };
@@ -28,8 +28,12 @@ var a3: { (x: string): void };
 t = s2;
 t = a3;
 t = (x: string) => 1;
-t = function (x: string) { return ''; }
+t = function (x: string) {
+	return "";
+};
 a = s2;
 a = a3;
 a = (x: string) => 1;
-a = function (x: string) { return ''; }
+a = function (x: string) {
+	return "";
+};

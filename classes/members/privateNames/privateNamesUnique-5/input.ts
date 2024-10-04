@@ -5,12 +5,12 @@
 // same as privateNamesUnique-1, but with an interface
 
 class A {
-    #foo: number;
+	#foo: number;
 }
-interface A2 extends A { }
+interface A2 extends A {}
 
 class B {
-    #foo: number;
+	#foo: number;
 }
 
 const b: A2 = new B();

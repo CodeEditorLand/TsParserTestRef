@@ -1,6 +1,6 @@
 enum E {
-    A,
-    B
+	A,
+	B,
 }
 
 var n: number;
@@ -21,6 +21,6 @@ e = n;
 e = null;
 e = undefined;
 e = 1;
-e = 1.;
+e = 1;
 e = 1.0;
 e = -1;

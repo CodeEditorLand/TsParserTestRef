@@ -1,36 +1,40 @@
 interface I {
-    id: number;
+	id: number;
 }
 
 class C implements I {
-    id: number;
-    valid: boolean;
+	id: number;
+	valid: boolean;
 }
 
 class C2 extends C {
-    name: string;
+	name: string;
 }
 
-class D<T>{
-    source: T;
-    recurse: D<T>;
-    wrapped: D<D<T>>
+class D<T> {
+	source: T;
+	recurse: D<T>;
+	wrapped: D<D<T>>;
 }
 
-function F(x: string): number { return 42; }
+function F(x: string): number {
+	return 42;
+}
 
 module M {
-    export class A {
-        name: string;
-    }
+	export class A {
+		name: string;
+	}
 
-    export function F2(x: number): string { return x.toString(); }
+	export function F2(x: number): string {
+		return x.toString();
+	}
 }
 
 // all of these are errors
 var a: any;
 var a = 1;
-var a = 'a string';
+var a = "a string";
 var a = new C();
 var a = new D<string>();
 var a = M;
@@ -40,7 +44,7 @@ var b = new C();
 var b = new C2();
 
 var f = F;
-var f = (x: number) => '';
+var f = (x: number) => "";
 
 var arr: string[];
 var arr = [1, 2, 3, 4];

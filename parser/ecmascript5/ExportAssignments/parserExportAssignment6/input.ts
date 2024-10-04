@@ -1,3 +1,3 @@
 declare module "M" {
-    export = A;
+	export = A;
 }

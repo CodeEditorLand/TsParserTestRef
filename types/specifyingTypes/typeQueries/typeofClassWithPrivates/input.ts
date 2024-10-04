@@ -1,8 +1,8 @@
 class C<T> {
-    private a: number;
-    private static b: number;
-    x: T;
-    static y: T;
+	private a: number;
+	private static b: number;
+	x: T;
+	static y: T;
 }
 
 var c: C<string>;

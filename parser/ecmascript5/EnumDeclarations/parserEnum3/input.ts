@@ -1,4 +1,1 @@
-
-
-    export enum SignatureFlags {
-    }
+export enum SignatureFlags {}

@@ -1,6 +1,7 @@
 ﻿//@target: ES6
 var iterableWithOptionalIterator: {
-    [Symbol.iterator]?(): Iterator<string>
+	[Symbol.iterator]?(): Iterator<string>;
 };
 
-for (var v of iterableWithOptionalIterator) { }
+for (var v of iterableWithOptionalIterator) {
+}

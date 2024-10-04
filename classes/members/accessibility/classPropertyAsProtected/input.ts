@@ -1,13 +1,17 @@
 class C {
-    protected x: string;
-    protected get y() { return null; }
-    protected set y(x) { }
-    protected foo() { }
+	protected x: string;
+	protected get y() {
+		return null;
+	}
+	protected set y(x) {}
+	protected foo() {}
 
-    protected static a: string;
-    protected static get b() { return null; }
-    protected static set b(x) { }
-    protected static foo() { }
+	protected static a: string;
+	protected static get b() {
+		return null;
+	}
+	protected static set b(x) {}
+	protected static foo() {}
 }
 
 var c: C;

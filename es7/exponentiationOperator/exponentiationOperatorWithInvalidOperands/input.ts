@@ -1,6 +1,10 @@
 // these operators require their operands to be of type Any, the Number primitive type, or
 // an enum type
-enum E { a, b, c }
+enum E {
+	a,
+	b,
+	c,
+}
 
 var a: any;
 var b: boolean;
@@ -65,4 +69,4 @@ var r1h2 = b ** E.b;
 var r1h3 = c ** E.b; //ok
 var r1h4 = d ** E.b;
 var r1h5 = e ** E.b;
-var r1h6 = f ** E.b
+var r1h6 = f ** E.b;

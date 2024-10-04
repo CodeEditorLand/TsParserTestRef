@@ -1,3 +1,3 @@
 // @strict: true
 
-function foo(foo: string, bar = foo ?? "bar") { }
+function foo(foo: string, bar = foo ?? "bar") {}

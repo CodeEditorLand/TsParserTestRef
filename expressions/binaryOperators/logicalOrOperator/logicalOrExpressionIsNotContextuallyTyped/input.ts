@@ -3,7 +3,6 @@
 // by the type of the left operand and the result is of the best common type of the two
 // operand types.
 
-
 var a: (a: string) => string;
 
 // bug 786110

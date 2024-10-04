@@ -1,15 +1,17 @@
 var a: any;
 
 class C {
-    foo: string;
+	foo: string;
 }
 var ac: C;
 interface I {
-    foo: string;
+	foo: string;
 }
 var ai: I;
 
-enum E { A }
+enum E {
+	A,
+}
 var ae: E;
 
 var b: number;
@@ -42,16 +44,16 @@ a = k;
 a = l;
 a = m;
 a = o;
-a = p; 
+a = p;
 a = q;
 a = ac;
 a = ai;
 a = ae;
 
 function foo<T, U /*extends T*/, V extends Date>(x: T, y: U, z: V) {
-    a = x;
-    a = y;
-    a = z;
+	a = x;
+	a = y;
+	a = z;
 }
 //function foo<T, U extends T, V extends Date>(x: T, y: U, z: V) {
 //    a = x;

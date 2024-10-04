@@ -4,10 +4,10 @@
 // Repro from #19682
 
 type Nominal<Kind extends string, Type> = Type & {
-    [Symbol.species]: Kind;
+	[Symbol.species]: Kind;
 };
 
-type A = Nominal<'A', string>;
+type A = Nominal<"A", string>;
 
 declare const a: Set<A>;
 declare const b: Set<A>;

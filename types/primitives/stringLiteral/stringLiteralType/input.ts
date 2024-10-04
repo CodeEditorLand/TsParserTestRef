@@ -1,6 +1,5 @@
-var x: 'hi';
+var x: "hi";
 
-function f(x: 'hi');
+function f(x: "hi");
 function f(x: string);
-function f(x: any) {
-}
+function f(x: any) {}

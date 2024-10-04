@@ -2,8 +2,8 @@
 // other operand.
 
 enum E {
-    a,
-    b
+	a,
+	b,
 }
 
 var a: any;

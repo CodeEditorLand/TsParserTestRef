@@ -1,2 +1,2 @@
 //@target: ES6
-var v = { [e]() { } };
+var v = { [e]() {} };

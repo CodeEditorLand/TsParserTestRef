@@ -3,8 +3,8 @@
 // @checkJs: true
 // @Filename: Eloquent.js
 // bug #27365, crashes from github.com/marijnh/Eloquent-JavaScript
-(function() {
-exports.bigOak = 1
-exports.everywhere = 2
-module.exports = exports
-})()
+(function () {
+	exports.bigOak = 1;
+	exports.everywhere = 2;
+	module.exports = exports;
+})();

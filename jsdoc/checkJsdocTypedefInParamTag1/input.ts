@@ -13,23 +13,23 @@
  * @param {Opts} opts
  */
 function foo(opts) {
-    opts.x;
+	opts.x;
 }
 
-foo({x: 'abc'});
+foo({ x: "abc" });
 
 /**
  * @typedef {Object} AnotherOpts
  * @property anotherX {string}
  * @property anotherY {string=}
- * 
+ *
  * @param {AnotherOpts} opts
  */
 function foo1(opts) {
-    opts.anotherX;
+	opts.anotherX;
 }
 
-foo1({anotherX: "world"});
+foo1({ anotherX: "world" });
 
 /**
  * @typedef {object} Opts1
@@ -41,6 +41,6 @@ foo1({anotherX: "world"});
  * @param {Opts1} opts
  */
 function foo2(opts) {
-    opts.x;
+	opts.x;
 }
-foo2({x: 'abc'});
+foo2({ x: "abc" });

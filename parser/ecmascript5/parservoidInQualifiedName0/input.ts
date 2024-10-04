@@ -1,1 +1,1 @@
-var v : void;
+var v: void;

@@ -1,13 +1,13 @@
 class C {
-    x: string;
+	x: string;
 }
 
 var c = new C();
 var r = C;
 
-class D<T,U> {
-    x: T;
-    y: U;
+class D<T, U> {
+	x: T;
+	y: U;
 }
 
 var d = new D();

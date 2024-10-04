@@ -4,5 +4,5 @@
 // @checkJs: true
 /** @param {Image} image */
 function process(image) {
-    return new image(1, 1)
+	return new image(1, 1);
 }

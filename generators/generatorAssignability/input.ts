@@ -35,39 +35,39 @@ for (_ of g1); // error
 for (_ of g2); // ok
 
 async function asyncfn() {
-    // for-await-of over iterable
-    for await (_ of g1); // error
-    for await (_ of g2); // ok
+	// for-await-of over iterable
+	for await (_ of g1); // error
+	for await (_ of g2); // ok
 
-    // for-await-of over asynciterable
-    for await (_ of g4); // error
-    for await (_ of g5); // ok
+	// for-await-of over asynciterable
+	for await (_ of g4); // error
+	for await (_ of g5); // ok
 }
 
 function* f1(): Generator<number, void, boolean> {
-    // yield* over iterable
-    yield* g1; // error
-    yield* g3; // ok
+	// yield* over iterable
+	yield* g1; // error
+	yield* g3; // ok
 }
 
 async function* f2(): AsyncGenerator<number, void, boolean> {
-    // yield* over iterable
-    yield* g1; // error
-    yield* g3; // ok
+	// yield* over iterable
+	yield* g1; // error
+	yield* g3; // ok
 
-    // yield* over asynciterable
-    yield* g4; // error
-    yield* g6; // ok
+	// yield* over asynciterable
+	yield* g4; // error
+	yield* g6; // ok
 }
 
 async function f3() {
-    const syncGenerator = function*() {
-        yield 1;
-        yield 2;
-    };
+	const syncGenerator = function* () {
+		yield 1;
+		yield 2;
+	};
 
-    const o = {[Symbol.asyncIterator]: syncGenerator};
+	const o = { [Symbol.asyncIterator]: syncGenerator };
 
-    for await (const x of o) {
-    }
+	for await (const x of o) {
+	}
 }

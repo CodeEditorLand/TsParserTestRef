@@ -7,7 +7,7 @@
 /** @param {...*=} args
     @return {*=} */
 function f(...args) {
-    return null
+	return null;
 }
 
 /** @type *= */

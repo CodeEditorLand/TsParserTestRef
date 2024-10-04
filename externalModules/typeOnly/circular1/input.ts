@@ -1,7 +1,7 @@
 // @noEmit: true
 
 // @Filename: /a.ts
-export type { A } from './b';
+export type { A } from "./b";
 
 // @Filename: /b.ts
-export type { A } from './a';
+export type { A } from "./a";

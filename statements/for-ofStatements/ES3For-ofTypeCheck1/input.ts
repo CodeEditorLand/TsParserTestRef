@@ -1,2 +1,3 @@
 //@target: ES3
-for (var v of "") { }
+for (var v of "") {
+}

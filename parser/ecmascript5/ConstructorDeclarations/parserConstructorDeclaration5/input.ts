@@ -1,3 +1,3 @@
 class C {
-  private constructor() { }
+	private constructor() {}
 }

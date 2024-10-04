@@ -1,3 +1,4 @@
 ﻿//@target: ES6
 var v: string;
-for (v of [0]) { }
+for (v of [0]) {
+}

@@ -1,16 +1,18 @@
 //@target: ES6
-function foo<T>(s: T[]) { return s[0] }
+function foo<T>(s: T[]) {
+	return s[0];
+}
 class SymbolIterator {
-    next() {
-        return {
-            value: Symbol(),
-            done: false
-        };
-    }
+	next() {
+		return {
+			value: Symbol(),
+			done: false,
+		};
+	}
 
-    [Symbol.iterator]() {
-        return this;
-    }
+	[Symbol.iterator]() {
+		return this;
+	}
 }
 
-foo(...new SymbolIterator);
+foo(...new SymbolIterator());

@@ -2,44 +2,50 @@
 
 // Repro from #2264
 
-interface Y { 'i am a very certain type': Y }
+interface Y {
+	"i am a very certain type": Y;
+}
 var y: Y = <Y>undefined;
 function destructure<a, r>(
-    something: a | Y,
-    haveValue: (value: a) => r,
-    haveY: (value: Y) => r
+	something: a | Y,
+	haveValue: (value: a) => r,
+	haveY: (value: Y) => r,
 ): r {
-    return something === y ? haveY(y) : haveValue(<a>something);
+	return something === y ? haveY(y) : haveValue(<a>something);
 }
 
-var value = Math.random() > 0.5 ? 'hey!' : <Y>undefined;
+var value = Math.random() > 0.5 ? "hey!" : <Y>undefined;
 
-var result = destructure(value, text => 'string', y => 'other one'); // text: string, y: Y
+var result = destructure(
+	value,
+	(text) => "string",
+	(y) => "other one",
+); // text: string, y: Y
 
 // Repro from #4212
 
 function isVoid<a>(value: void | a): value is void {
-    return undefined;
+	return undefined;
 }
 
-function isNonVoid<a>(value: void | a) : value is a {
-    return undefined;
+function isNonVoid<a>(value: void | a): value is a {
+	return undefined;
 }
 
-function foo1<a>(value: void|a): void {
-    if (isVoid(value)) {
-        value; // value is void
-    } else {
-        value; // value is a
-    }
+function foo1<a>(value: void | a): void {
+	if (isVoid(value)) {
+		value; // value is void
+	} else {
+		value; // value is a
+	}
 }
 
-function baz1<a>(value: void|a): void {
-      if (isNonVoid(value)) {
-          value; // value is a
-      } else {
-          value; // value is void
-      }
+function baz1<a>(value: void | a): void {
+	if (isNonVoid(value)) {
+		value; // value is a
+	} else {
+		value; // value is void
+	}
 }
 
 // Repro from #5417
@@ -47,7 +53,7 @@ function baz1<a>(value: void|a): void {
 type Maybe<T> = T | void;
 
 function get<U>(x: U | void): U {
-   return null; // just an example
+	return null; // just an example
 }
 
 let foo: Maybe<string>;
@@ -56,15 +62,15 @@ get(foo).toUpperCase(); // Ok
 // Repro from #5456
 
 interface Man {
-    walks: boolean;
+	walks: boolean;
 }
 
 interface Bear {
-    roars: boolean;
+	roars: boolean;
 }
 
 interface Pig {
-    oinks: boolean;
+	oinks: boolean;
 }
 
 declare function pigify<T>(y: T & Bear): T & Pig;
@@ -76,20 +82,21 @@ pigify(mbp).walks; // Ok, mbp is treated as Man
 // Repros from #29815
 
 interface ITest {
-  name: 'test'
+	name: "test";
 }
 
-const createTestAsync = (): Promise<ITest> => Promise.resolve().then(() => ({ name: 'test' }))
+const createTestAsync = (): Promise<ITest> =>
+	Promise.resolve().then(() => ({ name: "test" }));
 
 const createTest = (): ITest => {
-  return { name: 'test' }
-}
+	return { name: "test" };
+};
 
 declare function f1<T, U>(x: T | U): T | U;
 declare function f2<T, U>(x: T, y: U): T | U;
 
-let x1: string = f1('a');
-let x2: string = f2('a', 'b');
+let x1: string = f1("a");
+let x2: string = f2("a", "b");
 
 // Repro from #30442
 

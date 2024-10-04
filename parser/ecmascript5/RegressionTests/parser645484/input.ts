@@ -1,3 +1,3 @@
-var c : {
-    new?(): any;
-}
+var c: {
+	new?(): any;
+};

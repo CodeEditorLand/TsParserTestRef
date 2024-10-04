@@ -1,18 +1,18 @@
 class C {
-    private x: string;
+	private x: string;
 }
 
 class D {
-    private x: string;
+	private x: string;
 }
 
 class X<T> {
-    x: T;
+	x: T;
 }
 
 function foo<T>(t: X<T>, t2: X<T>) {
-    var x: T;
-    return x;
+	var x: T;
+	return x;
 }
 
 var c1 = new X<C>();

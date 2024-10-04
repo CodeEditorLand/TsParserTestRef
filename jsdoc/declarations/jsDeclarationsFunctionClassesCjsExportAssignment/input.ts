@@ -8,7 +8,7 @@
  * @param {number} timeout
  */
 function Timer(timeout) {
-    this.timeout = timeout;
+	this.timeout = timeout;
 }
 module.exports = Timer;
 // @filename: hook.js
@@ -19,7 +19,7 @@ module.exports = Timer;
  * @param {HookHandler} handle
  */
 function Hook(handle) {
-    this.handle = handle;
+	this.handle = handle;
 }
 module.exports = Hook;
 
@@ -39,7 +39,7 @@ module.exports = Hook;
  * @prop {Timer} timer
  * @prop {Hook} hook
  */
- 
+
 /**
  * State type definition
  *
@@ -56,19 +56,19 @@ module.exports = Hook;
  */
 
 function Context(input) {
-    if (!(this instanceof Context)) {
-      return new Context(input)
-    }
-    this.state = this.construct(input);
+	if (!(this instanceof Context)) {
+		return new Context(input);
+	}
+	this.state = this.construct(input);
 }
 Context.prototype = {
-    /**
-     * @param {Input} input
-     * @param {HookHandler=} handle
-     * @returns {State}
-     */
-    construct(input, handle = () => void 0) {
-        return input;
-    }
-}
+	/**
+	 * @param {Input} input
+	 * @param {HookHandler=} handle
+	 * @returns {State}
+	 */
+	construct(input, handle = () => void 0) {
+		return input;
+	},
+};
 module.exports = Context;

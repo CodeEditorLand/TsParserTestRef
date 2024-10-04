@@ -2,5 +2,5 @@
 // @lib: es5,es2015.promise
 // @noEmitHelpers: true
 async function foo(): Promise<void> {
-  return;
+	return;
 }

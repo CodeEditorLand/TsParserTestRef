@@ -4,7 +4,7 @@
 // @fileName: a.ts
 var a: any;
 var t: [any, any];
-declare function f1<T>(t: T): T
+declare function f1<T>(t: T): T;
 declare function f2<T>(t: T[]): T;
 declare function f3<T, U>(t: [T, U]): [T, U];
 declare function f4<T>(x: { bar: T; baz: T }): T;
@@ -17,12 +17,12 @@ declare function f10<T>(x: { [x: string]: T }): T;
 declare function f11<T>(x: { [x: number]: T }): T;
 declare function f12<T, U>(x: T | U): [T, U];
 declare function f13<T, U>(x: T & U): [T, U];
-declare function f14<T, U>(x: { a: T | U, b: U & T }): [T, U];
-interface I<T> { }
+declare function f14<T, U>(x: { a: T | U; b: U & T }): [T, U];
+interface I<T> {}
 declare function f15<T>(x: I<T>): T;
 declare function f16<T>(x: Partial<T>): T;
-declare function f17<T, K>(x: {[P in keyof T]: K}): T;
-declare function f18<T, K extends keyof T>(x: {[P in K]: T[P]}): T;
+declare function f17<T, K>(x: { [P in keyof T]: K }): T;
+declare function f18<T, K extends keyof T>(x: { [P in K]: T[P] }): T;
 declare function f19<T, K extends keyof T>(k: K, x: T[K]): T;
 
 // @fileName: a.js

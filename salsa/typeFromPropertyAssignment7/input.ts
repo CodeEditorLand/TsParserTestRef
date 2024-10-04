@@ -5,6 +5,6 @@
 // @Filename: a.js
 var obj = {};
 obj.method = function (hunch) {
-    return true;
-}
+	return true;
+};
 var b = obj.method();

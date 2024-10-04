@@ -4,10 +4,13 @@
 // @Filename: lovefield-ts.d.ts
 // bug #27352, crashes from github.com/google/lovefield
 declare namespace lf {
-    export enum Order { ASC, DESC }
+	export enum Order {
+		ASC,
+		DESC,
+	}
 }
 
 // @Filename: enums.js
-lf.Order = {}
+lf.Order = {};
 lf.Order.DESC = 0;
 lf.Order.ASC = 1;

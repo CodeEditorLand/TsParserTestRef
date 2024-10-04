@@ -6,16 +6,21 @@
  * tempFun - Can't have fun for too long.
  */
 function tempFun<T>(tempStrs: TemplateStringsArray, g: (x: T) => T, x: T): T;
-function tempFun<T>(tempStrs: TemplateStringsArray, g: (x: T) => T, h: (y: T) => T, x: T): T;
+function tempFun<T>(
+	tempStrs: TemplateStringsArray,
+	g: (x: T) => T,
+	h: (y: T) => T,
+	x: T,
+): T;
 function tempFun<T>(tempStrs: TemplateStringsArray, g: (x: T) => T, x: T): T {
-    return g(x);
+	return g(x);
 }
 
-var a = tempFun `${ x => x }  ${ 10 }`
-var b = tempFun `${ (x => x) }  ${ 10 }`
-var c = tempFun `${ ((x => x)) } ${ 10 }`
-var d = tempFun `${ x => x } ${ x => x } ${ 10 }`
-var e = tempFun `${ x => x } ${ (x => x) } ${ 10 }`
-var f = tempFun `${ x => x } ${ ((x => x)) } ${ 10 }`
-var g = tempFun `${ (x => x) } ${ (((x => x))) } ${ 10 }`
-var h = tempFun `${ (x => x) } ${ (((x => x))) } ${ undefined }`
+var a = tempFun`${(x) => x}  ${10}`;
+var b = tempFun`${(x) => x}  ${10}`;
+var c = tempFun`${(x) => x} ${10}`;
+var d = tempFun`${(x) => x} ${(x) => x} ${10}`;
+var e = tempFun`${(x) => x} ${(x) => x} ${10}`;
+var f = tempFun`${(x) => x} ${(x) => x} ${10}`;
+var g = tempFun`${(x) => x} ${(x) => x} ${10}`;
+var h = tempFun`${(x) => x} ${(x) => x} ${undefined}`;

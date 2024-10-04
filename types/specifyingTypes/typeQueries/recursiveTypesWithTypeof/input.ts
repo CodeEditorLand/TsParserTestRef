@@ -6,7 +6,7 @@ var d: any;
 var e: typeof d;
 var e: any;
 
-interface Foo<T> { }
+interface Foo<T> {}
 var f: Array<typeof f>;
 var f: any;
 var f2: Foo<typeof f2>;
@@ -16,7 +16,7 @@ var f3: any;
 
 // None of these declarations should have any errors!
 // Truly recursive types
-var g: { x: typeof g; };
+var g: { x: typeof g };
 var g: typeof g.x;
 var h: () => typeof h;
 var h = h();
@@ -34,9 +34,9 @@ var j2: new <T extends typeof j2>(x: T) => T;
 var j2 = new j2(j2);
 
 // Indexers
-var k: { [n: number]: typeof k;[s: string]: typeof k };
+var k: { [n: number]: typeof k; [s: string]: typeof k };
 var k = k[0];
-var k = k[''];
+var k = k[""];
 
 // Hybrid - contains type literals as well as type arguments
 // These two are recursive
@@ -45,7 +45,7 @@ var hy1 = hy1[0].x;
 var hy2: { x: Array<typeof hy2> };
 var hy2 = hy2.x[0];
 
-interface Foo2<T, U> { }
+interface Foo2<T, U> {}
 
 // This one should be an error because the first type argument is not contained inside a type literal
 var hy3: Foo2<typeof hy3, { x: typeof hy3 }>;

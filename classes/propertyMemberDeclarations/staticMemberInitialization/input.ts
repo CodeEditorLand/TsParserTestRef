@@ -1,5 +1,5 @@
 class C {
-    static x = 1;
+	static x = 1;
 }
 
 var c = new C();

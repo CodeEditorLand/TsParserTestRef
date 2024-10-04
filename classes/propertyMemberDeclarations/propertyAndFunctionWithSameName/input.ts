@@ -1,11 +1,12 @@
 class C {
-    x: number;
-    x() { // error
-        return 1;
-    }
+	x: number;
+	x() {
+		// error
+		return 1;
+	}
 }
 
 class D {
-    x: number;
-    x(v) { } // error
+	x: number;
+	x(v) {} // error
 }

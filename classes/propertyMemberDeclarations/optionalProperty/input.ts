@@ -2,5 +2,5 @@
 // @useDefineForClassFields: true
 // @noTypesAndSymbols: true
 class C {
-    prop?;
+	prop?;
 }

@@ -1,3 +1,3 @@
 // @declaration: true
 
-let x = <{a: number; a: number}>{};
+let x = <{ a: number; a: number }>{};

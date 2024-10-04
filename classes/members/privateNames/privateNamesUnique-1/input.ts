@@ -3,11 +3,11 @@
 // @strictPropertyInitialization: false
 
 class A {
-    #foo: number;
+	#foo: number;
 }
 
 class B {
-    #foo: number;
+	#foo: number;
 }
 
-const b: A = new B();     // Error: Property #foo is missing
+const b: A = new B(); // Error: Property #foo is missing

@@ -7,19 +7,32 @@ const x = {};
 Object.defineProperty(x, "name", { value: "Charles", writable: true });
 Object.defineProperty(x, "middleInit", { value: "H" });
 Object.defineProperty(x, "lastName", { value: "Smith", writable: false });
-Object.defineProperty(x, "zip", { get() { return 98122 }, set(_) { /*ignore*/ } });
-Object.defineProperty(x, "houseNumber", { get() { return 21.75 } });
+Object.defineProperty(x, "zip", {
+	get() {
+		return 98122;
+	},
+	set(_) {
+		/*ignore*/
+	},
+});
+Object.defineProperty(x, "houseNumber", {
+	get() {
+		return 21.75;
+	},
+});
 Object.defineProperty(x, "zipStr", {
-    /** @param {string} str */
-    set(str) {
-        this.zip = Number(str) 
-    }
+	/** @param {string} str */
+	set(str) {
+		this.zip = Number(str);
+	},
 });
 
 /**
  * @param {{name: string}} named
  */
-function takeName(named) { return named.name; }
+function takeName(named) {
+	return named.name;
+}
 
 takeName(x);
 /**
@@ -35,16 +48,20 @@ var b = x.houseNumber;
 const returnExemplar = () => x;
 const needsExemplar = (_ = x) => void 0;
 
-const expected = /** @type {{name: string, readonly middleInit: string, readonly lastName: string, zip: number, readonly houseNumber: number, zipStr: string}} */(/** @type {*} */(null));
+const expected =
+	/** @type {{name: string, readonly middleInit: string, readonly lastName: string, zip: number, readonly houseNumber: number, zipStr: string}} */ /** @type {*} */ null;
 
 /**
- * 
- * @param {typeof returnExemplar} a 
- * @param {typeof needsExemplar} b 
+ *
+ * @param {typeof returnExemplar} a
+ * @param {typeof needsExemplar} b
  */
 function match(a, b) {}
 
-match(() => expected, (x = expected) => void 0);
+match(
+	() => expected,
+	(x = expected) => void 0,
+);
 
 module.exports = x;
 

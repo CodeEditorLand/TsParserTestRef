@@ -13,15 +13,15 @@ declare let x4: ItemMap<any>;
 // Repro from #19152
 
 type Data = {
-  value: string;
-}
+	value: string;
+};
 
 type StrictDataMap<T> = {
-  [P in keyof T]: Data
-}
+	[P in keyof T]: Data;
+};
 
 declare let z: StrictDataMap<any>;
 for (let id in z) {
-  let data = z[id];
-  let x = data.notAValue;  // Error
+	let data = z[id];
+	let x = data.notAValue; // Error
 }

@@ -3,14 +3,18 @@
 var NUMBER: number;
 var NUMBER1: number[] = [1, 2];
 
-function foo(): number { return 1; }
+function foo(): number {
+	return 1;
+}
 
 class A {
-    public a: number;
-    static foo() { return 1; }
+	public a: number;
+	static foo() {
+		return 1;
+	}
 }
 module M {
-    export var n: number;
+	export var n: number;
 }
 
 var objA = new A();
@@ -21,8 +25,13 @@ var ResultIsString2 = typeof NUMBER1;
 
 // number type literal
 var ResultIsString3 = typeof 1;
-var ResultIsString4 = typeof { x: 1, y: 2};
-var ResultIsString5 = typeof { x: 1, y: (n: number) => { return n; } };
+var ResultIsString4 = typeof { x: 1, y: 2 };
+var ResultIsString5 = typeof {
+	x: 1,
+	y: (n: number) => {
+		return n;
+	},
+};
 
 // number type expressions
 var ResultIsString6 = typeof objA.a;

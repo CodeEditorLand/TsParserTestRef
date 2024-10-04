@@ -1,3 +1,7 @@
+// @filename: referencer.js
+
+import { Point } from "./source";
+
 // @allowJs: true
 // @checkJs: true
 // @target: es5
@@ -10,20 +14,16 @@
  * @param {number} y
  */
 export function Point(x, y) {
-    if (!(this instanceof Point)) {
-        return new Point(x, y);
-    }
-    this.x = x;
-    this.y = y;
+	if (!(this instanceof Point)) {
+		return new Point(x, y);
+	}
+	this.x = x;
+	this.y = y;
 }
-
-// @filename: referencer.js
-
-import {Point} from "./source";
 
 /**
  * @param {Point} p
  */
 export function magnitude(p) {
-    return Math.sqrt(p.x ** 2 + p.y ** 2);
+	return Math.sqrt(p.x ** 2 + p.y ** 2);
 }

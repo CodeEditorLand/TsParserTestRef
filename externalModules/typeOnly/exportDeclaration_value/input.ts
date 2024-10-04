@@ -4,4 +4,4 @@ export type { A };
 export const AA = {};
 
 // @Filename: /b.ts
-export type { AA } from './a';
+export type { AA } from "./a";

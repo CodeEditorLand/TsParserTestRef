@@ -6,21 +6,20 @@
 
 // @Filename: /defs.d.ts
 interface A {
-    mNumber(): number;
+	mNumber(): number;
 }
 // @Filename: /a.js
 /** @implements A */
 class B {
-    mNumber() {
-        return 0;
-    }
+	mNumber() {
+		return 0;
+	}
 }
 /** @implements {A} */
 class B2 {
-    mNumber() {
-        return "";
-    }
+	mNumber() {
+		return "";
+	}
 }
 /** @implements A */
-class B3 {
-}
+class B3 {}

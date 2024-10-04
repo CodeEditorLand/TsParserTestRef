@@ -5,7 +5,10 @@
 // @outDir: ./out
 
 // @Filename: /a.js
-class A { constructor() { this.x = 0; } }
-/** @implements */
-class B  {
+class A {
+	constructor() {
+		this.x = 0;
+	}
 }
+/** @implements */
+class B {}

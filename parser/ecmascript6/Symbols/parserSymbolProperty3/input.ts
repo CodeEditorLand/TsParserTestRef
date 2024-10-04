@@ -1,4 +1,4 @@
 //@target: ES6
 declare class C {
-    [Symbol.unscopables](): string;
+	[Symbol.unscopables](): string;
 }

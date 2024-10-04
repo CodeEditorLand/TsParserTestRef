@@ -1,34 +1,33 @@
 interface BaseInterface {
-    required: number;
-    optional?: number;
+	required: number;
+	optional?: number;
 }
 
 class BaseClass {
-    baseMethod() { }
-    baseNumber: number;
+	baseMethod() {}
+	baseNumber: number;
 }
 
 interface Child extends BaseInterface {
-    additional: number;
+	additional: number;
 }
 
 class Child extends BaseClass {
-    classNumber: number;
-    method() { }
+	classNumber: number;
+	method() {}
 }
 
 interface ChildNoBaseClass extends BaseInterface {
-    additional2: string;
+	additional2: string;
 }
 class ChildNoBaseClass {
-    classString: string;
-    method2() { }
+	classString: string;
+	method2() {}
 }
-class Grandchild extends ChildNoBaseClass {
-}
+class Grandchild extends ChildNoBaseClass {}
 
 // checks if properties actually were merged
-var child : Child;
+var child: Child;
 child.required;
 child.optional;
 child.additional;

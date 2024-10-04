@@ -1,2 +1,2 @@
 ﻿// @target: ES6
-var x = `abc${ "hello" instanceof String }def`;
+var x = `abc${"hello" instanceof String}def`;

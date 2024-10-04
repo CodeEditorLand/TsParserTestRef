@@ -5,7 +5,7 @@
 // @declaration: true
 // @filename: bar.js
 export class Z {
-    f(x = 1, y) {
-        return [x, y];
-    }
+	f(x = 1, y) {
+		return [x, y];
+	}
 }

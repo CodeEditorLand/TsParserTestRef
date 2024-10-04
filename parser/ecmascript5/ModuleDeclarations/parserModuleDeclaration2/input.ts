@@ -1,2 +1,1 @@
-declare module "Foo" {
-}
+declare module "Foo" {}

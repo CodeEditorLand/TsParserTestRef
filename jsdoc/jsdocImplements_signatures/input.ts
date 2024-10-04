@@ -6,9 +6,8 @@
 
 // @Filename: /defs.d.ts
 interface Sig {
-    [index: string]: string
+	[index: string]: string;
 }
 // @Filename: /a.js
 /** @implements {Sig} */
-class B  {
-}
+class B {}

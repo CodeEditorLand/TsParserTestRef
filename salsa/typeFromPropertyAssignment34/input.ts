@@ -7,4 +7,4 @@ N.commands = {};
 
 // @Filename: file2.js
 N.commands.a = 111;
-N.commands.b = function () { };
+N.commands.b = function () {};

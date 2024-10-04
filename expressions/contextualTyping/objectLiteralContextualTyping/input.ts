@@ -4,8 +4,8 @@
 //      the string index type of the contextual type, if any.
 
 interface Item {
-    name: string;
-    description?: string;
+	name: string;
+	description?: string;
 }
 
 declare function foo(item: Item): string;

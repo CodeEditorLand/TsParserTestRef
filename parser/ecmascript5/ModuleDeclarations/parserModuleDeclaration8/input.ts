@@ -1,2 +1,1 @@
-module a.number {
-}
+module a.number {}

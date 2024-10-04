@@ -1,1 +1,1 @@
-import {} from 'module-not-existed'
+import "module-not-existed";

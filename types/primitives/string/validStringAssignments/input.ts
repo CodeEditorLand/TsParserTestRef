@@ -1,4 +1,4 @@
-var x = '';
+var x = "";
 
 var a: any = x;
 var b: Object = x;

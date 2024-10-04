@@ -1,5 +1,5 @@
 // @target: es5
 // @module: es2015
 
-class E { }
+class E {}
 export default E;

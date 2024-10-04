@@ -1,19 +1,19 @@
 abstract class BaseClass {
-  abstract bar: number;
+	abstract bar: number;
 }
 
 class Broken extends BaseClass {}
 
 // declaration merging should satisfy abstract bar
 interface IGetters {
-  bar: number;
+	bar: number;
 }
 interface Broken extends IGetters {}
 
-new Broken().bar
+new Broken().bar;
 
 class IncorrectlyExtends extends BaseClass {}
 interface IncorrectGetters {
-  bar: string;
+	bar: string;
 }
 interface IncorrectlyExtends extends IncorrectGetters {}

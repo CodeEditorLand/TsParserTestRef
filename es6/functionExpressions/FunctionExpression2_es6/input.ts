@@ -1,2 +1,2 @@
 // @target: es6
-var v = function * foo() { }
+var v = function* foo() {};

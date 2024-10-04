@@ -1,1 +1,1 @@
-export = foo
+export = foo;

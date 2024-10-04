@@ -1,7 +1,15 @@
-﻿interface A { a: string }
-interface B { b: string }
-interface C { c: string }
-interface D { d: string }
+﻿interface A {
+	a: string;
+}
+interface B {
+	b: string;
+}
+interface C {
+	c: string;
+}
+interface D {
+	d: string;
+}
 
 var a: A;
 var b: B;
@@ -11,17 +19,17 @@ var anb: A & B;
 var aob: A | B;
 var cnd: C & D;
 var cod: C | D;
-var x: A & B | C & D;
+var x: (A & B) | (C & D);
 var y: (A | B) & (C | D);
 
-a = anb;  // Ok
-b = anb;  // Ok
+a = anb; // Ok
+b = anb; // Ok
 anb = a;
 anb = b;
 
-x = anb;  // Ok
+x = anb; // Ok
 x = aob;
-x = cnd;  // Ok
+x = cnd; // Ok
 x = cod;
 anb = x;
 aob = x;
@@ -33,6 +41,6 @@ y = aob;
 y = cnd;
 y = cod;
 anb = y;
-aob = y;  // Ok
+aob = y; // Ok
 cnd = y;
-cod = y;  // Ok
+cod = y; // Ok

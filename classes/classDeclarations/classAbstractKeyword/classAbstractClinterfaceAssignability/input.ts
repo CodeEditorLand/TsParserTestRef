@@ -1,19 +1,19 @@
 interface I {
-    x: number;
+	x: number;
 }
 
 interface IConstructor {
-    new (): I;
-    
-    y: number;
-    prototype: I;
+	new (): I;
+
+	y: number;
+	prototype: I;
 }
 
 var I: IConstructor;
 
 abstract class A {
-    x: number;
-    static y: number;
+	x: number;
+	static y: number;
 }
 
 var AA: typeof A;

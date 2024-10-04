@@ -1,4 +1,4 @@
 //@target: ES6
 class C {
-    [Symbol.toStringTag]: string = "";
+	[Symbol.toStringTag]: string = "";
 }

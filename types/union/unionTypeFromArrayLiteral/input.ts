@@ -9,15 +9,23 @@ var arr3Tuple: [number, string] = [3, "three"]; // [number, string]
 var arr4Tuple: [number, string] = [3, "three", "hello"]; // [number, string, string]
 var arrEmpty = [];
 var arr5Tuple: {
-    0: string;
-    5: number;
+	0: string;
+	5: number;
 } = ["hello", true, false, " hello", true, 10, "any"]; // Tuple
-class C { foo() { } }
-class D { foo2() { } }
-class E extends C { foo3() { } }
-class F extends C { foo4() { } }
+class C {
+	foo() {}
+}
+class D {
+	foo2() {}
+}
+class E extends C {
+	foo3() {}
+}
+class F extends C {
+	foo4() {}
+}
 var c: C, d: D, e: E, f: F;
-var arr6 = [c, d];  // (C | D)[]
+var arr6 = [c, d]; // (C | D)[]
 var arr7 = [c, d, e]; // (C | D)[]
 var arr8 = [c, e]; // C[]
 var arr9 = [e, f]; // (E|F)[]

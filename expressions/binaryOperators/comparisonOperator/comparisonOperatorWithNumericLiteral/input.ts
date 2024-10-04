@@ -1,5 +1,5 @@
 type BrandedNum = number & { __numberBrand: any };
-var x : BrandedNum;
+var x: BrandedNum;
 
 // operator >
 x > 0;

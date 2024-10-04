@@ -17,4 +17,3 @@ declare var beta: { b: string };
 /// <reference types="alpha" />
 /// <reference types="beta" />
 var x: string = alpha.a + beta.b;
-

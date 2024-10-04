@@ -1,13 +1,17 @@
 class C {
-    x: string;
-    get y() { return null; }
-    set y(x) { }
-    foo() { }
+	x: string;
+	get y() {
+		return null;
+	}
+	set y(x) {}
+	foo() {}
 
-    static a: string;
-    static get b() { return null; }
-    static set b(x) { }
-    static foo() { }
+	static a: string;
+	static get b() {
+		return null;
+	}
+	static set b(x) {}
+	static foo() {}
 }
 
 var c: C;

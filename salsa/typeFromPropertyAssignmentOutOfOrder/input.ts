@@ -3,10 +3,10 @@
 // @checkJs: true
 // @target: es3
 // @filename: index.js
-First.Item = class I {}
-Common.Object = class extends First.Item {}
+First.Item = class I {};
+Common.Object = class extends First.Item {};
 
-Workspace.Object = class extends Common.Object {}
+Workspace.Object = class extends Common.Object {};
 
 /** @type {Workspace.Object} */
 var am;

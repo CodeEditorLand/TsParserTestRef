@@ -7,7 +7,7 @@ var STRING: string;
 var OBJECT: Object;
 
 class CLASS {
-    num: number;
+	num: number;
 }
 
 //The second operand type is Object
@@ -25,15 +25,15 @@ var resultIsObject4 = (STRING, OBJECT);
 var resultIsObject5 = (OBJECT, OBJECT);
 
 //Literal and expression
-null, OBJECT
-ANY = null, OBJECT
-true, {}
-!BOOLEAN, []
-"string", new Date()
-STRING.toLowerCase(), new CLASS()
+null, OBJECT;
+(ANY = null), OBJECT;
+true, {};
+!BOOLEAN, [];
+"string", new Date();
+STRING.toLowerCase(), new CLASS();
 
 var resultIsObject6 = (null, OBJECT);
-var resultIsObject7 = (ANY = null, OBJECT);
+var resultIsObject7 = ((ANY = null), OBJECT);
 var resultIsObject8 = (true, {});
 var resultIsObject9 = (!BOOLEAN, { a: 1, b: "s" });
 var resultIsObject10 = ("string", new Date());

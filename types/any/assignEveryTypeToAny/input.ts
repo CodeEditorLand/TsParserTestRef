@@ -24,7 +24,7 @@ var e2: typeof undefined;
 x = e2;
 
 enum E {
-    A
+	A,
 }
 
 x = E.A;
@@ -32,14 +32,14 @@ var f = E.A;
 x = f;
 
 interface I {
-    foo: string;
+	foo: string;
 }
 
 var g: I;
 x = g;
 
 class C {
-    bar: string;
+	bar: string;
 }
 
 var h: C;
@@ -47,9 +47,17 @@ x = h;
 
 var i: { (): string };
 x = i;
-x = { f() { return 1; } }
-x = { f<T>(x: T) { return x; } }
+x = {
+	f() {
+		return 1;
+	},
+};
+x = {
+	f<T>(x: T) {
+		return x;
+	},
+};
 
 function j<T>(a: T) {
-    x = a;
+	x = a;
 }

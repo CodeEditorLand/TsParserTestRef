@@ -6,5 +6,5 @@ x = x.length;
 x; // number
 
 x = true;
-(x = "", obj).foo = (x = x.length);
+((x = ""), obj).foo = x = x.length;
 x; // number

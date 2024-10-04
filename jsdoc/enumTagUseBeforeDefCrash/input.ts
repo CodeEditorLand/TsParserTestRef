@@ -5,7 +5,7 @@
 /**
  * @enum {number}
  */
-var foo = { };
+var foo = {};
 
 /**
  * @type {foo}

@@ -1,3 +1,3 @@
 declare enum E {
-  A = 1
+	A = 1,
 }

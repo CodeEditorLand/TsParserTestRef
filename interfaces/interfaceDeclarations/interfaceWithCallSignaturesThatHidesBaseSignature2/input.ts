@@ -1,9 +1,10 @@
 interface Foo {
-    (): { a: number; b: number };
+	(): { a: number; b: number };
 }
 
-interface Derived extends Foo { // error
-    (): { a: number };
+interface Derived extends Foo {
+	// error
+	(): { a: number };
 }
 
 var d: Derived;

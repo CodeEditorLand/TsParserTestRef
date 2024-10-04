@@ -1,5 +1,5 @@
 interface I {
-    toString(): void;
+	toString(): void;
 }
 
 var i: I;
@@ -8,14 +8,14 @@ o = i; // error
 i = o; // ok
 
 class C {
-    toString(): void { }
+	toString(): void {}
 }
 var c: C;
 o = c; // error
 c = o; // ok
 
 var a = {
-    toString: () => { }
-}
+	toString: () => {},
+};
 o = a; // error
 a = o; // ok

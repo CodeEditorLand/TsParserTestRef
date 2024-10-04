@@ -3,7 +3,7 @@
 // @noEmit: true
 
 // @Filename: t.d.ts
-type A<T extends string> = { a: T }
+type A<T extends string> = { a: T };
 
 // @Filename: test.js
 /** Also should error for jsdoc typedefs

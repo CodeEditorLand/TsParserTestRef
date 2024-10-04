@@ -3,14 +3,18 @@
 // ~ operator on boolean type
 var BOOLEAN: boolean;
 
-function foo(): boolean { return true; }
+function foo(): boolean {
+	return true;
+}
 
 class A {
-    public a: boolean;
-    static foo() { return false; }
+	public a: boolean;
+	static foo() {
+		return false;
+	}
 }
 module M {
-    export var n: boolean;
+	export var n: boolean;
 }
 
 var objA = new A();

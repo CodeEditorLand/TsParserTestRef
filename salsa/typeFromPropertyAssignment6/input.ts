@@ -7,14 +7,15 @@ class Outer {}
 
 // @Filename: a.js
 Outer.Inner = class I {
-    messages() { return [] }
-}
+	messages() {
+		return [];
+	}
+};
 /** @type {!Outer.Inner} */
-Outer.i
+Outer.i;
 
 // @Filename: b.js
-var msgs = Outer.i.messages()
+var msgs = Outer.i.messages();
 
 /** @param {Outer.Inner} inner */
-function x(inner) {
-}
+function x(inner) {}

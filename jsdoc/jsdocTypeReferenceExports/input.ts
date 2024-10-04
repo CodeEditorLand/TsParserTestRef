@@ -2,9 +2,8 @@
 // @noEmit: true
 // @checkJs: true
 // @Filename: bug27342.js
-module.exports = {}
+module.exports = {};
 /**
  * @type {exports}
  */
-var x
-
+var x;

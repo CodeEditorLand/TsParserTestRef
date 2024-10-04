@@ -1,5 +1,5 @@
 interface I {
-    (): void;
+	(): void;
 }
 
 var i: I;
@@ -8,7 +8,7 @@ f = i;
 i = f;
 
 var a: {
-    (): void
-}
+	(): void;
+};
 f = a;
 a = f;

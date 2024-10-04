@@ -3,8 +3,7 @@
 // @noEmit: true
 // @Filename: bug24062.js
 // #24062
-class C {
-}
+class C {}
 module.exports = {
-    C
+	C,
 };

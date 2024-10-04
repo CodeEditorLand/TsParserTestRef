@@ -2,9 +2,9 @@
 // @module: commonjs
 
 interface I {
-    a: number;
+	a: number;
 }
 
 export function f(x: any): x is I {
-    return typeof x.a === "number";
+	return typeof x.a === "number";
 }

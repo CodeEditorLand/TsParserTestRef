@@ -1,1 +1,1 @@
-var v : x.void;
+var v: x.void;

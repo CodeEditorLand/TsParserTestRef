@@ -7,5 +7,5 @@ export default "./foo";
 
 // @filename: index.ts
 async function foo() {
-    return await import((await import("./foo")).default);
+	return await import((await import("./foo")).default);
 }

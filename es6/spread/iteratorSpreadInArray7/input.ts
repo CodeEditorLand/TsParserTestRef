@@ -1,16 +1,16 @@
 //@target: ES6
 class SymbolIterator {
-    next() {
-        return {
-            value: Symbol(),
-            done: false
-        };
-    }
+	next() {
+		return {
+			value: Symbol(),
+			done: false,
+		};
+	}
 
-    [Symbol.iterator]() {
-        return this;
-    }
+	[Symbol.iterator]() {
+		return this;
+	}
 }
 
 var array: symbol[];
-array.concat([...new SymbolIterator]);
+array.concat([...new SymbolIterator()]);

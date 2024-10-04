@@ -1,3 +1,3 @@
 interface I {
-  "H"?:any;
+	"H"?: any;
 }

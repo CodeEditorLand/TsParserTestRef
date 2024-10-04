@@ -1,13 +1,13 @@
 class Base {
-    public a: string;
+	public a: string;
 }
 
 class Derived extends Base {
-    public b: string;
+	public b: string;
 }
 
 class C {
-    public c: string;
+	public c: string;
 }
 
 var a1: { fn(): Base };

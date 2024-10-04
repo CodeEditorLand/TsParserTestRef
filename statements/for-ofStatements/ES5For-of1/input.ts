@@ -1,4 +1,4 @@
 //@sourcemap: true
-for (var v of ['a', 'b', 'c']) {
-    console.log(v);
+for (var v of ["a", "b", "c"]) {
+	console.log(v);
 }

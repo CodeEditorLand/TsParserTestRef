@@ -1,2 +1,1 @@
-module A.string {
-}
+module A.string {}

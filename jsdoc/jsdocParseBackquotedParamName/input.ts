@@ -8,13 +8,11 @@
  * @param {string=} `args`
  * @param `bwarg` {?number?}
  */
-function f(args, bwarg) {
-}
+function f(args, bwarg) {}
 
 // @Filename: ts.ts
 
 /**
  * @param `arg` - this is fine
  */
-function g(arg: string) {
-}
+function g(arg: string) {}

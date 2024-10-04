@@ -1,1 +1,1 @@
-﻿var x = `abc${ new String("Hi") }def`;
+﻿var x = `abc${new String("Hi")}def`;

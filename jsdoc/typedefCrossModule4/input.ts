@@ -4,6 +4,5 @@
 // @Filename: mod3.js
 
 /** @typedef {number} Foo */
-class Bar { }
+class Bar {}
 module.exports = { Foo: Bar };
-

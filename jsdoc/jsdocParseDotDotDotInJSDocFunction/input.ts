@@ -7,7 +7,7 @@
 // from bcryptjs
 /** @param {function(...[*])} callback */
 function g(callback) {
-    callback([1], [2], [3])
+	callback([1], [2], [3]);
 }
 
 /**

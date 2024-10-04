@@ -1,5 +1,5 @@
 class C {
-  M() {
-    this.super<T>(0);
-  }
+	M() {
+		this.super<T>(0);
+	}
 }

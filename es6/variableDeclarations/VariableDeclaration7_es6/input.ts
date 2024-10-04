@@ -1,2 +1,2 @@
 // @target:es6
-let a
+let a;

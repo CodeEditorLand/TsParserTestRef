@@ -1,2 +1,1 @@
-target:
-  break target;
+target: break target;

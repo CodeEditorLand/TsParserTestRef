@@ -1,1 +1,1 @@
-var v = { get Foo() { } };
+var v = { get Foo() {} };

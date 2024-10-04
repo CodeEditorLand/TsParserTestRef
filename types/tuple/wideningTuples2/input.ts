@@ -1,6 +1,6 @@
 //@noImplicitAny: true
 var foo: () => [any] = function bar() {
-    let intermediate = bar();
-    intermediate = [""];
-    return [undefined];
+	let intermediate = bar();
+	intermediate = [""];
+	return [undefined];
 };

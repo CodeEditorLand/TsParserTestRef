@@ -2,7 +2,7 @@
 //@noImplicitAny: true
 
 function* g() {
-    function* h() {
-        yield 0;
-    }
+	function* h() {
+		yield 0;
+	}
 }

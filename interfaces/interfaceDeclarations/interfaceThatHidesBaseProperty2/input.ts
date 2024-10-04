@@ -1,9 +1,10 @@
 interface Base {
-    x: { a: number };
+	x: { a: number };
 }
 
-interface Derived extends Base { // error
-    x: {
-        a: string;
-    };
+interface Derived extends Base {
+	// error
+	x: {
+		a: string;
+	};
 }

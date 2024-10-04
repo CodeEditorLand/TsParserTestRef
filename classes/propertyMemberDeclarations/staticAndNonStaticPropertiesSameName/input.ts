@@ -1,7 +1,7 @@
 class C {
-    x: number;
-    static x: number;
+	x: number;
+	static x: number;
 
-    f() { }
-    static f() { }
+	f() {}
+	static f() {}
 }

@@ -1,10 +1,10 @@
 // @target: es6
 interface I {
-    [s: string]: boolean;
-    [s: number]: boolean;
+	[s: string]: boolean;
+	[s: number]: boolean;
 }
 
 var o: I = {
-    [""+"foo"]: "",
-    [""+"bar"]: 0
-}
+	["" + "foo"]: "",
+	["" + "bar"]: 0,
+};

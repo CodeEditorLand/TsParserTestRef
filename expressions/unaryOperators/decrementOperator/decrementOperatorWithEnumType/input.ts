@@ -1,6 +1,10 @@
 // -- operator on enum type
 
-enum ENUM1 { A, B, "" };
+enum ENUM1 {
+	A,
+	B,
+	"",
+}
 
 // expression
 var ResultIsNumber1 = --ENUM1["A"];

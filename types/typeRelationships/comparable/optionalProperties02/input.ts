@@ -2,8 +2,8 @@
 // @declaration: true
 
 interface Foo {
-    a?: string;
-    b: string;
+	a?: string;
+	b: string;
 }
 
 <Foo>{ a: undefined };

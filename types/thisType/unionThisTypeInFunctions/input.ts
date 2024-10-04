@@ -1,11 +1,11 @@
 interface Real {
-    method(this: this, n: number): void;
-    data: string;
+	method(this: this, n: number): void;
+	data: string;
 }
 interface Fake {
-    method(this: this, n: number): void;
-    data: number;
+	method(this: this, n: number): void;
+	data: number;
 }
 function test(r: Real | Fake) {
-    r.method(12); // error
+	r.method(12); // error
 }

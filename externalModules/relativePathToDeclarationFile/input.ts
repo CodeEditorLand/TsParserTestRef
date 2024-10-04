@@ -16,10 +16,10 @@ declare class Test {
 export = Test;
 
 // @Filename: test/file1.ts
-import foo = require('foo');
-import other = require('./other');
-import relMod = require('./sub/relMod');
+import foo = require("foo");
+import other = require("./other");
+import relMod = require("./sub/relMod");
 
-if(foo.M2.x){
+if (foo.M2.x) {
 	var x = new relMod(other.M2.x.charCodeAt(0));
 }

@@ -1,4 +1,4 @@
 class C {
-   constructor();
-   constructor(a) { }
+	constructor();
+	constructor(a) {}
 }

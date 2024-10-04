@@ -1,18 +1,22 @@
 //@target: ES6
-class Bar { x }
-class Foo extends Bar { y }
+class Bar {
+	x;
+}
+class Foo extends Bar {
+	y;
+}
 class FooArrayIterator {
-    next() {
-        return {
-            value: [new Foo],
-            done: false
-        };
-    }
+	next() {
+		return {
+			value: [new Foo()],
+			done: false,
+		};
+	}
 
-    [Symbol.iterator]() {
-        return this;
-    }
+	[Symbol.iterator]() {
+		return this;
+	}
 }
 
-function fun([[a], b]: Bar[][]) { }
-fun(new FooArrayIterator);
+function fun([[a], b]: Bar[][]) {}
+fun(new FooArrayIterator());

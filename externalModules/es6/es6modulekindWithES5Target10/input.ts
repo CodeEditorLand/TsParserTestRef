@@ -3,7 +3,5 @@
 
 import i = require("mod"); // Error;
 
-
-namespace N {
-}
+namespace N {}
 export = N; // Error

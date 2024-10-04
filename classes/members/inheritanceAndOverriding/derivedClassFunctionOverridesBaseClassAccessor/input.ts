@@ -1,14 +1,13 @@
 class Base {
-    get x() {
-        return 1;
-    }
-    set x(v) {
-    }
+	get x() {
+		return 1;
+	}
+	set x(v) {}
 }
 
 // error
 class Derived extends Base {
-    x() {
-        return 1;
-    }
+	x() {
+		return 1;
+	}
 }

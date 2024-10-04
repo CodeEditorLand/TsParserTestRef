@@ -1,12 +1,16 @@
 class C {
-    public x;
-    public a = '';
-    public b: string = '';
-    public c() { return '' }
-    public d = () => '';
-    public static e;
-    public static f() { return '' }
-    public static g = () => '';
+	public x;
+	public a = "";
+	public b: string = "";
+	public c() {
+		return "";
+	}
+	public d = () => "";
+	public static e;
+	public static f() {
+		return "";
+	}
+	public static g = () => "";
 }
 
 // all of these are valid

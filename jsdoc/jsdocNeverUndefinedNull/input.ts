@@ -7,5 +7,4 @@
  * @param {null} p3
  * @returns {void} nothing
  */
-function f(p1, p2, p3) {
-}
+function f(p1, p2, p3) {}

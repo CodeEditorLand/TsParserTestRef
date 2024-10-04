@@ -1,26 +1,34 @@
 var x: void;
 x = 1;
-x = '';
+x = "";
 x = true;
 
-enum E { A }
+enum E {
+	A,
+}
 x = E;
 x = E.A;
 
-class C { foo: string }
+class C {
+	foo: string;
+}
 var a: C;
 x = a;
 
-interface I { foo: string }
+interface I {
+	foo: string;
+}
 var b: I;
 x = b;
 
-x = { f() {} }
+x = { f() {} };
 
-module M { export var x = 1; }
+module M {
+	export var x = 1;
+}
 x = M;
 
 function f<T>(a: T) {
-    x = a;
+	x = a;
 }
 x = f;

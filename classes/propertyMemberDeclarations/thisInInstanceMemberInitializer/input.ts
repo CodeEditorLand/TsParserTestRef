@@ -1,8 +1,8 @@
 class C {
-    x = this;
+	x = this;
 }
 
 class D<T> {
-    x = this;
-    y: T;
+	x = this;
+	y: T;
 }

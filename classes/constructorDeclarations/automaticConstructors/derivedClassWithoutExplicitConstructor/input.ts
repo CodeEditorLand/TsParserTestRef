@@ -1,24 +1,28 @@
 class Base {
-    a = 1;
-    constructor(x: number) { this.a = x; }
+	a = 1;
+	constructor(x: number) {
+		this.a = x;
+	}
 }
 
 class Derived extends Base {
-    x = 1
-    y = 'hello';
+	x = 1;
+	y = "hello";
 }
 
 var r = new Derived(); // error
-var r2 = new Derived(1); 
+var r2 = new Derived(1);
 
 class Base2<T> {
-    a: T;
-    constructor(x: T) { this.a = x; }
+	a: T;
+	constructor(x: T) {
+		this.a = x;
+	}
 }
 
 class D<T extends Date> extends Base2<T> {
-    x = 2
-    y: T = null;
+	x = 2;
+	y: T = null;
 }
 
 var d = new D(); // error

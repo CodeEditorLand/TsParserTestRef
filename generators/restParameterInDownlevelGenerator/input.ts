@@ -4,6 +4,6 @@
 // @noEmitHelpers: true
 
 // https://github.com/Microsoft/TypeScript/issues/30653
-function * mergeStringLists(...strings: string[]) {
-    for (var str of strings);
+function* mergeStringLists(...strings: string[]) {
+	for (var str of strings);
 }

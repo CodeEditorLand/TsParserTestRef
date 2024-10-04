@@ -1,11 +1,13 @@
 // @target: esnext
 // @useDefineForClassFields: true
 interface I {
-    p: number
+	p: number;
 }
-interface B extends I { }
-class B { }
+interface B extends I {}
+class B {}
 class C extends B {
-    get p() { return 1 }
-    set p(value) { }
+	get p() {
+		return 1;
+	}
+	set p(value) {}
 }

@@ -1,3 +1,3 @@
 // @target: es6
-class D { }
+class D {}
 var v = class C extends D {};

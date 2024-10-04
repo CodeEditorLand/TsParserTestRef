@@ -1,4 +1,4 @@
 //@target: ES6
 class C {
-    set [e](v) { }
+	set [e](v) {}
 }

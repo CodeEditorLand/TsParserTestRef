@@ -10,6 +10,6 @@ var o2;
 var o3;
 /** @param {Object.<string, boolean>} o */
 function f(o) {
-    o.foo = 1; // error
-    o.bar = false; // ok
+	o.foo = 1; // error
+	o.bar = false; // ok
 }

@@ -7,4 +7,3 @@
  */
 /** @type {Miracle} smallId */
 var sid = () => "!";
-

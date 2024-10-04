@@ -1,2 +1,3 @@
 var v;
-for (v of []) { }
+for (v of []) {
+}

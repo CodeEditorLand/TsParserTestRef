@@ -1,3 +1,3 @@
 for (var v of []) {
-    var x = v;
+	var x = v;
 }

@@ -3,10 +3,10 @@ var NUMBER: number;
 var NUMBER1: number[] = [1, 2];
 
 class A {
-    public a: number;
+	public a: number;
 }
 module M {
-    export var n: number;
+	export var n: number;
 }
 
 var objA = new A();

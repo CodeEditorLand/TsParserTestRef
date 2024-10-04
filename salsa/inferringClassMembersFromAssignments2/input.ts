@@ -3,8 +3,8 @@
 // @noEmit: true
 // @filename: a.js
 OOOrder.prototype.m = function () {
-    this.p = 1
-}
+	this.p = 1;
+};
 function OOOrder() {
-    this.x = 1
+	this.x = 1;
 }

@@ -1,14 +1,14 @@
 interface I {
-    (): void;
+	(): void;
 }
- 
+
 var i: I;
 var o: Object;
 o = i;
 i = o;
- 
+
 var a: {
-    (): void
-}
+	(): void;
+};
 o = a;
 a = o;

@@ -1,4 +1,3 @@
-target:
-while (true) {
-  continue target;
+target: while (true) {
+	continue target;
 }

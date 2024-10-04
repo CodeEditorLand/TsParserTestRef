@@ -1,6 +1,5 @@
 ﻿//@target: es6
 
-function declare(x: any, ...ys: any[]) {
-}
+function declare(x: any, ...ys: any[]) {}
 
-declare `Hello ${0} world!`;
+declare`Hello ${0} world!`;

@@ -4,12 +4,12 @@
 // @checkJs: true
 
 // @Filename: jsdocTypeReferenceToMergedClass.js
-var Workspace = {}
+var Workspace = {};
 /** @type {Workspace.Project} */
 var p;
-p.isServiceProject()
+p.isServiceProject();
 
-Workspace.Project = function wp() { }
+Workspace.Project = function wp() {};
 Workspace.Project.prototype = {
-  isServiceProject() {}
-}
+	isServiceProject() {},
+};

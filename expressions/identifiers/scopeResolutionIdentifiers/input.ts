@@ -2,36 +2,36 @@
 
 var s: string;
 module M1 {
-    export var s: number;
-    var n = s;
-    var n: number;
+	export var s: number;
+	var n = s;
+	var n: number;
 }
 
 module M2 {
-    var s: number;
-    var n = s;
-    var n: number;
+	var s: number;
+	var n = s;
+	var n: number;
 }
 
 function fn() {
-    var s: boolean;
-    var n = s;
-    var n: boolean;
+	var s: boolean;
+	var n = s;
+	var n: boolean;
 }
 
 class C {
-    s: Date;
-    n = this.s;
-    x() {
-        var p = this.n;
-        var p: Date;
-    }
+	s: Date;
+	n = this.s;
+	x() {
+		var p = this.n;
+		var p: Date;
+	}
 }
 
 module M3 {
-    var s: any;
-    module M4 {
-        var n = s;
-        var n: any;
-    }
+	var s: any;
+	module M4 {
+		var n = s;
+		var n: any;
+	}
 }

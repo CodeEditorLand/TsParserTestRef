@@ -1,24 +1,26 @@
 class Foo {
-    private x: string;
+	private x: string;
 }
 
 class Bar {
-    private x: string;
+	private x: string;
 }
 
-interface I3 extends Foo, Bar { // error
+interface I3 extends Foo, Bar {
+	// error
 }
 
-interface I4 extends Foo, Bar { // error
-    x: string;
+interface I4 extends Foo, Bar {
+	// error
+	x: string;
 }
 
 class Baz {
-    private y: string;
+	private y: string;
 }
 
 interface I5 extends Foo, Baz {
-    z: string;
+	z: string;
 }
 
 var i: I5;

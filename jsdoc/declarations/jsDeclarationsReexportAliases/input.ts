@@ -1,3 +1,6 @@
+// @filename: usage.js
+import { default as Fooa } from "./cls";
+
 // @allowJs: true
 // @checkJs: true
 // @target: es5
@@ -6,9 +9,6 @@
 // @filename: cls.js
 export default class Foo {}
 
-// @filename: usage.js
-import {default as Fooa} from "./cls";
-
 export const x = new Fooa();
 
-export {default as Foob} from "./cls";
+export { default as Foob } from "./cls";

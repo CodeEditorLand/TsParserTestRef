@@ -1,36 +1,40 @@
 class C<T extends number> {
-    x: T;
-    get X(): T { return null; }
-    foo(): T {
-        return null;
-    }
+	x: T;
+	get X(): T {
+		return null;
+	}
+	foo(): T {
+		return null;
+	}
 }
 
 class D extends C<number> {
-    x: any;
-    get X(): any {
-        return null;
-    }
-    foo(): any {
-        return 1;
-    }
+	x: any;
+	get X(): any {
+		return null;
+	}
+	foo(): any {
+		return 1;
+	}
 
-    static y: any;
-    static get Y(): any {
-        return null;
-    }
-    static bar(): any {
-        return null;
-    }
+	static y: any;
+	static get Y(): any {
+		return null;
+	}
+	static bar(): any {
+		return null;
+	}
 }
 
 // if D is a valid class definition than E is now not safe tranisitively through C
 class E<T extends string> extends D {
-    x: T;
-    get X(): T { return ''; } // error
-    foo(): T {
-        return ''; // error
-    }
+	x: T;
+	get X(): T {
+		return "";
+	} // error
+	foo(): T {
+		return ""; // error
+	}
 }
 
 var c: C<number>;

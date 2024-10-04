@@ -1,19 +1,19 @@
 // @declaration: true
 class RoyalGuard {
-    isLeader(): this is LeadGuard {
-        return this instanceof LeadGuard;
-    }
-    isFollower(): this is FollowerGuard {
-        return this instanceof FollowerGuard;
-    }
+	isLeader(): this is LeadGuard {
+		return this instanceof LeadGuard;
+	}
+	isFollower(): this is FollowerGuard {
+		return this instanceof FollowerGuard;
+	}
 }
 
 class LeadGuard extends RoyalGuard {
-    lead(): void {};
+	lead(): void {}
 }
 
 class FollowerGuard extends RoyalGuard {
-    follow(): void {};
+	follow(): void {}
 }
 
 interface GuardInterface extends RoyalGuard {}
@@ -28,33 +28,30 @@ a.isFollower = a.isLeader;
 a.isLeader = a.isFollower;
 
 function invalidGuard(c: any): this is number {
-    return false;
+	return false;
 }
 
 let c: number | number[];
 if (invalidGuard(c)) {
-    c;
-}
-else {
-    c;
+	c;
+} else {
+	c;
 }
 
-let holder = {invalidGuard};
+let holder = { invalidGuard };
 
 if (holder.invalidGuard(c)) {
-    c;
-    holder;
-}
-else {
-    c;
-    holder;
+	c;
+	holder;
+} else {
+	c;
+	holder;
 }
 
 let detached = a.isFollower;
 
 if (detached()) {
-    a.follow();
-}
-else {
-    a.lead();
+	a.follow();
+} else {
+	a.lead();
 }

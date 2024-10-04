@@ -5,6 +5,6 @@
 // #24131
 // @Filename: a.js
 const a = {};
-a.d = function() {};
+a.d = function () {};
 // @Filename: b.js
 a.d.prototype = {};

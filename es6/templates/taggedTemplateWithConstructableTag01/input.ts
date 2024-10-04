@@ -1,3 +1,3 @@
-class CtorTag { }
+class CtorTag {}
 
-CtorTag `Hello world!`;
+CtorTag`Hello world!`;

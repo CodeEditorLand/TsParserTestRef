@@ -1,5 +1,5 @@
 // @target: es6
 function* foo() {
-  yield
-  yield
+	yield;
+	yield;
 }

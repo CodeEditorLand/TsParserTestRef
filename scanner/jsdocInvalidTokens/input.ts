@@ -12,4 +12,4 @@
  * or for the tag below:
  * @private
  */
-var hi = 1
+var hi = 1;

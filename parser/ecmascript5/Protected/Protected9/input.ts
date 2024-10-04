@@ -1,3 +1,3 @@
 class C {
-   constructor(protected p) { }
+	constructor(protected p) {}
 }

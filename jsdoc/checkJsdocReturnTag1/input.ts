@@ -7,19 +7,19 @@
  * @returns {string} This comment is not currently exposed
  */
 function f() {
-    return "hello";
+	return "hello";
 }
 
 /**
  * @returns {string=} This comment is not currently exposed
  */
 function f1() {
-    return "hello world";
+	return "hello world";
 }
 
 /**
  * @returns {string|number} This comment is not currently exposed
  */
 function f2() {
-    return 5 || "hello";
+	return 5 || "hello";
 }

@@ -1,38 +1,30 @@
 // @allowUnreachableCode: true
 
-for (; ;) {
-    continue;
+for (;;) {
+	continue;
 }
 
-ONE:
-for (; ;) {
-    continue ONE;
+ONE: for (;;) {
+	continue ONE;
 }
 
-TWO:
-THREE:
-for (; ;) {
-    continue THREE;
+TWO: THREE: for (;;) {
+	continue THREE;
 }
 
-FOUR:
-for (; ;) {
-    FIVE:
-    for (; ;) {
-        continue FOUR;
-    }
+FOUR: for (;;) {
+	FIVE: for (;;) {
+		continue FOUR;
+	}
 }
 
-for (; ;) {
-    SIX:
-    for (; ;) continue SIX;
+for (;;) {
+	SIX: for (;;) continue SIX;
 }
 
-SEVEN:
-for (; ;) for (; ;) for (; ;) continue SEVEN;
+SEVEN: for (;;) for (;;) for (;;) continue SEVEN;
 
-EIGHT:
-for (; ;) {
-    var fn = function () { }
-    continue EIGHT;
+EIGHT: for (;;) {
+	var fn = function () {};
+	continue EIGHT;
 }

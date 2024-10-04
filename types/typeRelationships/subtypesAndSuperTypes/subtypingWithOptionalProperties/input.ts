@@ -2,8 +2,8 @@
 
 // returns { s?: number; }
 function f<T>(a: T) {
-    var b: { s?: number } = a;
-    return b;
+	var b: { s?: number } = a;
+	return b;
 }
 
 var r = f({ s: new Object() }); // ok

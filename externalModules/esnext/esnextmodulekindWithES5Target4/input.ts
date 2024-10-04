@@ -1,5 +1,5 @@
 // @target: es5
 // @module: esnext
 
-class E { }
+class E {}
 export default E;

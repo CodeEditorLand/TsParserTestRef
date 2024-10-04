@@ -1,3 +1,3 @@
 class C {
-   [a: string]: number
+	[a: string]: number;
 }

@@ -1,5 +1,5 @@
 interface Array<T> {
-    slice(): this;
+	slice(): this;
 }
 
 let t: [number, string] = [42, "hello"];

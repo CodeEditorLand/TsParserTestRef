@@ -1,4 +1,4 @@
 class C {
-   [a: string]: number;
-   public v: number
+	[a: string]: number;
+	public v: number;
 }

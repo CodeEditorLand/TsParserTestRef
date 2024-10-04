@@ -1,7 +1,6 @@
 // @target: esnext
 ({
 	async m() {
-		for (;;) {
-		}
-	}
+		for (;;) {}
+	},
 });

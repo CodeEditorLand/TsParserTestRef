@@ -11,9 +11,9 @@ export const kSymbol = Symbol("my-symbol");
  */
 // @filename: b.js
 /**
- * @returns {import('./a').WithSymbol} 
- * @param {import('./a').WithSymbol} value 
+ * @returns {import('./a').WithSymbol}
+ * @param {import('./a').WithSymbol} value
  */
 export function b(value) {
-    return value;
+	return value;
 }

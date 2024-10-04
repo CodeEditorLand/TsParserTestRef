@@ -11,7 +11,7 @@ var lena: number = arr.length;
 var t1 = t2; // error
 var t2 = t1; // error
 
-type A<T extends any[]> = T['length'];
+type A<T extends any[]> = T["length"];
 var b: A<[boolean]>;
 var c: 1 = b;
 

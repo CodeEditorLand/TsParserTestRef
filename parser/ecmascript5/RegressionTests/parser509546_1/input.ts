@@ -1,3 +1,3 @@
-export class Logger { 
-     public
+export class Logger {
+	public;
 }

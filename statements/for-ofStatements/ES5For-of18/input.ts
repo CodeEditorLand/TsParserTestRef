@@ -1,6 +1,6 @@
 for (let v of []) {
-    v;
+	v;
 }
 for (let v of []) {
-    v;
+	v;
 }

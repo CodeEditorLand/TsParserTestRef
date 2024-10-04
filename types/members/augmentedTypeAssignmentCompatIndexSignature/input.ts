@@ -1,21 +1,25 @@
-interface Foo { a }
-interface Bar { b }
+interface Foo {
+	a;
+}
+interface Bar {
+	b;
+}
 
 interface Object {
-    [n: number]: Foo;
+	[n: number]: Foo;
 }
 
 interface Function {
-    [n: number]: Bar;
+	[n: number]: Bar;
 }
 
 var o = {};
-var f = () => { };
+var f = () => {};
 
 var v1: {
-    [n: number]: Foo
+	[n: number]: Foo;
 } = o; // Should be allowed
 
 var v2: {
-    [n: number]: Bar
+	[n: number]: Bar;
 } = f; // Should be allowed

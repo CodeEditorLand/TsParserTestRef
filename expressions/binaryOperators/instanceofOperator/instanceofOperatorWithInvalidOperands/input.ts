@@ -1,5 +1,5 @@
 class C {
-    foo() { }
+	foo() {}
 }
 
 var x: any;
@@ -17,7 +17,7 @@ var ra3 = a3 instanceof x;
 var ra4 = a4 instanceof x;
 var ra5 = 0 instanceof x;
 var ra6 = true instanceof x;
-var ra7 = '' instanceof x;
+var ra7 = "" instanceof x;
 var ra8 = null instanceof x;
 var ra9 = undefined instanceof x;
 
@@ -37,10 +37,10 @@ var rb3 = x instanceof b3;
 var rb4 = x instanceof b4;
 var rb5 = x instanceof 0;
 var rb6 = x instanceof true;
-var rb7 = x instanceof '';
+var rb7 = x instanceof "";
 var rb8 = x instanceof o1;
 var rb9 = x instanceof o2;
 var rb10 = x instanceof o3;
 
 // both operands are invalid
-var rc1 = '' instanceof {};
+var rc1 = "" instanceof {};

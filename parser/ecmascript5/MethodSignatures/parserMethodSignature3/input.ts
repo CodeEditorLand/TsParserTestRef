@@ -1,3 +1,3 @@
 interface I {
-  C<T>();
+	C<T>();
 }

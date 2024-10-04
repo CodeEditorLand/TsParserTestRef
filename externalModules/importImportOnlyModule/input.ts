@@ -6,7 +6,7 @@ export class C1 {
 }
 
 // @Filename: foo_1.ts
-import c1 = require('./foo_0'); // Makes this an external module
+import c1 = require("./foo_0"); // Makes this an external module
 var answer = 42; // No exports
 
 // @Filename: foo_2.ts

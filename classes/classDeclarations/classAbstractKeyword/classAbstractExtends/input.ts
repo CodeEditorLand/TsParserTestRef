@@ -1,16 +1,15 @@
-
 class A {
-    foo() {}
+	foo() {}
 }
 
 abstract class B extends A {
-    abstract bar();
+	abstract bar();
 }
 
-class C extends B { }
+class C extends B {}
 
 abstract class D extends B {}
 
 class E extends B {
-    bar() {}
+	bar() {}
 }

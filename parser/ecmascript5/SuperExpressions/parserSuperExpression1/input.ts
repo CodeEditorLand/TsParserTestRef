@@ -1,13 +1,13 @@
 class C {
-    private foo() {
-        super.foo();
-    }
+	private foo() {
+		super.foo();
+	}
 }
 
 module M1.M2 {
-    class C {
-        private foo() {
-            super.foo();
-        }
-    }
+	class C {
+		private foo() {
+			super.foo();
+		}
+	}
 }

@@ -12,4 +12,4 @@ var exports = {};
 exports.SomeName;
 
 /** @type {exports.SomeName} */
-const myString = 'str';
+const myString = "str";

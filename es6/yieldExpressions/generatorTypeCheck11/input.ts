@@ -1,4 +1,4 @@
 //@target: ES6
 function* g(): IterableIterator<number> {
-    return 0;
+	return 0;
 }

@@ -1,4 +1,4 @@
 class C {
-   foo();
-   foo() { }
+	foo();
+	foo() {}
 }

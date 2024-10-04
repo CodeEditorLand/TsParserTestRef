@@ -1,32 +1,28 @@
 declare global {
-    interface Function {
-        now(): string;
-    }
+	interface Function {
+		now(): string;
+	}
 }
 
 Function.prototype.now = function () {
-    return "now"
-}
+	return "now";
+};
 
 class X {
-    static now() {
-        return {}
-    }
+	static now() {
+		return {};
+	}
 
-    why() {
-
-    }
+	why() {}
 }
 
-class Y {
+class Y {}
 
-}
+console.log(X.now()); // works as expected
+console.log(Y.now()); // works as expected
 
-console.log(X.now()) // works as expected
-console.log(Y.now()) // works as expected
-
-export const x: X | number = Math.random() > 0.5 ? new X() : 1
+export const x: X | number = Math.random() > 0.5 ? new X() : 1;
 
 if (x instanceof X) {
-    x.why() // should compile
+	x.why(); // should compile
 }

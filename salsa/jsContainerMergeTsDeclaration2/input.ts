@@ -3,7 +3,7 @@
 // @checkJs: true
 // @Filename: a.d.ts
 declare namespace C {
-    function bar(): void
+	function bar(): void;
 }
 // @Filename: b.js
 C.prototype = {};

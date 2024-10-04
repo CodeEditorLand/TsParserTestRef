@@ -1,2 +1,1 @@
-1
-/notregexp/a.foo();
+1 / notregexp / a.foo();

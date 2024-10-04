@@ -8,14 +8,14 @@
  * const doc comment
  */
 const x = (a) => {
-    return '';
+	return "";
 };
 
 /**
  * function doc comment
  */
 function b() {
-    return 0;
+	return 0;
 }
 
-module.exports = {x, b}
+module.exports = { x, b };

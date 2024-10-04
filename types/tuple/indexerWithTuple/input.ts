@@ -1,7 +1,7 @@
-﻿var strNumTuple: [string, number] = ["foo", 10]; 
+﻿var strNumTuple: [string, number] = ["foo", 10];
 var numTupleTuple: [number, [string, number]] = [10, ["bar", 20]];
-var unionTuple1: [number, string| number] = [10, "foo"]; 
-var unionTuple2: [boolean, string| number] = [true, "foo"]; 
+var unionTuple1: [number, string | number] = [10, "foo"];
+var unionTuple2: [boolean, string | number] = [true, "foo"];
 
 // no error
 var idx0 = 0;
@@ -13,7 +13,7 @@ var ele13 = strNumTuple[idx0]; // string | number
 var ele14 = strNumTuple[idx1]; // string | number
 var ele15 = strNumTuple["0"]; // string
 var ele16 = strNumTuple["1"]; // number
-var strNumTuple1 = numTupleTuple[1];  //[string, number];
+var strNumTuple1 = numTupleTuple[1]; //[string, number];
 var ele17 = numTupleTuple[2]; // number | [string, number]
 var eleUnion10 = unionTuple1[0]; // number
 var eleUnion11 = unionTuple1[1]; // string | number

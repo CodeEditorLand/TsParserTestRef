@@ -2,9 +2,9 @@
 // @declaration: true
 
 interface Foo {
-  required1: string;
-  required2: string;
-  optional?: string;
+	required1: string;
+	required2: string;
+	optional?: string;
 }
 
 const foo1 = { required1: "hello" } as Foo;

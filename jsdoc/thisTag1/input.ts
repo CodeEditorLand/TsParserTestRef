@@ -9,11 +9,11 @@
  * @return {number}
  */
 function f(s) {
-    return this.n + s.length
+	return this.n + s.length;
 }
 
 const o = {
-    f,
-    n: 1
-}
-o.f('hi')
+	f,
+	n: 1,
+};
+o.f("hi");

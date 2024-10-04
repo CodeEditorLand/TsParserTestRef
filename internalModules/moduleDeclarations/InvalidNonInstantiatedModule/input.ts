@@ -1,5 +1,8 @@
 module M {
-    export interface Point { x: number; y: number }
+	export interface Point {
+		x: number;
+		y: number;
+	}
 }
 
 var m = M; // Error, not instantiated can not be used as var

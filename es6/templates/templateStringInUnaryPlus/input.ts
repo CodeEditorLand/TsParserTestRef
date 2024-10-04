@@ -1,1 +1,1 @@
-﻿var x = +`abc${ 123 }def`;
+﻿var x = +`abc${123}def`;

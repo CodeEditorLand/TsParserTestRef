@@ -1,5 +1,5 @@
 function foo(f: (x: string) => string) {
-    return f("");
+	return f("");
 }
 var g = (x: string) => x + "blah";
 var x = () => g;

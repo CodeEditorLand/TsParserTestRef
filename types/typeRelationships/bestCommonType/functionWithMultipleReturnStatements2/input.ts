@@ -4,46 +4,44 @@
 // no errors expected here
 
 function f1() {
-    if (true) {
-        return 1;
-    } else {
-        return null;
-    }
+	if (true) {
+		return 1;
+	} else {
+		return null;
+	}
 }
 
 function f2() {
-    if (true) {
-        return 1;
-    } else if (false) {
-        return null;
-    } else {
-        return 2;
-    }
+	if (true) {
+		return 1;
+	} else if (false) {
+		return null;
+	} else {
+		return 2;
+	}
 }
 
 function f4() {
-    try {
-        return 1;
-    }
-    catch (e) {
-        return undefined;
-    }
-    finally {
-        return 1;
-    }
+	try {
+		return 1;
+	} catch (e) {
+		return undefined;
+	} finally {
+		return 1;
+	}
 }
 
 function f5() {
-    return 1;
-    return new Object();
+	return 1;
+	return new Object();
 }
 
 function f6<T>(x: T) {
-    if (true) {
-        return x;
-    } else {
-        return null;
-    }
+	if (true) {
+		return x;
+	} else {
+		return null;
+	}
 }
 
 //function f7<T extends U, U>(x: T, y: U) {
@@ -58,36 +56,36 @@ var a: { x: number; y?: number };
 var b: { x: number; z?: number };
 // returns typeof a
 function f9() {
-    if (true) {
-        return a;
-    } else {
-        return b;
-    }
+	if (true) {
+		return a;
+	} else {
+		return b;
+	}
 }
 
 // returns typeof b
 function f10() {
-    if (true) {
-        return b;
-    } else {
-        return a;
-    }
+	if (true) {
+		return b;
+	} else {
+		return a;
+	}
 }
 
 // returns number => void
 function f11() {
-    if (true) {
-        return (x: number) => { }
-    } else {
-        return (x: Object) => { }
-    }
+	if (true) {
+		return (x: number) => {};
+	} else {
+		return (x: Object) => {};
+	}
 }
 
 // returns Object => void
 function f12() {
-    if (true) {
-        return (x: Object) => { }
-    } else {
-        return (x: number) => { }        
-    }
+	if (true) {
+		return (x: Object) => {};
+	} else {
+		return (x: number) => {};
+	}
 }

@@ -1,7 +1,11 @@
 // ! operator on enum type
 
-enum ENUM { A, B, C };
-enum ENUM1 { };
+enum ENUM {
+	A,
+	B,
+	C,
+}
+enum ENUM1 {}
 
 // enum type var
 var ResultIsBoolean1 = !ENUM;

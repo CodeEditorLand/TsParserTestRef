@@ -21,5 +21,4 @@
  * @param {...number![]?} j - number[][] | null
  * @param {...number?[]!} k - (number[] | null)[]
  */
-function f(x, y, z, a, b, c, e, f, g, h, i, j, k) {
-}
+function f(x, y, z, a, b, c, e, f, g, h, i, j, k) {}

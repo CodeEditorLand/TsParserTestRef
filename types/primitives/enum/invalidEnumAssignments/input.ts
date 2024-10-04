@@ -1,11 +1,11 @@
 enum E {
-    A,
-    B
+	A,
+	B,
 }
 
 enum E2 {
-    A,
-    B
+	A,
+	B,
 }
 
 var e: E;
@@ -15,8 +15,8 @@ e = E2.A;
 e2 = E.A;
 e = <void>null;
 e = {};
-e = '';
+e = "";
 
 function f<T>(a: T) {
-    e = a;
+	e = a;
 }

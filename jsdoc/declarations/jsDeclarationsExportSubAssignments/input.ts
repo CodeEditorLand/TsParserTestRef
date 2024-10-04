@@ -5,8 +5,8 @@
 // @declaration: true
 // @filename: cls.js
 const Strings = {
-    a: "A",
-    b: "B"
+	a: "A",
+	b: "B",
 };
 class Foo {}
 module.exports = Foo;

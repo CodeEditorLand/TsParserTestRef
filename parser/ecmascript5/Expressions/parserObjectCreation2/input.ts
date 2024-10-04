@@ -1,1 +1,1 @@
-new new Foo()()
+new new Foo()();

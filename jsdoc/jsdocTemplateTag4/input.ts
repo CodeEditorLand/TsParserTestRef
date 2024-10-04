@@ -11,17 +11,17 @@
  * @template V
  */
 function Multimap() {
-    /** @type {Object<string, V>} TODO: Remove the prototype from the fresh object */
-    this._map = {};
-};
+	/** @type {Object<string, V>} TODO: Remove the prototype from the fresh object */
+	this._map = {};
+}
 
 /**
  * @param {K} key the key ok
  * @returns {V} the value ok
  */
 Multimap.prototype.get = function (key) {
-    return this._map[key + ''];
-}
+	return this._map[key + ""];
+};
 
 /**
  * Should work for initialisers too
@@ -29,9 +29,9 @@ Multimap.prototype.get = function (key) {
  * @template {string} K
  * @template V
  */
-var Multimap2 = function() {
-    /** @type {Object<string, V>} TODO: Remove the prototype from the fresh object */
-    this._map = {};
+var Multimap2 = function () {
+	/** @type {Object<string, V>} TODO: Remove the prototype from the fresh object */
+	this._map = {};
 };
 
 /**
@@ -39,8 +39,8 @@ var Multimap2 = function() {
  * @returns {V} the value ok
  */
 Multimap2.prototype.get = function (key) {
-    return this._map[key + ''];
-}
+	return this._map[key + ""];
+};
 
 var Ns = {};
 /**
@@ -49,9 +49,9 @@ var Ns = {};
  * @template {string} K
  * @template V
  */
-Ns.Multimap3 = function() {
-    /** @type {Object<string, V>} TODO: Remove the prototype from the fresh object */
-    this._map = {};
+Ns.Multimap3 = function () {
+	/** @type {Object<string, V>} TODO: Remove the prototype from the fresh object */
+	this._map = {};
 };
 
 /**
@@ -59,5 +59,5 @@ Ns.Multimap3 = function() {
  * @returns {V} the value ok
  */
 Ns.Multimap3.prototype.get = function (key) {
-    return this._map[key + ''];
-}
+	return this._map[key + ""];
+};

@@ -1,1 +1,1 @@
-declare module "too*many*asterisks" { }
+declare module "too*many*asterisks" {}

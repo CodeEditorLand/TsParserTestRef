@@ -1,2 +1,1 @@
-class any {
-}
+class any {}

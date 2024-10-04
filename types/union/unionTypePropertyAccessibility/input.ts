@@ -1,17 +1,17 @@
 class Default {
-    member: string;
+	member: string;
 }
 
 class Public {
-    public member: string;
+	public member: string;
 }
 
 class Protected {
-    protected member: string;
+	protected member: string;
 }
 
 class Private {
-    private member: number;
+	private member: number;
 }
 
 var v1: Default;

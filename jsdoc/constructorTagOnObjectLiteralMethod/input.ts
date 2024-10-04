@@ -4,7 +4,9 @@
 // @checkJs: true
 // @noImplicitAny: true
 const obj = {
-  /** @constructor */
-  Foo() { this.bar = "bar" }
+	/** @constructor */
+	Foo() {
+		this.bar = "bar";
+	},
 };
-(new obj.Foo()).bar
+new obj.Foo().bar;

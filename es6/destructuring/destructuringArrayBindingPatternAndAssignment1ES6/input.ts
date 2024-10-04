@@ -33,21 +33,21 @@ var [b0, b1, b2] = [2, 3, 4];
 var [b3, b4, b5]: [number, number, string] = [1, 2, "string"];
 
 function foo() {
-    return [1, 2, 3];
+	return [1, 2, 3];
 }
 
 var [b6, b7] = foo();
 var [...b8] = foo();
 
 //      S is not a tuple- like type and the numeric index signature type of S is assignable to the target given in E.
-var temp = [1,2,3]
+var temp = [1, 2, 3];
 var [c0, c1] = [...temp];
 var [c2] = [];
-var [[[c3]], [[[[c4]]]]] = [[[]], [[[[]]]]]
-var [[c5], c6]: [[string|number], boolean] = [[1], true];
+var [[[c3]], [[[[c4]]]]] = [[[]], [[[[]]]]];
+var [[c5], c6]: [[string | number], boolean] = [[1], true];
 var [, c7] = [1, 2, 3];
-var [,,, c8] = [1, 2, 3, 4];
-var [,,, c9] = [1, 2, 3, 4];
-var [,,,...c10] = [1, 2, 3, 4, "hello"];
+var [, , , c8] = [1, 2, 3, 4];
+var [, , , c9] = [1, 2, 3, 4];
+var [, , , ...c10] = [1, 2, 3, 4, "hello"];
 var [c11, c12, ...c13] = [1, 2, "string"];
 var [c14, c15, c16] = [1, 2, "string"];

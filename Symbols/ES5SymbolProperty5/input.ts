@@ -2,7 +2,7 @@
 var Symbol: { iterator: symbol };
 
 class C {
-    [Symbol.iterator]() { }
+	[Symbol.iterator]() {}
 }
 
-(new C)[Symbol.iterator](0) // Should error
+new C()[Symbol.iterator](0); // Should error

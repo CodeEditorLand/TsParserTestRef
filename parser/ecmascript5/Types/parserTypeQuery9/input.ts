@@ -1,1 +1,1 @@
-var s: typeof A[];
+var s: (typeof A)[];

@@ -1,23 +1,23 @@
 declare class C1 {
-    public x : number;
+	public x: number;
 }
 
 interface C1 {
-    x : number;
+	x: number;
 }
 
 declare class C2 {
-    protected x : number;
+	protected x: number;
 }
 
 interface C2 {
-    x : number;
+	x: number;
 }
 
 declare class C3 {
-    private x : number;
+	private x: number;
 }
 
 interface C3 {
-    x : number;
+	x: number;
 }

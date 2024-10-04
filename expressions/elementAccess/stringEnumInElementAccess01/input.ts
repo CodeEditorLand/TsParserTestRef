@@ -1,14 +1,14 @@
 // @noImplicitAny: true
 enum E {
-    A = "a",
-    B = "b",
-    C = "c",
+	A = "a",
+	B = "b",
+	C = "c",
 }
 
 interface Item {
-    a: string;
-    b: number;
-    c: boolean;
+	a: string;
+	b: number;
+	c: boolean;
 }
 
 declare const item: Item;

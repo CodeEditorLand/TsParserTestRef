@@ -9,7 +9,6 @@
  */
 class A {}
 
-
 /**
  * Target element
  * @type {module:A}

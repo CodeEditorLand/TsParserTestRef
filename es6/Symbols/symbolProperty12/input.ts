@@ -1,11 +1,11 @@
 //@target: ES6
 class C {
-    private [Symbol.iterator]: { x };
+	private [Symbol.iterator]: { x };
 }
 interface I {
-    [Symbol.iterator]: { x };
+	[Symbol.iterator]: { x };
 }
 
 var i: I;
-i = new C;
+i = new C();
 var c: C = i;

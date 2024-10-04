@@ -3,32 +3,36 @@
 // all legal
 
 interface I {
-    id: number;
+	id: number;
 }
 
 class C implements I {
-    id: number;
+	id: number;
 }
 
-class D<T>{
-    source: T;
-    recurse: D<T>;
-    wrapped: D<D<T>>
+class D<T> {
+	source: T;
+	recurse: D<T>;
+	wrapped: D<D<T>>;
 }
 
-function F(x: string): number { return 42; }
+function F(x: string): number {
+	return 42;
+}
 
 module M {
-    export class A {
-        name: string;
-    }
+	export class A {
+		name: string;
+	}
 
-    export function F2(x: number): string { return x.toString(); }
+	export function F2(x: number): string {
+		return x.toString();
+	}
 }
 
 var aNumber = 9.9;
 throw aNumber;
-var aString = 'this is a string';
+var aString = "this is a string";
 throw aString;
 var aDate = new Date(12);
 throw aDate;
@@ -37,7 +41,7 @@ throw anObject;
 
 var anAny = null;
 throw anAny;
-var anOtherAny = <any> new C();
+var anOtherAny = <any>new C();
 throw anOtherAny;
 var anUndefined = undefined;
 throw anUndefined;
@@ -51,7 +55,7 @@ throw anObjectLiteral;
 
 var aFunction = F;
 throw aFunction;
-throw aFunction('');
+throw aFunction("");
 var aLambda = (x) => 2;
 throw aLambda;
 throw aLambda(1);
@@ -73,12 +77,14 @@ throw 0.0;
 throw false;
 throw null;
 throw undefined;
-throw 'a string';
-throw function () { return 'a string' };
-throw <T>(x:T) => 42;
+throw "a string";
+throw function () {
+	return "a string";
+};
+throw <T>(x: T) => 42;
 throw { x: 12, y: 13 };
 throw [];
-throw ['a', ['b']];
+throw ["a", ["b"]];
 throw /[a-z]/;
 throw new Date();
 throw new C();

@@ -1,5 +1,4 @@
-﻿
-type S = "a" | "b";
+﻿type S = "a" | "b";
 type T = S[] | S;
 
 var s: S;

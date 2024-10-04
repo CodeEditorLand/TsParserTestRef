@@ -8,10 +8,10 @@
  * @param {T} t
  * @returns {T} Maybe just return 120 and cast it?
  */
-var x = 1
+var x = 1;
 
 /** @type {Id<string>} I actually wanted to write `const "120"` */
-var one_twenty = s => "120";
+var one_twenty = (s) => "120";
 
 /** @template S
  * @callback SharedId
@@ -19,16 +19,16 @@ var one_twenty = s => "120";
  * @return {S}
  */
 class SharedClass {
-    constructor() {
-        /** @type {SharedId<S>} */
-        this.id;
-    }
+	constructor() {
+		/** @type {SharedId<S>} */
+		this.id;
+	}
 }
 /** @type {SharedId<number>} */
-var outside = n => n + 1;
+var outside = (n) => n + 1;
 
 /** @type {Final<{ fantasy }, { heroes }>} */
-var noreturn = (barts, tidus, noctis) => "cecil"
+var noreturn = (barts, tidus, noctis) => "cecil";
 
 /**
  * @template V,X

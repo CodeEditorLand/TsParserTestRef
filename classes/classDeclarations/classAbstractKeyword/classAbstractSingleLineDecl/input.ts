@@ -1,12 +1,12 @@
 abstract class A {}
 
-abstract
+abstract;
 class B {}
 
-abstract
+abstract;
 
 class C {}
 
-new A;
-new B;
-new C;
+new A();
+new B();
+new C();

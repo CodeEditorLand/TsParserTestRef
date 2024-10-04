@@ -1,29 +1,63 @@
+// @filename: validator.ts
+import "./";
+
 // @allowJs: true
 // @noEmit: true
 // @strict: true
 // @checkJs: true
 // @filename: mod1.js
 Object.defineProperty(exports, "thing", { value: 42, writable: true });
-Object.defineProperty(exports, "readonlyProp", { value: "Smith", writable: false });
-Object.defineProperty(exports, "rwAccessors", { get() { return 98122 }, set(_) { /*ignore*/ } });
-Object.defineProperty(exports, "readonlyAccessor", { get() { return 21.75 } });
+Object.defineProperty(exports, "readonlyProp", {
+	value: "Smith",
+	writable: false,
+});
+Object.defineProperty(exports, "rwAccessors", {
+	get() {
+		return 98122;
+	},
+	set(_) {
+		/*ignore*/
+	},
+});
+Object.defineProperty(exports, "readonlyAccessor", {
+	get() {
+		return 21.75;
+	},
+});
 Object.defineProperty(exports, "setonlyAccessor", {
-    /** @param {string} str */
-    set(str) {
-        this.rwAccessors = Number(str) 
-    }
+	/** @param {string} str */
+	set(str) {
+		this.rwAccessors = Number(str);
+	},
 });
 
 // @filename: mod2.js
-Object.defineProperty(module.exports, "thing", { value: "yes", writable: true });
-Object.defineProperty(module.exports, "readonlyProp", { value: "Smith", writable: false });
-Object.defineProperty(module.exports, "rwAccessors", { get() { return 98122 }, set(_) { /*ignore*/ } });
-Object.defineProperty(module.exports, "readonlyAccessor", { get() { return 21.75 } });
+Object.defineProperty(module.exports, "thing", {
+	value: "yes",
+	writable: true,
+});
+Object.defineProperty(module.exports, "readonlyProp", {
+	value: "Smith",
+	writable: false,
+});
+Object.defineProperty(module.exports, "rwAccessors", {
+	get() {
+		return 98122;
+	},
+	set(_) {
+		/*ignore*/
+	},
+});
+Object.defineProperty(module.exports, "readonlyAccessor", {
+	get() {
+		return 21.75;
+	},
+});
 Object.defineProperty(module.exports, "setonlyAccessor", {
-    /** @param {string} str */
-    set(str) {
-        this.rwAccessors = Number(str) 
-    }
+	/** @param {string} str */
+	set(str) {
+		this.rwAccessors = Number(str);
+	},
 });
 
 // @filename: index.js
@@ -37,9 +71,6 @@ const q = require("./mod1").thing;
  * @type {string}
  */
 const u = require("./mod2").thing;
-
-// @filename: validator.ts
-import "./";
 
 import m1 = require("./mod1");
 

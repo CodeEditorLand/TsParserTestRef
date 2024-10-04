@@ -8,7 +8,7 @@
  * @param {T} a
  * @returns {(b: T) => T}
  */
-const seq = a => b => b;
+const seq = (a) => (b) => b;
 
 const text1 = "hello";
 const text2 = "world";

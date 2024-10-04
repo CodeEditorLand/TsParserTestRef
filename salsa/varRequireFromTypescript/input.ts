@@ -3,20 +3,19 @@
 // @strict: true
 // @noEmit: true
 // @Filename: ex.d.ts
-export type Greatest = { day: 1 }
+export type Greatest = { day: 1 };
 export class Crunch {
-    n: number
-    m(): number
-    constructor(n: number)
+	n: number;
+	m(): number;
+	constructor(n: number);
 }
 
 // @Filename: use.js
-var ex = require('./ex')
+var ex = require("./ex");
 
 // values work
 var crunch = new ex.Crunch(1);
-crunch.n
-
+crunch.n;
 
 // types work
 /**
@@ -24,6 +23,6 @@ crunch.n
  * @param {ex.Crunch} wrap
  */
 function f(greatest, wrap) {
-    greatest.day
-    wrap.n
+	greatest.day;
+	wrap.n;
 }

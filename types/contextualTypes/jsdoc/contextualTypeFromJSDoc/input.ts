@@ -6,25 +6,25 @@
 
 /** @type {Array<[string, {x?:number, y?:number}]>} */
 const arr = [
-    ['a', { x: 1 }],
-    ['b', { y: 2 }]
+	["a", { x: 1 }],
+	["b", { y: 2 }],
 ];
 
 /** @return {Array<[string, {x?:number, y?:number}]>} */
 function f() {
-    return [
-        ['a', { x: 1 }],
-        ['b', { y: 2 }]
-    ];
+	return [
+		["a", { x: 1 }],
+		["b", { y: 2 }],
+	];
 }
 
 class C {
-    /** @param {Array<[string, {x?:number, y?:number}]>} value */
-    set x(value) { }
-    get x() {
-        return [
-            ['a', { x: 1 }],
-            ['b', { y: 2 }]
-        ];
-    }
+	/** @param {Array<[string, {x?:number, y?:number}]>} value */
+	set x(value) {}
+	get x() {
+		return [
+			["a", { x: 1 }],
+			["b", { y: 2 }],
+		];
+	}
 }

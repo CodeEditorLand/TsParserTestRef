@@ -1,2 +1,2 @@
 //@target: ES5
-var { x } = <any>new Foo;
+var { x } = <any>new Foo();

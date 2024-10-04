@@ -1,17 +1,17 @@
 ﻿//@target: ES6
-class Foo { }
+class Foo {}
 class FooIterator {
-    next() {
-        return {
-            value: new Foo,
-            done: false
-        };
-    }
-    [Symbol.iterator]() {
-        return this;
-    }
+	next() {
+		return {
+			value: new Foo(),
+			done: false,
+		};
+	}
+	[Symbol.iterator]() {
+		return this;
+	}
 }
 
-for (const v of new FooIterator) {
-    v;
+for (const v of new FooIterator()) {
+	v;
 }

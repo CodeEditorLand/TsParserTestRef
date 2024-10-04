@@ -1,19 +1,21 @@
 class C {
-    x: number;
-    get x() { // error
-        return 1;
-    }
+	x: number;
+	get x() {
+		// error
+		return 1;
+	}
 }
 
 class D {
-    x: number;
-    set x(v) { } // error
+	x: number;
+	set x(v) {} // error
 }
 
 class E {
-    private x: number;
-    get x() { // error
-        return 1;
-    }
-    set x(v) { }
+	private x: number;
+	get x() {
+		// error
+		return 1;
+	}
+	set x(v) {}
 }

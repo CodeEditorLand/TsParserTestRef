@@ -1,15 +1,15 @@
 // @ts-ignore with additional commenting
-var invalidCommentedFancy: number = 'nope';
+var invalidCommentedFancy: number = "nope";
 
 // @ts-ignore with additional commenting
-var validCommentedFancy: string = 'nope';
+var validCommentedFancy: string = "nope";
 
 // @ts-ignore
-var invalidCommentedPlain: number = 'nope';
+var invalidCommentedPlain: number = "nope";
 
 // @ts-ignore
-var validCommentedPlain: string = 'nope';
+var validCommentedPlain: string = "nope";
 
-var invalidPlain: number = 'nope';
+var invalidPlain: number = "nope";
 
-var validPlain: string = 'nope';
+var validPlain: string = "nope";

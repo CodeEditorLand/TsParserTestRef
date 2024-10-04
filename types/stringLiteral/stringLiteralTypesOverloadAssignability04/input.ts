@@ -2,12 +2,12 @@
 
 function f(x: "foo"): number;
 function f(x: "foo"): number {
-    return 0;
+	return 0;
 }
 
 function g(x: "foo"): number;
 function g(x: "foo"): number {
-    return 0;
+	return 0;
 }
 
 let a = f;

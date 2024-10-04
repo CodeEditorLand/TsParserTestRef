@@ -4,7 +4,7 @@
 
 // @Filename: mod1.js
 
-/** 
+/**
  * @typedef {function(string): boolean}
  * Type1
  */
@@ -17,12 +17,12 @@
  * @returns {boolean} The return.
  */
 function callIt(func, arg) {
-  return func(arg);
+	return func(arg);
 }
 
 // @Filename: mod2.js
 
-/** 
+/**
  * @typedef {{
  *   num: number,
  *   str: string,
@@ -36,7 +36,7 @@ function callIt(func, arg) {
  * @returns {string|number} The return.
  */
 function check(obj) {
-  return obj.boo ? obj.num : obj.str;
+	return obj.boo ? obj.num : obj.str;
 }
 
 // @Filename: mod3.js
@@ -57,7 +57,7 @@ function check(obj) {
  * @returns {string|number} The return.
  */
 function use1(func, bool, str, num) {
-  return func(bool, str, num)
+	return func(bool, str, num);
 }
 
 // @Filename: mod4.js
@@ -79,12 +79,12 @@ function use1(func, bool, str, num) {
  * @returns {string|number} The return.
  */
 function use2(func, bool, str, num) {
-  return func(bool, str, num)
+	return func(bool, str, num);
 }
 
 // @Filename: mod5.js
 
-/** 
+/**
  * @typedef {{
  *   num:
  *   number,
@@ -101,12 +101,12 @@ function use2(func, bool, str, num) {
  * @returns {string|number} The return.
  */
 function check5(obj) {
-  return obj.boo ? obj.num : obj.str;
+	return obj.boo ? obj.num : obj.str;
 }
 
 // @Filename: mod6.js
 
-/** 
+/**
  * @typedef {{
  *   foo:
  *   *,
@@ -121,9 +121,8 @@ function check5(obj) {
  * @returns {*} The return.
  */
 function check6(obj) {
-  return obj.foo;
+	return obj.foo;
 }
-
 
 // @Filename: mod7.js
 

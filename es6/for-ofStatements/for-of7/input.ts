@@ -1,3 +1,4 @@
 ﻿//@target: ES6
 v;
-for (let v of [0]) { }
+for (let v of [0]) {
+}

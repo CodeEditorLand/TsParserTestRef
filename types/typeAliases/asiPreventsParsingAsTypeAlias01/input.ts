@@ -1,7 +1,6 @@
-
 var type;
 var string;
 var Foo;
 
-type
+type;
 Foo = string;

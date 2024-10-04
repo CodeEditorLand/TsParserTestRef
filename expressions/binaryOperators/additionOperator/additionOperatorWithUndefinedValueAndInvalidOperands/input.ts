@@ -1,6 +1,8 @@
 // If one operand is the null or undefined value, it is treated as having the type of the other operand.
 
-function foo(): void { return undefined }
+function foo(): void {
+	return undefined;
+}
 
 var a: boolean;
 var b: Object;
@@ -18,6 +20,6 @@ var r6 = undefined + c;
 // other cases
 var r7 = undefined + d;
 var r8 = undefined + true;
-var r9 = undefined + { a: '' };
+var r9 = undefined + { a: "" };
 var r10 = undefined + foo();
-var r11 = undefined + (() => { });
+var r11 = undefined + (() => {});

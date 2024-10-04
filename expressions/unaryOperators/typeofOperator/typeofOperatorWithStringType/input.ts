@@ -2,14 +2,18 @@
 var STRING: string;
 var STRING1: string[] = ["", "abc"];
 
-function foo(): string { return "abc"; }
+function foo(): string {
+	return "abc";
+}
 
 class A {
-    public a: string;
-    static foo() { return ""; }
+	public a: string;
+	static foo() {
+		return "";
+	}
 }
 module M {
-    export var n: string;
+	export var n: string;
 }
 
 var objA = new A();
@@ -21,7 +25,12 @@ var ResultIsString2 = typeof STRING1;
 // string type literal
 var ResultIsString3 = typeof "";
 var ResultIsString4 = typeof { x: "", y: "" };
-var ResultIsString5 = typeof { x: "", y: (s: string) => { return s; } };
+var ResultIsString5 = typeof {
+	x: "",
+	y: (s: string) => {
+		return s;
+	},
+};
 
 // string type expressions
 var ResultIsString6 = typeof objA.a;

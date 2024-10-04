@@ -5,5 +5,5 @@
 /**
  * @type {MyClass}
  */
-function MyClass() { }
+function MyClass() {}
 MyClass.prototype = {};

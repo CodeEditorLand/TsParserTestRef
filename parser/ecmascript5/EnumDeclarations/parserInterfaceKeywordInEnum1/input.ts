@@ -1,5 +1,5 @@
 "use strict";
 
 enum Bar {
-    interface,
+	interface,
 }

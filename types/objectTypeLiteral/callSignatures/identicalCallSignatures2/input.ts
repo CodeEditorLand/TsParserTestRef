@@ -2,9 +2,9 @@
 // Here the multiple overloads come from multiple bases.
 
 interface Base<T> {
-    (x: number): string;
+	(x: number): string;
 }
 
-interface I extends Base<string>, Base<number> { }
+interface I extends Base<string>, Base<number> {}
 
-interface I2<T> extends Base<string>, Base<number> { }
+interface I2<T> extends Base<string>, Base<number> {}

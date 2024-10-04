@@ -32,4 +32,3 @@ window.a;
 window.b;
 top.a;
 top.b;
-
